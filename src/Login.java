@@ -14,7 +14,6 @@ public class Login extends JFrame implements ActionListener {
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
         image.setBounds(0, 0, 1000, 700);
-
         add(image);
         // Default
         setTitle("Hospital Management System");
