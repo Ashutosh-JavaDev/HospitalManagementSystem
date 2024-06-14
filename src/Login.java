@@ -5,7 +5,8 @@ import java.awt.Image;
 import java.awt.Color;
 
 public class Login extends JFrame implements ActionListener {
-    JButton NewUser;
+    JButton Login,Forget;
+    JTextField loginfield,passwordfield;
     Login() {
 
     }
