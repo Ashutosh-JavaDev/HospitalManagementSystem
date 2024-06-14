@@ -35,13 +35,15 @@ public class Login extends JFrame implements ActionListener {
         add(passwordfield);
         // Button
         Login=new JButton("Login");
-        Login.setBounds(300,410,100,30);
+        Login.setBounds(300,610,100,30);
         Login.setFont(new Font("Arial", Font.BOLD, 14));
+        Login.setForeground(Color.white);
         Login.setBackground(Color.black);
         add(Login);
         Forget=new JButton("Forget Password");
-        Forget.setBounds(500,410,200,30);
+        Forget.setBounds(500,610,200,30);
         Forget.setFont(new Font("Arial", Font.BOLD, 14));
+        Forget.setForeground(Color.white);
         Forget.setBackground(Color.black);
         add(Forget);
         // Default
