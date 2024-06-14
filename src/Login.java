@@ -11,12 +11,12 @@ public class Login extends JFrame implements ActionListener {
     JPasswordField passwordfield;
 
     Login() {
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel image = new JLabel(i3);
-        image.setBounds(0, 0, 500, 400);
-        add(image);
+        // ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
+        // Image i2 = i1.getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
+        // ImageIcon i3 = new ImageIcon(i2);
+        // JLabel image = new JLabel(i3);
+        // image.setBounds(0, 0, 500, 400);
+        // add(image);
         JLabel title=new JLabel("Hospital Management");
         title.setBounds(150,70,250,30);
         title.setFont(new Font("Arial",Font.BOLD,18));
