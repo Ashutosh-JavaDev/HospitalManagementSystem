@@ -18,7 +18,7 @@ public class Login extends JFrame implements ActionListener {
         JLabel username=new JLabel("UserName");
         username.setBounds(400, 300,100,30);
         username.setFont(new Font("Arial",Font.BOLD,18));
-
+        add(username);
         // Default
         setTitle("Hospital Management System");
         setLayout(null);
