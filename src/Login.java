@@ -21,7 +21,7 @@ public class Login extends JFrame implements ActionListener {
         setLayout(null);
         setSize(1000,700);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(200, 150);
+        setLocation(400, 150);
         setVisible(true);
     }
 
