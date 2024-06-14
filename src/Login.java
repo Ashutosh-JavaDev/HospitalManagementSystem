@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Image;
 import java.awt.Color;
-
+import java.awt.Font;
 public class Login extends JFrame implements ActionListener {
     JButton Login, Forget;
     JTextField loginfield, passwordfield;
@@ -15,6 +15,10 @@ public class Login extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(0, 0, 1000, 700);
         add(image);
+        JLabel username=new JLabel("UserName");
+        username.setBounds(400, 300,100,30);
+        username.setFont(new Font("Arial",Font.BOLD,18));
+
         // Default
         setTitle("Hospital Management System");
         setLayout(null);
