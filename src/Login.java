@@ -17,13 +17,20 @@ public class Login extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1000, 700);
         add(image);
         JLabel username = new JLabel("UserName");
-        username.setBounds(400, 300, 100, 30);
+        username.setBounds(300, 300, 100, 30);
         username.setFont(new Font("Arial", Font.BOLD, 18));
         add(username);
         JPasswordField password = new JPasswordField("Password");
-        password.setBounds(400, 350, 100, 30);
+        password.setBounds(300, 350, 100, 30);
         password.setFont(new Font("Arial", Font.BOLD, 18));
         add(password);
+        loginfield=new JTextField();
+        loginfield.setBounds(500,300,150,30);
+        add(loginfield);
+        passwordfield=new JTextField();
+        passwordfield.setBounds(500,350,150,30);
+        add(passwordfield);
+
         // Default
         setTitle("Hospital Management System");
         setLayout(null);
