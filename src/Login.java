@@ -19,6 +19,10 @@ public class Login extends JFrame implements ActionListener {
         username.setBounds(400, 300,100,30);
         username.setFont(new Font("Arial",Font.BOLD,18));
         add(username);
+        JPasswordField password=new JPasswordField("Password");
+        password.setBounds(400, 350,100,30);
+        password.setFont(new Font("Arial",Font.BOLD,18));
+        add(password);
         // Default
         setTitle("Hospital Management System");
         setLayout(null);
