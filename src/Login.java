@@ -11,21 +11,25 @@ public class Login extends JFrame implements ActionListener {
     JPasswordField passwordfield;
 
     Login() {
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(1000, 800, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel image = new JLabel(i3);
-        image.setBounds(0, 0, 1000, 800);
-        add(image);
+        // ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
+        // Image i2 = i1.getImage().getScaledInstance(1000, 800, Image.SCALE_DEFAULT);
+        // ImageIcon i3 = new ImageIcon(i2);
+        // JLabel image = new JLabel(i3);
+        // image.setBounds(0, 0, 1000, 800);
+        // add(image);
+        JLabel title=new JLabel("Hospital Management");
+        title.setBounds(200,100,500,30);
+        title.setFont(new Font("Arial",Font.BOLD,20));
+        add(title);
         JLabel username = new JLabel("UserName");
         username.setBounds(300, 500, 100, 30);
-        username.setFont(new Font("Arial", Font.BOLD, 18));
+        username.setFont(new Font("Raleway", Font.BOLD, 18));
         username.setForeground(Color.BLACK);
         add(username);
         JLabel password = new JLabel("Password");
         password.setBounds(300, 550, 100, 30);
         password.setForeground(Color.BLACK);
-        password.setFont(new Font("Arial", Font.BOLD, 18));
+        password.setFont(new Font("Raleway", Font.BOLD, 18));
         add(password);
         loginfield=new JTextField();
         loginfield.setBounds(500,500,150,30);
