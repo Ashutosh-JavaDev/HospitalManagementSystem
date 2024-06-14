@@ -9,6 +9,8 @@ public class Login extends JFrame implements ActionListener {
     JTextField loginfield, passwordfield;
 
     Login() {
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
+        // Default
         setTitle("Hospital Management System");
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
