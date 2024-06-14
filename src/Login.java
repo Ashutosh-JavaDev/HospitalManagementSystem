@@ -17,6 +17,7 @@ public class Login extends JFrame implements ActionListener {
         // Default
         setTitle("Hospital Management System");
         setLayout(null);
+        setSize(150,300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(200, 150);
         setVisible(true);
