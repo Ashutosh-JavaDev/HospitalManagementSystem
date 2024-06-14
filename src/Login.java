@@ -34,10 +34,12 @@ public class Login extends JFrame implements ActionListener {
         Login=new JButton("Login");
         Login.setBounds(300,410,100,30);
         Login.setFont(new Font("Arial", Font.BOLD, 14));
+        Login.setBackground(Color.black);
         add(Login);
         Forget=new JButton("Forget Password");
         Forget.setBounds(500,410,200,30);
         Forget.setFont(new Font("Arial", Font.BOLD, 14));
+        Forget.setBackground(Color.black);
         add(Forget);
         // Default
         setTitle("Hospital Management System");
