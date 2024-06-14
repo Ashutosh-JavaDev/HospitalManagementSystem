@@ -7,7 +7,8 @@ import java.awt.Font;
 
 public class Login extends JFrame implements ActionListener {
     JButton Login, Forget;
-    JTextField loginfield, passwordfield;
+    JTextField loginfield;
+    JPasswordField passwordfield;
 
     Login() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
@@ -17,18 +18,20 @@ public class Login extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1000, 800);
         add(image);
         JLabel username = new JLabel("UserName");
-        username.setBounds(300, 300, 100, 30);
+        username.setBounds(300, 500, 100, 30);
         username.setFont(new Font("Arial", Font.BOLD, 18));
+        username.setForeground(Color.BLACK);
         add(username);
-        JPasswordField password = new JPasswordField("Password");
-        password.setBounds(300, 350, 100, 30);
+        JLabel password = new JLabel("Password");
+        password.setBounds(300, 550, 100, 30);
+        password.setForeground(Color.BLACK);
         password.setFont(new Font("Arial", Font.BOLD, 18));
         add(password);
         loginfield=new JTextField();
-        loginfield.setBounds(500,300,150,30);
+        loginfield.setBounds(500,500,150,30);
         add(loginfield);
-        passwordfield=new JTextField();
-        passwordfield.setBounds(500,350,150,30);
+        passwordfield=new JPasswordField();
+        passwordfield.setBounds(500,550,150,30);
         add(passwordfield);
         // Button
         Login=new JButton("Login");
