@@ -15,56 +15,56 @@ public class selection extends JFrame implements ActionListener {
         add(image);
         // Button 1
         addPatient=new JButton("Patient");
-        addPatient.setBounds(40,20,150,40);
+        addPatient.setBounds(40,60,150,40);
         addPatient.setFont(new Font("Arial",Font.BOLD,18));
         addPatient.setBackground(Color.black);
         addPatient.setForeground(Color.white);
         image.add(addPatient);
         // Button 2
         ambulance=new JButton("Ambulance");
-        ambulance.setBounds(200,20,150,40);
+        ambulance.setBounds(200,60,150,40);
         ambulance.setFont(new Font("Arial",Font.BOLD,18));
         ambulance.setBackground(Color.black);
         ambulance.setForeground(Color.white);
         image.add(ambulance);
         // Button 3
         appointment=new JButton("Appointment");
-        appointment.setBounds(360,20,180,40);
+        appointment.setBounds(360,60,180,40);
         appointment.setFont(new Font("Arial",Font.BOLD,18));
         appointment.setBackground(Color.black);
         appointment.setForeground(Color.white);
         image.add(appointment);
         // Button 4
         medical=new JButton("Medical");
-        medical.setBounds(560,20,150,40);
+        medical.setBounds(560,60,150,40);
         medical.setFont(new Font("Arial",Font.BOLD,18));
         medical.setBackground(Color.black);
         medical.setForeground(Color.white);
         image.add(medical);
         // Button 5
         billing=new JButton("Billing");
-        billing.setBounds(40,80,150,40);
+        billing.setBounds(40,120,150,40);
         billing.setFont(new Font("Arial",Font.BOLD,18));
         billing.setBackground(Color.black);
         billing.setForeground(Color.white);
         image.add(billing);
         // Button 6
         inventory=new JButton("Inventory");
-        inventory.setBounds(200,80,150,40);
+        inventory.setBounds(200,120,150,40);
         inventory.setFont(new Font("Arial",Font.BOLD,18));
         inventory.setBackground(Color.black);
         inventory.setForeground(Color.white);
         image.add(inventory);
         // Button 7
         security=new JButton("Security");
-        security.setBounds(360,80,180,40);
+        security.setBounds(360,120,180,40);
         security.setFont(new Font("Arial",Font.BOLD,18));
         security.setBackground(Color.black);
         security.setForeground(Color.white);
         image.add(security);
         // Button 8
         logout=new JButton("Logout");
-        logout.setBounds(560,80,150,40);
+        logout.setBounds(560,120,150,40);
         logout.setFont(new Font("Arial",Font.BOLD,18));
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
