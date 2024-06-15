@@ -15,6 +15,7 @@ public class selection extends JFrame implements ActionListener {
         // default
         setTitle("Hospital Management System");
         setSize(800,600);
+        setLocation(200,100);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
