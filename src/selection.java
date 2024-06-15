@@ -13,7 +13,11 @@ public class selection extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
-
+        addPatient=new JButton("Patient");
+        addPatient.setBounds(20,20,80,20);
+        addPatient.setBackground(Color.black);
+        addPatient.setForeground(Color.white);
+        image.add(addPatient);
         // default
         setTitle("Hospital Management System");
         setSize(800,600);
