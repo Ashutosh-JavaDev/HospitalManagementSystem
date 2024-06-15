@@ -29,14 +29,14 @@ public class selection extends JFrame implements ActionListener {
         image.add(ambulance);
         // Button 3
         appointment=new JButton("Appointment");
-        appointment.setBounds(360,20,150,20);
+        appointment.setBounds(360,20,180,20);
         appointment.setFont(new Font("Arial",Font.BOLD,18));
         appointment.setBackground(Color.black);
         appointment.setForeground(Color.white);
         image.add(appointment);
         // Button 4
         medical=new JButton("Medical");
-        medical.setBounds(570,20,150,20);
+        medical.setBounds(560,20,150,20);
         medical.setFont(new Font("Arial",Font.BOLD,18));
         medical.setBackground(Color.black);
         medical.setForeground(Color.white);
@@ -64,7 +64,7 @@ public class selection extends JFrame implements ActionListener {
         image.add(security);
         // Button 8
         logout=new JButton("Logout");
-        logout.setBounds(570,60,150,20);
+        logout.setBounds(560,60,150,20);
         logout.setFont(new Font("Arial",Font.BOLD,18));
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
