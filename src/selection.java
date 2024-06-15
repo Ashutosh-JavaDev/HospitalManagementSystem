@@ -15,6 +15,7 @@ public class selection extends JFrame implements ActionListener {
         add(image);
         addPatient=new JButton("Patient");
         addPatient.setBounds(20,20,80,20);
+        addPatient.setFont(new Font("Arial",Font.BOLD,18));
         addPatient.setBackground(Color.black);
         addPatient.setForeground(Color.white);
         image.add(addPatient);
