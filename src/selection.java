@@ -6,7 +6,12 @@ import java.awt.Color;
 import java.awt.Font;
 public class selection extends JFrame implements ActionListener {
     selection(){
-
+        // default
+        setTitle("Hospital Management System");
+        setSize(500,400);
+        setLayout(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
     }
     public void actionPerformed(ActionEvent ae){
 
