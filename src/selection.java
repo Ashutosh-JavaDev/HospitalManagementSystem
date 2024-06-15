@@ -6,6 +6,12 @@ import java.awt.Color;
 import java.awt.Font;
 public class selection extends JFrame implements ActionListener {
     selection(){
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
+        Image i2=i1.getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
+        ImageIcon i3=new ImageIcon(i2);
+        JLabel image=new JLabel(i3);
+        setBounds(250, 150, 500, 400);
+        add(image);
         // default
         setTitle("Hospital Management System");
         setSize(500,400);
