@@ -5,6 +5,7 @@ import java.awt.Image;
 import java.awt.Color;
 import java.awt.Font;
 public class selection extends JFrame implements ActionListener {
+    JButton addPatient,ambulance,appointment,medical,billing,inventory,security,logout;
     selection(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
         Image i2=i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
@@ -12,10 +13,11 @@ public class selection extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
+
         // default
         setTitle("Hospital Management System");
         setSize(800,600);
-        setLocation(200,100);
+        setLocation(400,200);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
