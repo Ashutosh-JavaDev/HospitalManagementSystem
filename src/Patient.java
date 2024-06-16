@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.Image;
 public class Patient extends JFrame implements ActionListener{
     JLabel name,ID,phone,email,room,cause,date,gaurdian;
+    JTextField namefield,idfield,emailfield,phonefield,roomfield,causefield,datefield,gaurdianfield;
     Patient(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/.jgp"));
         Image i2=i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
@@ -16,9 +17,13 @@ public class Patient extends JFrame implements ActionListener{
         //Name 
         name=new JLabel("Patient's Name: ");
         name.setFont(new Font("Arial",Font.BOLD,18));
-        name.setForeground(Color.white);
+        name.setForeground(Color.BLACK);
         name.setBounds(100,25,200,20);
         image.add(name);
+        namefield=new JTextField();
+        namefield.setFont(new Font("Arial",Font.PLAIN,16));
+        namefield.setBounds(350,25,200,20);
+        image.add(namefield);
         // Default
         setTitle("Patient Details");
         setLayout(null);
