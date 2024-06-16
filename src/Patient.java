@@ -80,6 +80,26 @@ public class Patient extends JFrame implements ActionListener {
         roomfield.setFont(new Font("Arial", Font.PLAIN, 18));
         roomfield.setBounds(225, 180, 200, 30);
         image.add(roomfield);
+        // cause
+        cause = new JLabel("Addmit Reason: ");
+        cause.setFont(new Font("Arial", Font.BOLD, 20));
+        cause.setForeground(Color.black);
+        cause.setBounds(25, 220, 180, 30);
+        image.add(cause);
+        causefield = new JTextField();
+        causefield.setFont(new Font("Arial", Font.PLAIN, 18));
+        causefield.setBounds(225, 220, 200, 30);
+        image.add(causefield);
+        // date
+        date = new JLabel("Addmit Date: ");
+        date.setFont(new Font("Arial", Font.BOLD, 20));
+        date.setForeground(Color.black);
+        date.setBounds(25, 180, 180, 30);
+        image.add(email);
+        emailfield = new JTextField();
+        emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
+        emailfield.setBounds(225, 180, 200, 30);
+        image.add(emailfield);
         // Default
         setTitle("Patient Details");
         setLayout(null);
