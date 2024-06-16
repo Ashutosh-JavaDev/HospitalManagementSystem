@@ -12,6 +12,12 @@ public class Patient extends JFrame implements ActionListener{
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
+        // Default
+        setTitle("Patient Details");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(800,600);
+        setLocation(250,250);
+        setVisible(true);
     }
     public void actionPerformed(ActionEvent ae){
 
