@@ -17,7 +17,7 @@ public class Patient extends JFrame implements ActionListener{
         //Name 
         name=new JLabel("Patient's Name: ");
         name.setFont(new Font("Arial",Font.BOLD,20));
-        name.setForeground(Color.white);
+        name.setForeground(Color.black);
         name.setBounds(100,35,200,30);
         image.add(name);
         namefield=new JTextField();
