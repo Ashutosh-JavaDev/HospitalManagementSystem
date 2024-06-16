@@ -36,6 +36,16 @@ public class Patient extends JFrame implements ActionListener{
         idfield.setFont(new Font("Arial",Font.BOLD,18));
         idfield.setBounds(225,60,200,30);
         image.add(idfield);
+        // Card
+        card=new JLabel("Card Number: ");
+        card.setFont(new Font("Arial",Font.BOLD,20));
+        card.setForeground(Color.black);
+        card.setBounds(25,100,180,30);
+        image.add(card);
+        cardfield=new JTextField();
+        cardfield.setFont(new Font("Arial",Font.PLAIN,18));
+        cardfield.setBounds(225,100,200,30);
+        image.add(cardfield);
         // Default
         setTitle("Patient Details");
         setLayout(null);
