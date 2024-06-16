@@ -5,8 +5,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 public class Patient extends JFrame implements ActionListener{
-    JLabel name,ID,phone,email,room,cause,date,gaurdian;
-    JTextField namefield,emailfield,phonefield,roomfield,causefield,datefield,gaurdianfield;
+    JLabel name,ID,phone,email,room,cause,date,gaurdian,card;
+    JTextField namefield,emailfield,phonefield,roomfield,causefield,datefield,gaurdianfield,cardfield;
     JComboBox idfield;
     Patient(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
