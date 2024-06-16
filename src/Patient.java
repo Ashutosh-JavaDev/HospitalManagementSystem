@@ -18,11 +18,11 @@ public class Patient extends JFrame implements ActionListener{
         name=new JLabel("Patient's Name: ");
         name.setFont(new Font("Arial",Font.BOLD,20));
         name.setForeground(Color.black);
-        name.setBounds(100,35,200,30);
+        name.setBounds(25,20,180,30);
         image.add(name);
         namefield=new JTextField();
         namefield.setFont(new Font("Arial",Font.PLAIN,18));
-        namefield.setBounds(350,35,200,30);
+        namefield.setBounds(225,20,200,30);
         image.add(namefield);
         // Default
         setTitle("Patient Details");
