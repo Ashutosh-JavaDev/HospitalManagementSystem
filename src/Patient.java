@@ -4,6 +4,11 @@ import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-public class Patient {
-    
+public class Patient extends JFrame implements ActionListener{
+    Patient(){
+
+    }
+    public void actionPerformed(ActionEvent ae){
+        
+    }
 }
