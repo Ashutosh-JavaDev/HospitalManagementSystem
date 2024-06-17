@@ -163,10 +163,13 @@ public class Patient extends JFrame implements ActionListener {
             String Addmission = ((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
             String Realease = ((JTextField) dischargedatechooser.getDateEditor().getUiComponent()).getText();
             String Guardian = gaurdianfield.getText();
-            try{
-                HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="insert into HospitalManagementSystem values('"+Name+"','"+sidfield+"','"+Card+"','"+Phone+"','"+Email+"','"+Room+"','"+Cause+"','"+Addmission+"','"+Realease+"','"+Guardian+"')";
-            }catch(SQLException e){
+            try {
+                HospitalManagementSystem conn = new HospitalManagementSystem();
+                String query = "insert into HospitalManagementSystem values('" + Name + "','" + sidfield + "','" + Card
+                        + "','" + Phone + "','" + Email + "','" + Room + "','" + Cause + "','" + Addmission + "','"
+                        + Realease + "','" + Guardian + "')";
+                conn.state.executeUpdate(query);
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
