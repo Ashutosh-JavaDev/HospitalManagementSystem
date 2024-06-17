@@ -122,7 +122,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(logout);
         // Confirm
         confirm=new JButton("Confirm");
-        confirm.setBounds(200,390,150,30);
+        confirm.setBounds(400,390,150,30);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
