@@ -129,7 +129,7 @@ public class Patient extends JFrame implements ActionListener {
         PatientID.setFont(new Font("Arial", Font.BOLD, 20));
         PatientID.setForeground(Color.black);
         PatientID.setBounds(25, 390, 180, 30);
-        image.add(name);
+        image.add(PatientID);
         patientId = new JTextField();
         patientId.setFont(new Font("Arial", Font.PLAIN, 18));
         patientId.setBounds(250, 390, 250, 30);
@@ -166,6 +166,7 @@ public class Patient extends JFrame implements ActionListener {
         else if (ae.getSource() == confirm) {
             // JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate,
             // gaurdian, card;
+            String PatientIDS=patientId.getText();
             String Name = namefield.getText();
             String sidfield = (String) idfield.getSelectedItem();
             String Card = cardfield.getText();
@@ -177,7 +178,7 @@ public class Patient extends JFrame implements ActionListener {
             String Guardian = gaurdianfield.getText();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-                String query = "insert into HospitalManagementSystem values('" + Name + "','" + sidfield + "','" + Card
+                String query = "insert into HospitalManagementSystem values('"+PatientIDS+"','" + Name + "','" + sidfield + "','" + Card
                         + "','" + Phone + "','" + Email + "','" + Room + "','" + Cause + "','" + Addmission + "','" + Guardian + "')";
                 conn.state.executeUpdate(query);
                 JOptionPane.showMessageDialog(phone, "Patient Added Succesfully");
