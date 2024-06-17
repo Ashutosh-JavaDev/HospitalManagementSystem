@@ -120,6 +120,13 @@ public class Patient extends JFrame implements ActionListener {
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
+        // Confirm
+        confirm=new JButton("Confirm");
+        confirm.setBounds(200,390,100,30);
+        confirm.setFont(new Font("Arial", Font.BOLD, 20));
+        confirm.setForeground(Color.white);
+        confirm.setBackground(Color.black);
+        image.add(confirm);
         // Default
         setTitle("Patient Details");
         setLayout(null);
