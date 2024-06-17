@@ -7,11 +7,11 @@ import java.awt.Font;
 import java.awt.Image;
 
 public class Patient extends JFrame implements ActionListener {
-    JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate, gaurdian, card;
+    JLabel name, ID, phone, email, room, cause, addmissionDate, realseDate, gaurdian, card;
     JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
-    JButton logout,confirm;
-    JDateChooser addmissiondatechooser,dischargedatechooser;
+    JButton logout, confirm;
+    JDateChooser addmissiondatechooser, dischargedatechooser;
 
     Patient() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -123,15 +123,15 @@ public class Patient extends JFrame implements ActionListener {
         gaurdianfield.setBounds(250, 390, 250, 30);
         image.add(gaurdianfield);
         // Logout
-        logout=new JButton("Logout");
-        logout.setBounds(30,750,150,40);
+        logout = new JButton("Logout");
+        logout.setBounds(30, 750, 150, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
         // Confirm
-        confirm=new JButton("Confirm");
-        confirm.setBounds(400,750,150,40);
+        confirm = new JButton("Confirm");
+        confirm.setBounds(400, 750, 150, 40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
@@ -146,21 +146,22 @@ public class Patient extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        if(ae.getSource()==logout){
+        if (ae.getSource() == logout) {
             System.exit(0);
         }
-        if(ae.getSource()==confirm){
-            //  JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate, gaurdian, card;
-            String Name=namefield.getText();
-           String sidfield=(String)idfield.getSelectedItem();
-           String Card=cardfield.getText();
-           String Phone=phone.getText();
-           String Email=emailfield.getText();
-           String Room=(String)roomfield.getSelectedItem();
-           String Cause=causefield.getText();
-           String Addmission=((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
-           String Realease=((JTextField)dischargedatechooser.getDateEditor().getUiComponent()).getText();
-           String Guardian=gaurdianfield.getText();
+        if (ae.getSource() == confirm) {
+            // JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate,
+            // gaurdian, card;
+            String Name = namefield.getText();
+            String sidfield = (String) idfield.getSelectedItem();
+            String Card = cardfield.getText();
+            String Phone = phone.getText();
+            String Email = emailfield.getText();
+            String Room = (String) roomfield.getSelectedItem();
+            String Cause = causefield.getText();
+            String Addmission = ((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
+            String Realease = ((JTextField) dischargedatechooser.getDateEditor().getUiComponent()).getText();
+            String Guardian = gaurdianfield.getText();
 
         }
     }
