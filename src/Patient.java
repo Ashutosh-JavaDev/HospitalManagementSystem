@@ -88,7 +88,7 @@ public class Patient extends JFrame implements ActionListener {
         String roomnumber[] = { "101", "102", "103", "104", "105", "201", "202", "203", "204", "205", "301", "302",
                 "303", "304", "305", "401", "402", "403", "404", "405", "501", "502", "503", "504", "505" };
         roomfield = new JComboBox(roomnumber);
-        roomfield.setFont(new Font("Arial", Font.PLAIN, 18));
+        roomfield.setFont(new Font("Arial", Font.BOLD, 18));
         roomfield.setBounds(225, 260, 200, 30);
         image.add(roomfield);
         // date
