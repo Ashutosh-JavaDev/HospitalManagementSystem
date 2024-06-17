@@ -28,7 +28,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(name);
         namefield = new JTextField();
         namefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        namefield.setBounds(225, 20, 250, 30);
+        namefield.setBounds(250, 20, 250, 30);
         image.add(namefield);
         // ID
         ID = new JLabel("Patient's ID: ");
@@ -39,7 +39,7 @@ public class Patient extends JFrame implements ActionListener {
         String data[] = { "Aadhar Card", "Pan Card", "Voter Card", "Passport", "Driving License" };
         idfield = new JComboBox(data);
         idfield.setFont(new Font("Arial", Font.BOLD, 18));
-        idfield.setBounds(225, 60, 250, 30);
+        idfield.setBounds(250, 60, 250, 30);
         image.add(idfield);
         // Card
         card = new JLabel("Card Number: ");
@@ -49,7 +49,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(card);
         cardfield = new JTextField();
         cardfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        cardfield.setBounds(225, 100, 250, 30);
+        cardfield.setBounds(250, 100, 250, 30);
         image.add(cardfield);
         // Phone
         phone = new JLabel("Phone Number: ");
@@ -59,7 +59,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(phone);
         phonefield = new JTextField();
         phonefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        phonefield.setBounds(225, 140, 250, 30);
+        phonefield.setBounds(250, 140, 250, 30);
         image.add(phonefield);
         // Email
         email = new JLabel("Email ID: ");
@@ -69,7 +69,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(email);
         emailfield = new JTextField();
         emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        emailfield.setBounds(225, 180, 250, 30);
+        emailfield.setBounds(250, 180, 250, 30);
         image.add(emailfield);
 
         // cause
@@ -80,7 +80,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(cause);
         causefield = new JTextField();
         causefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        causefield.setBounds(225, 220, 250, 30);
+        causefield.setBounds(250, 220, 250, 30);
         image.add(causefield);
         // room
         room = new JLabel("Room Number: ");
@@ -92,7 +92,7 @@ public class Patient extends JFrame implements ActionListener {
                 "303", "304", "305", "401", "402", "403", "404", "405", "501", "502", "503", "504", "505" };
         roomfield = new JComboBox(roomnumber);
         roomfield.setFont(new Font("Arial", Font.BOLD, 18));
-        roomfield.setBounds(225, 260, 250, 30);
+        roomfield.setBounds(250, 260, 250, 30);
         image.add(roomfield);
         // date
         date = new JLabel("Date of Addmission");
@@ -111,7 +111,7 @@ public class Patient extends JFrame implements ActionListener {
         image.add(gaurdian);
         gaurdianfield = new JTextField();
         gaurdianfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        gaurdianfield.setBounds(225, 340, 250, 30);
+        gaurdianfield.setBounds(250, 340, 250, 30);
         image.add(gaurdianfield);
         // Logout
         logout=new JButton("Logout");
