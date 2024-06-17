@@ -103,15 +103,15 @@ public class Patient extends JFrame implements ActionListener {
         datechooser.setBounds(250, 300, 180, 30);
         image.add(datechooser);
         // Gurdian
-        cause = new JLabel("Addmit Reason: ");
-        cause.setFont(new Font("Arial", Font.BOLD, 20));
-        cause.setForeground(Color.black);
-        cause.setBounds(25, 220, 180, 30);
+        gaurdian = new JLabel("Guardian: ");
+        gaurdian.setFont(new Font("Arial", Font.BOLD, 20));
+        gaurdian.setForeground(Color.black);
+        gaurdian.setBounds(25, 340, 180, 30);
         image.add(cause);
-        causefield = new JTextField();
-        causefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        causefield.setBounds(225, 220, 200, 30);
-        image.add(causefield);
+        gaurdianfield = new JTextField();
+        gaurdianfield.setFont(new Font("Arial", Font.PLAIN, 18));
+        gaurdianfield.setBounds(225, 340, 200, 30);
+        image.add(gaurdianfield);
         // Default
         setTitle("Patient Details");
         setLayout(null);
