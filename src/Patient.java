@@ -124,14 +124,14 @@ public class Patient extends JFrame implements ActionListener {
         image.add(gaurdianfield);
         // Logout
         logout=new JButton("Logout");
-        logout.setBounds(30,450,150,40);
+        logout.setBounds(30,750,150,40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
         // Confirm
         confirm=new JButton("Confirm");
-        confirm.setBounds(400,450,150,40);
+        confirm.setBounds(400,750,150,40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
