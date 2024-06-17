@@ -169,6 +169,8 @@ public class Patient extends JFrame implements ActionListener {
                         + "','" + Phone + "','" + Email + "','" + Room + "','" + Cause + "','" + Addmission + "','"
                         + Realease + "','" + Guardian + "')";
                 conn.state.executeUpdate(query);
+                JOptionPane.showMessageDialog(phone, "Patient Added Succesfully");
+                System.exit(0);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
