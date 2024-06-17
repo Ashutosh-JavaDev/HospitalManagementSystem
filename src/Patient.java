@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import com.toedter.calendar.JDateChooser;
 import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Font;
@@ -9,6 +10,7 @@ public class Patient extends JFrame implements ActionListener {
     JLabel name, ID, phone, email, room, cause, date, gaurdian, card;
     JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
+    JDateChooser datechooser;
 
     Patient() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -68,7 +70,7 @@ public class Patient extends JFrame implements ActionListener {
         emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
         emailfield.setBounds(225, 180, 200, 30);
         image.add(emailfield);
-   
+
         // cause
         cause = new JLabel("Addmit Reason: ");
         cause.setFont(new Font("Arial", Font.BOLD, 20));
@@ -79,7 +81,7 @@ public class Patient extends JFrame implements ActionListener {
         causefield.setFont(new Font("Arial", Font.PLAIN, 18));
         causefield.setBounds(225, 220, 200, 30);
         image.add(causefield);
-             // room
+        // room
         room = new JLabel("Room Number: ");
         room.setFont(new Font("Arial", Font.BOLD, 20));
         room.setForeground(Color.black);
@@ -92,7 +94,13 @@ public class Patient extends JFrame implements ActionListener {
         roomfield.setBounds(225, 260, 200, 30);
         image.add(roomfield);
         // date
-        
+        date = new JLabel("Date of Addmission");
+        date.setBounds(25, 300, 200, 30);
+        date.setFont(new Font("Arial", Font.BOLD, 20));
+        date.setForeground(Color.black);
+        image.add(date);
+        datechooser = new JDateChooser();
+        datechooser.setBounds(getBounds());
         // Default
         setTitle("Patient Details");
         setLayout(null);
