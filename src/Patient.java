@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import com.toedter.calendar.JDateChooser;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -162,7 +163,12 @@ public class Patient extends JFrame implements ActionListener {
             String Addmission = ((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
             String Realease = ((JTextField) dischargedatechooser.getDateEditor().getUiComponent()).getText();
             String Guardian = gaurdianfield.getText();
-
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+                String query="insert into HospitalManagementSystem values()";
+            }catch(SQLException e){
+                e.printStackTrace();
+            }
         }
     }
 
