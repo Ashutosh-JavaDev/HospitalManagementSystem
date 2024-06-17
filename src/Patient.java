@@ -150,7 +150,8 @@ public class Patient extends JFrame implements ActionListener {
             System.exit(0);
         }
         if(ae.getSource()==confirm){
-            
+            String Name=namefield.getText();
+           String sidfield=(String)idfield.getSelectedItem();
         }
     }
 
