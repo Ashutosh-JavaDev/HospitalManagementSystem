@@ -8,11 +8,11 @@ import java.awt.Font;
 import java.awt.Image;
 
 public class Patient extends JFrame implements ActionListener {
-    JLabel name, ID, phone, email, room, cause, addmissionDate, realseDate, gaurdian, card;
+    JLabel name, ID, phone, email, room, cause, addmissionDate, gaurdian, card;
     JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
     JButton logout, confirm;
-    JDateChooser addmissiondatechooser, dischargedatechooser;
+    JDateChooser addmissiondatechooser;
 
     Patient() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -104,15 +104,6 @@ public class Patient extends JFrame implements ActionListener {
         addmissiondatechooser = new JDateChooser();
         addmissiondatechooser.setBounds(250, 300, 250, 30);
         image.add(addmissiondatechooser);
-        // Realese Date
-        realseDate = new JLabel("Date of Discharge");
-        realseDate.setBounds(25, 340, 200, 30);
-        realseDate.setFont(new Font("Arial", Font.BOLD, 20));
-        realseDate.setForeground(Color.black);
-        image.add(realseDate);
-        dischargedatechooser = new JDateChooser();
-        dischargedatechooser.setBounds(250, 340, 250, 30);
-        image.add(dischargedatechooser);
         // Gurdian
         gaurdian = new JLabel("Guardian: ");
         gaurdian.setFont(new Font("Arial", Font.BOLD, 20));
@@ -125,14 +116,14 @@ public class Patient extends JFrame implements ActionListener {
         image.add(gaurdianfield);
         // Logout
         logout = new JButton("Logout");
-        logout.setBounds(30, 750, 150, 40);
+        logout.setBounds(30, 550, 150, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
         // Confirm
         confirm = new JButton("Confirm");
-        confirm.setBounds(400, 750, 150, 40);
+        confirm.setBounds(400, 550, 150, 40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
@@ -161,13 +152,11 @@ public class Patient extends JFrame implements ActionListener {
             String Room = (String) roomfield.getSelectedItem();
             String Cause = causefield.getText();
             String Addmission = ((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
-            String Realease = ((JTextField) dischargedatechooser.getDateEditor().getUiComponent()).getText();
             String Guardian = gaurdianfield.getText();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String query = "insert into HospitalManagementSystem values('" + Name + "','" + sidfield + "','" + Card
-                        + "','" + Phone + "','" + Email + "','" + Room + "','" + Cause + "','" + Addmission + "','"
-                        + Realease + "','" + Guardian + "')";
+                        + "','" + Phone + "','" + Email + "','" + Room + "','" + Cause + "','" + Addmission + "','" + Guardian + "')";
                 conn.state.executeUpdate(query);
                 JOptionPane.showMessageDialog(phone, "Patient Added Succesfully");
                 System.exit(0);
