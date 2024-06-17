@@ -165,7 +165,7 @@ public class Patient extends JFrame implements ActionListener {
             String Guardian = gaurdianfield.getText();
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="insert into HospitalManagementSystem values()";
+                String query="insert into HospitalManagementSystem values('"+Name+"','"+sidfield+"','"+Card+"','"+Phone+"','"+Email+"','"+Room+"','"+Cause+"','"+Addmission+"','"+Realease+"','"+Guardian+"')";
             }catch(SQLException e){
                 e.printStackTrace();
             }
