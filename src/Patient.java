@@ -10,6 +10,7 @@ public class Patient extends JFrame implements ActionListener {
     JLabel name, ID, phone, email, room, cause, date, gaurdian, card;
     JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
+    JButton logout,confirm;
     JDateChooser datechooser;
 
     Patient() {
