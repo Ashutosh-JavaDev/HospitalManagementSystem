@@ -121,6 +121,7 @@ public class Patient extends JFrame implements ActionListener {
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
+        logout.addActionListener(this);
         // Confirm
         confirm = new JButton("Confirm");
         confirm.setBounds(400, 390, 150, 40);
@@ -128,6 +129,7 @@ public class Patient extends JFrame implements ActionListener {
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
         image.add(confirm);
+        confirm.addActionListener(this);
         // Default
         setTitle("Patient Details");
         setLayout(null);
@@ -141,7 +143,7 @@ public class Patient extends JFrame implements ActionListener {
         if (ae.getSource() == logout) {
             System.exit(0);
         }
-        if (ae.getSource() == confirm) {
+        else if (ae.getSource() == confirm) {
             // JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate,
             // gaurdian, card;
             String Name = namefield.getText();
