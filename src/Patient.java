@@ -108,22 +108,22 @@ public class Patient extends JFrame implements ActionListener {
         gaurdian = new JLabel("Guardian: ");
         gaurdian.setFont(new Font("Arial", Font.BOLD, 20));
         gaurdian.setForeground(Color.black);
-        gaurdian.setBounds(25, 390, 180, 30);
+        gaurdian.setBounds(25, 350, 180, 30);
         image.add(gaurdian);
         gaurdianfield = new JTextField();
         gaurdianfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        gaurdianfield.setBounds(250, 390, 250, 30);
+        gaurdianfield.setBounds(250, 350, 250, 30);
         image.add(gaurdianfield);
         // Logout
         logout = new JButton("Logout");
-        logout.setBounds(30, 550, 150, 40);
+        logout.setBounds(30, 390, 150, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
         // Confirm
         confirm = new JButton("Confirm");
-        confirm.setBounds(400, 550, 150, 40);
+        confirm.setBounds(400, 390, 150, 40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
