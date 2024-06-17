@@ -149,7 +149,7 @@ public class Patient extends JFrame implements ActionListener {
             String Name = namefield.getText();
             String sidfield = (String) idfield.getSelectedItem();
             String Card = cardfield.getText();
-            String Phone = phone.getText();
+            String Phone = phonefield.getText();
             String Email = emailfield.getText();
             String Room = (String) roomfield.getSelectedItem();
             String Cause = causefield.getText();
