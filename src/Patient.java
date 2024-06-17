@@ -7,11 +7,11 @@ import java.awt.Font;
 import java.awt.Image;
 
 public class Patient extends JFrame implements ActionListener {
-    JLabel name, ID, phone, email, room, cause, date, gaurdian, card;
+    JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate, gaurdian, card;
     JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
     JButton logout,confirm;
-    JDateChooser datechooser;
+    JDateChooser addmissiondatechooser,dischargedatechooser;
 
     Patient() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -95,34 +95,43 @@ public class Patient extends JFrame implements ActionListener {
         roomfield.setBounds(250, 260, 250, 30);
         image.add(roomfield);
         // date
-        date = new JLabel("Date of Addmission");
-        date.setBounds(25, 300, 200, 30);
-        date.setFont(new Font("Arial", Font.BOLD, 20));
-        date.setForeground(Color.black);
-        image.add(date);
-        datechooser = new JDateChooser();
-        datechooser.setBounds(250, 300, 250, 30);
-        image.add(datechooser);
+        addmissionDate = new JLabel("Date of Addmission");
+        addmissionDate.setBounds(25, 300, 200, 30);
+        addmissionDate.setFont(new Font("Arial", Font.BOLD, 20));
+        addmissionDate.setForeground(Color.black);
+        image.add(addmissionDate);
+        addmissiondatechooser = new JDateChooser();
+        addmissiondatechooser.setBounds(250, 300, 250, 30);
+        image.add(addmissiondatechooser);
+        // Realese Date
+        realseDate = new JLabel("Date of Discharge");
+        realseDate.setBounds(25, 340, 200, 30);
+        realseDate.setFont(new Font("Arial", Font.BOLD, 20));
+        realseDate.setForeground(Color.black);
+        image.add(realseDate);
+        dischargedatechooser = new JDateChooser();
+        dischargedatechooser.setBounds(250, 340, 250, 30);
+        image.add(dischargedatechooser);
         // Gurdian
         gaurdian = new JLabel("Guardian: ");
         gaurdian.setFont(new Font("Arial", Font.BOLD, 20));
         gaurdian.setForeground(Color.black);
-        gaurdian.setBounds(25, 340, 180, 30);
+        gaurdian.setBounds(25, 390, 180, 30);
         image.add(gaurdian);
         gaurdianfield = new JTextField();
         gaurdianfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        gaurdianfield.setBounds(250, 340, 250, 30);
+        gaurdianfield.setBounds(250, 390, 250, 30);
         image.add(gaurdianfield);
         // Logout
         logout=new JButton("Logout");
-        logout.setBounds(30,390,150,40);
+        logout.setBounds(30,450,150,40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
         image.add(logout);
         // Confirm
         confirm=new JButton("Confirm");
-        confirm.setBounds(400,390,150,40);
+        confirm.setBounds(400,450,150,40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
