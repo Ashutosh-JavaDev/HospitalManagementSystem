@@ -146,7 +146,12 @@ public class Patient extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==logout){
+            System.exit(0);
+        }
+        if(ae.getSource()==confirm){
+            
+        }
     }
 
     public static void main(String[] args) {
