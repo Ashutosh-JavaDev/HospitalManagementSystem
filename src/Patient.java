@@ -8,8 +8,8 @@ import java.awt.Font;
 import java.awt.Image;
 
 public class Patient extends JFrame implements ActionListener {
-    JLabel name, ID, phone, email, room, cause, addmissionDate, gaurdian, card;
-    JTextField namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
+    JLabel PatientID, name, ID, phone, email, room, cause, addmissionDate, gaurdian, card;
+    JTextField patientId,namefield, emailfield, phonefield, causefield, datefield, gaurdianfield, cardfield;
     JComboBox idfield, roomfield;
     JButton logout, confirm;
     JDateChooser addmissiondatechooser;
@@ -31,6 +31,16 @@ public class Patient extends JFrame implements ActionListener {
         namefield.setFont(new Font("Arial", Font.PLAIN, 18));
         namefield.setBounds(250, 20, 250, 30);
         image.add(namefield);
+        // Patient Id
+        PatientID = new JLabel("Patient's ID: ");
+        PatientID.setFont(new Font("Arial", Font.BOLD, 20));
+        PatientID.setForeground(Color.black);
+        PatientID.setBounds(25, 20, 180, 30);
+        image.add(name);
+        patientId = new JTextField();
+        patientId.setFont(new Font("Arial", Font.PLAIN, 18));
+        patientId.setBounds(250, 20, 250, 30);
+        image.add(patientId);
         // ID
         ID = new JLabel("Patient's ID: ");
         ID.setFont(new Font("Arial", Font.BOLD, 20));
@@ -114,9 +124,19 @@ public class Patient extends JFrame implements ActionListener {
         gaurdianfield.setFont(new Font("Arial", Font.PLAIN, 18));
         gaurdianfield.setBounds(250, 350, 250, 30);
         image.add(gaurdianfield);
+        // patient id
+        PatientID = new JLabel("Patient's ID: ");
+        PatientID.setFont(new Font("Arial", Font.BOLD, 20));
+        PatientID.setForeground(Color.black);
+        PatientID.setBounds(25, 390, 180, 30);
+        image.add(name);
+        patientId = new JTextField();
+        patientId.setFont(new Font("Arial", Font.PLAIN, 18));
+        patientId.setBounds(250, 390, 250, 30);
+        image.add(patientId);
         // Logout
         logout = new JButton("Logout");
-        logout.setBounds(30, 390, 150, 40);
+        logout.setBounds(30, 550, 150, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 20));
         logout.setForeground(Color.white);
         logout.setBackground(Color.black);
@@ -124,7 +144,7 @@ public class Patient extends JFrame implements ActionListener {
         logout.addActionListener(this);
         // Confirm
         confirm = new JButton("Confirm");
-        confirm.setBounds(400, 390, 150, 40);
+        confirm.setBounds(400, 550, 150, 40);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
