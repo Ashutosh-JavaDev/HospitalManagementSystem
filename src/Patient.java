@@ -150,8 +150,18 @@ public class Patient extends JFrame implements ActionListener {
             System.exit(0);
         }
         if(ae.getSource()==confirm){
+            //  JLabel name, ID, phone, email, room, cause, addmissionDate,realseDate, gaurdian, card;
             String Name=namefield.getText();
            String sidfield=(String)idfield.getSelectedItem();
+           String Card=cardfield.getText();
+           String Phone=phone.getText();
+           String Email=emailfield.getText();
+           String Room=(String)roomfield.getSelectedItem();
+           String Cause=causefield.getText();
+           String Addmission=((JTextField) addmissiondatechooser.getDateEditor().getUiComponent()).getText();
+           String Realease=((JTextField)dischargedatechooser.getDateEditor().getUiComponent()).getText();
+           String Guardian=gaurdianfield.getText();
+
         }
     }
 
