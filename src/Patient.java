@@ -100,7 +100,8 @@ public class Patient extends JFrame implements ActionListener {
         date.setForeground(Color.black);
         image.add(date);
         datechooser = new JDateChooser();
-        datechooser.setBounds(getBounds());
+        datechooser.setBounds(250,300,180,30);
+        image.add(datechooser);
         // Default
         setTitle("Patient Details");
         setLayout(null);
