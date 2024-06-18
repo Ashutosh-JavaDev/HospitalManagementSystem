@@ -16,7 +16,9 @@ public class Hospital extends JFrame implements ActionListener{
         setTitle("Employee Entry");
         setSize(800,600);
         setLocation(250,150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
+
 
     }
     public void actionPerformed(ActionEvent ae){
