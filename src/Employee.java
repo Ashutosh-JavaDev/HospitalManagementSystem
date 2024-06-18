@@ -26,7 +26,7 @@ public class Employee extends JFrame implements ActionListener {
         name = new JLabel("Employee's Name: ");
         name.setFont(new Font("Arial", Font.BOLD, 20));
         name.setForeground(Color.black);
-        name.setBounds(25, 20, 180, 30);
+        name.setBounds(25, 20, 200, 30);
         image.add(name);
         namefield = new JTextField();
         namefield.setFont(new Font("Arial", Font.PLAIN, 18));
@@ -36,7 +36,7 @@ public class Employee extends JFrame implements ActionListener {
         ID = new JLabel("Employee's ID: ");
         ID.setFont(new Font("Arial", Font.BOLD, 20));
         ID.setForeground(Color.black);
-        ID.setBounds(25, 20, 180, 30);
+        ID.setBounds(25, 60, 180, 30);
         image.add(ID);
         String data[] = { "Aadhar Card", "Pan Card", "Voter Card", "Passport", "Driving License" };
         idfieldsbox = new JComboBox(data);
