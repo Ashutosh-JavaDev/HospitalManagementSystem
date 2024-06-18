@@ -73,6 +73,17 @@ public class Employee extends JFrame implements ActionListener {
         emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
         emailfield.setBounds(250, 180, 250, 30);
         image.add(emailfield);
+        // Proffesion Field
+        proffesion = new JLabel("Role: ");
+        proffesion.setFont(new Font("Arial", Font.BOLD, 20));
+        proffesion.setForeground(Color.black);
+        proffesion.setBounds(25, 220, 180, 30);
+        image.add(ID);
+        String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
+        idfieldsbox = new JComboBox(datas);
+        idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
+        idfieldsbox.setBounds(250, 220, 250, 30);
+        image.add(idfieldsbox);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
