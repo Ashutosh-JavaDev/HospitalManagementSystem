@@ -12,7 +12,12 @@ public class Hospital extends JFrame implements ActionListener{
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
-        
+        setLayout(null);
+        setTitle("Employee Entry");
+        setSize(800,600);
+        setLocation(250,150);
+        setVisible(true);
+
     }
     public void actionPerformed(ActionEvent ae){
 
