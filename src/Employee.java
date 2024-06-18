@@ -78,7 +78,7 @@ public class Employee extends JFrame implements ActionListener {
         proffesion.setFont(new Font("Arial", Font.BOLD, 20));
         proffesion.setForeground(Color.black);
         proffesion.setBounds(25, 220, 180, 30);
-        image.add(ID);
+        image.add(proffesion);
         String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
         idfieldsbox = new JComboBox(datas);
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
