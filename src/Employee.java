@@ -92,24 +92,24 @@ public class Employee extends JFrame implements ActionListener {
         doj.setForeground(Color.black);
         image.add(doj);
         dojfield=new JDateChooser();
-        dojfield.setBounds(300,260,100,30);
+        dojfield.setBounds(300,260,250,30);
         image.add(dojfield);
         // Status
         maritial=new JLabel("Maratial Status");
-        maritial.setBounds(25,300,100,30);
+        maritial.setBounds(25,300,200,30);
         maritial.setFont(new Font("Arial", Font.BOLD, 20));
         maritial.setForeground(Color.black);
         image.add(maritial);
         Single=new JRadioButton("Single");
-        Single.setBounds(150,300,100,30);
+        Single.setBounds(300,300,100,30);
         image.add(Single);
         // Unmaaried
         Married=new JRadioButton("Married");
-        Married.setBounds(275,300,100,30);
+        Married.setBounds(375,300,100,30);
         image.add(Married);
         // Divorsed
         Divorsed=new JRadioButton("Divorsed");
-        Divorsed.setBounds(400,300,100,30);
+        Divorsed.setBounds(500,300,100,30);
         image.add(Divorsed);
         // Group
         ButtonGroup group=new ButtonGroup();
