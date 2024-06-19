@@ -30,6 +30,7 @@ public class selection extends JFrame implements ActionListener {
         ambulance.setBackground(Color.black);
         ambulance.setForeground(Color.white);
         image.add(ambulance);
+        addPatient.addActionListener(this);
         // Button 3
         appointment = new JButton("Appointment");
         appointment.setBounds(360, 60, 180, 40);
@@ -37,6 +38,8 @@ public class selection extends JFrame implements ActionListener {
         appointment.setBackground(Color.black);
         appointment.setForeground(Color.white);
         image.add(appointment);
+        addPatient.addActionListener(this);
+
         // Button 4
         medical = new JButton("Medical");
         medical.setBounds(560, 60, 150, 40);
@@ -44,6 +47,8 @@ public class selection extends JFrame implements ActionListener {
         medical.setBackground(Color.black);
         medical.setForeground(Color.white);
         image.add(medical);
+        addPatient.addActionListener(this);
+
         // Button 5
         billing = new JButton("Billing");
         billing.setBounds(40, 120, 150, 40);
@@ -51,6 +56,8 @@ public class selection extends JFrame implements ActionListener {
         billing.setBackground(Color.black);
         billing.setForeground(Color.white);
         image.add(billing);
+        addPatient.addActionListener(this);
+
         // Button 6
         inventory = new JButton("Inventory");
         inventory.setBounds(200, 120, 150, 40);
@@ -58,6 +65,8 @@ public class selection extends JFrame implements ActionListener {
         inventory.setBackground(Color.black);
         inventory.setForeground(Color.white);
         image.add(inventory);
+        addPatient.addActionListener(this);
+
         // Button 7
         security = new JButton("Security");
         security.setBounds(360, 120, 180, 40);
@@ -65,6 +74,7 @@ public class selection extends JFrame implements ActionListener {
         security.setBackground(Color.black);
         security.setForeground(Color.white);
         image.add(security);
+        addPatient.addActionListener(this);
         // Employee
         addEmployee = new JButton("Employee");
         addEmployee.setBounds(560, 120, 150, 40);
@@ -72,6 +82,7 @@ public class selection extends JFrame implements ActionListener {
         addEmployee.setBackground(Color.black);
         addEmployee.setForeground(Color.white);
         image.add(addEmployee);
+        addPatient.addActionListener(this);
         // Button 8
         logout = new JButton("Logout");
         logout.setBounds(40, 170, 150, 40);
@@ -79,6 +90,7 @@ public class selection extends JFrame implements ActionListener {
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
         image.add(logout);
+        addPatient.addActionListener(this);
         // default
         setTitle("Hospital Management System");
         setSize(800, 600);
