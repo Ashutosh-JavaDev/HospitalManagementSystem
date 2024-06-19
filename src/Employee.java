@@ -30,7 +30,7 @@ public class Employee extends JFrame implements ActionListener {
         image.add(name);
         namefield = new JTextField();
         namefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        namefield.setBounds(250, 20, 250, 30);
+        namefield.setBounds(300, 20, 250, 30);
         image.add(namefield);
         // Patient Id
         ID = new JLabel("Employee's ID: ");
@@ -41,7 +41,7 @@ public class Employee extends JFrame implements ActionListener {
         String data[] = { "Aadhar Card", "Pan Card", "Voter Card", "Passport", "Driving License" };
         idfieldsbox = new JComboBox(data);
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
-        idfieldsbox.setBounds(250, 60, 250, 30);
+        idfieldsbox.setBounds(300, 60, 250, 30);
         image.add(idfieldsbox);
         // Card
         IDnumber = new JLabel("Card Number: ");
@@ -51,7 +51,7 @@ public class Employee extends JFrame implements ActionListener {
         image.add(IDnumber);
         idnumberfield = new JTextField();
         idnumberfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        idnumberfield.setBounds(250, 100, 250, 30);
+        idnumberfield.setBounds(300, 100, 250, 30);
         image.add(idnumberfield);
         // Phone
         phone = new JLabel("Phone Number: ");
@@ -61,7 +61,7 @@ public class Employee extends JFrame implements ActionListener {
         image.add(phone);
         phonefield = new JTextField();
         phonefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        phonefield.setBounds(250, 140, 250, 30);
+        phonefield.setBounds(300, 140, 250, 30);
         image.add(phonefield);
         // Email
         email = new JLabel("Email ID: ");
@@ -71,7 +71,7 @@ public class Employee extends JFrame implements ActionListener {
         image.add(email);
         emailfield = new JTextField();
         emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        emailfield.setBounds(250, 180, 250, 30);
+        emailfield.setBounds(300, 180, 250, 30);
         image.add(emailfield);
         // Proffesion Field
         proffesion = new JLabel("Role: ");
@@ -82,7 +82,7 @@ public class Employee extends JFrame implements ActionListener {
         String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
         idfieldsbox = new JComboBox(datas);
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
-        idfieldsbox.setBounds(250, 220, 250, 30);
+        idfieldsbox.setBounds(300, 220, 250, 30);
         image.add(idfieldsbox);
         // Date of Joining
         doj=new JLabel("Date of Joining");
@@ -91,8 +91,14 @@ public class Employee extends JFrame implements ActionListener {
         doj.setForeground(Color.black);
         image.add(doj);
         dojfield=new JDateChooser();
-        dojfield.setBounds(300,220,100,30);
+        dojfield.setBounds(300,260,100,30);
         image.add(dojfield);
+        // Status
+        maritial=new JLabel("Maratial Status");
+        maritial.setBounds(25,300,100,30);
+        maritial.setFont(new Font("Arial", Font.BOLD, 20));
+        maritial.setForeground(Color.black);
+        image.add(maritial);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
