@@ -15,7 +15,7 @@ public class Employee extends JFrame implements ActionListener {
     JRadioButton Single,Married,Divorsed;
     JComboBox proffesionfield, idfieldsbox;
     JDateChooser dojfield;
-    JButton save;
+    JButton save,back;
     public Employee() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2 = i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
@@ -119,6 +119,13 @@ public class Employee extends JFrame implements ActionListener {
         group.add(Single);
         group.add(Married);
         group.add(Divorsed);
+        // Back
+        back=new JButton("Back");
+        back.setBounds(50,400,300,30);
+        back.setBackground(Color.black);
+        back.setForeground(Color.white);
+        back.setFont(new Font("Arial", Font.BOLD, 20));
+        image.add(back);
         // Save
         save=new JButton("Next");
         save.setBounds(450,400,100,30);
