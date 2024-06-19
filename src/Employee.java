@@ -165,7 +165,7 @@ public class Employee extends JFrame implements ActionListener {
             }
             String IDproof=(String)idfieldsbox.getSelectedItem();
             String Professionfield=(String)proffesionfield.getSelectedItem();
-            
+            String Joining=((JTextField)dojfield.getDateEditor().getUiComponent()).getText();
         }
     }
 
