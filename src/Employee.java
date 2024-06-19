@@ -111,7 +111,11 @@ public class Employee extends JFrame implements ActionListener {
         Divorsed=new JRadioButton("Divorsed");
         Divorsed.setBounds(150,300,100,30);
         image.add(Divorsed);
-        
+        // Group
+        ButtonGroup group=new ButtonGroup();
+        group.add(Single);
+        group.add(Married);
+        group.add(Divorsed);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
