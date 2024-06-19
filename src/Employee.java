@@ -84,6 +84,12 @@ public class Employee extends JFrame implements ActionListener {
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
         idfieldsbox.setBounds(250, 220, 250, 30);
         image.add(idfieldsbox);
+        // Date of Joining
+        doj=new JLabel("Date of Joining");
+        doj.setBounds(25,260,250,30);
+        doj.setFont(new Font("Arial", Font.BOLD, 20));
+        doj.setForeground(Color.black);
+        image.add(doj);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
