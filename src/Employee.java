@@ -91,10 +91,10 @@ public class Employee extends JFrame implements ActionListener {
         proffesion.setBounds(25, 270, 180, 30);
         image.add(proffesion);
         String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
-        idfieldsbox = new JComboBox(datas);
-        idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
-        idfieldsbox.setBounds(300, 270, 250, 30);
-        image.add(idfieldsbox);
+        proffesionfield = new JComboBox(datas);
+        proffesionfield.setFont(new Font("Arial", Font.BOLD, 18));
+        proffesionfield.setBounds(300, 270, 250, 30);
+        image.add(proffesionfield);
         // Date of Joining
         doj=new JLabel("Date of Joining");
         doj.setBounds(25,310,250,30);
