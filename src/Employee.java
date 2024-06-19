@@ -11,7 +11,8 @@ import java.awt.Font;
 
 public class Employee extends JFrame implements ActionListener {
     JLabel name, proffesion, ID, email, phone, IDnumber, doj, maritial;
-    JTextField namefield, idfield, emailfield, phonefield, idnumberfield, statusfield;
+    JTextField namefield, idfield, emailfield, phonefield, idnumberfield;
+    JRadioButton Single,Married,Divorsed;
     JComboBox proffesionfield, idfieldsbox;
     JDateChooser dojfield;
 
@@ -99,6 +100,10 @@ public class Employee extends JFrame implements ActionListener {
         maritial.setFont(new Font("Arial", Font.BOLD, 20));
         maritial.setForeground(Color.black);
         image.add(maritial);
+        Single=new JRadioButton("Single");
+        Single.setBounds(150,300,100,30);
+        image.add(Single);
+        
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
