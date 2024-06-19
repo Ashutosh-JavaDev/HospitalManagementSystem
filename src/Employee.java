@@ -182,7 +182,9 @@ public class Employee extends JFrame implements ActionListener {
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="insert into Employee values('"+formno+"','"+Name+"','"+IDproof+"','"+IDnumber+"','"+phone+"','"+email+"','"+Professionfield+"','"+Joining+"','"+Status+"')";
-
+                conn.state.executeUpdate(query);
+                JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
+                System.exit(0);
             }
             catch(SQLException e){
                 e.printStackTrace();
