@@ -11,7 +11,7 @@ import java.awt.Font;
 
 public class Employee extends JFrame implements ActionListener {
     JLabel name, proffesion, ID, email, phone, IDnumber, doj, maritial;
-    JTextField namefield, idfield, emailfield, phonefield, idnumberfield;
+    JTextField namefield, emailfield, phonefield, idnumberfield;
     JRadioButton Single,Married,Divorsed;
     JComboBox proffesionfield, idfieldsbox;
     JDateChooser dojfield;
@@ -145,7 +145,25 @@ public class Employee extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==back){
+            System.exit(0);
+        }
+        else if(ae.getSource()==save){
+            String Name=namefield.getText();
+            String IDnumber=idnumberfield.getText();
+            String email=emailfield.getText();
+            String phone=phonefield.getText();
+            String Status=null;
+            if(Single.isSelected()){
+                Status="Single";
+            }
+            else if(Married.isSelected()){
+                Status="Married";
+            }
+            else if(Divorsed.isSelected()){
+                Status="Divorsed";
+            }
+        }
     }
 
     public static void main(String[] args) {
