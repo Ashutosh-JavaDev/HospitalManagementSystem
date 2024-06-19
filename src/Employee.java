@@ -36,91 +36,91 @@ public class Employee extends JFrame implements ActionListener {
         name = new JLabel("Employee's Name: ");
         name.setFont(new Font("Arial", Font.BOLD, 20));
         name.setForeground(Color.black);
-        name.setBounds(25, 20, 200, 30);
+        name.setBounds(25, 70, 200, 30);
         image.add(name);
         namefield = new JTextField();
         namefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        namefield.setBounds(300, 20, 250, 30);
+        namefield.setBounds(300, 70, 250, 30);
         image.add(namefield);
         // Patient Id
         ID = new JLabel("Employee's ID: ");
         ID.setFont(new Font("Arial", Font.BOLD, 20));
         ID.setForeground(Color.black);
-        ID.setBounds(25, 60, 180, 30);
+        ID.setBounds(25, 110, 180, 30);
         image.add(ID);
         String data[] = { "Aadhar Card", "Pan Card", "Voter Card", "Passport", "Driving License" };
         idfieldsbox = new JComboBox(data);
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
-        idfieldsbox.setBounds(300, 60, 250, 30);
+        idfieldsbox.setBounds(300, 110, 250, 30);
         image.add(idfieldsbox);
         // Card
         IDnumber = new JLabel("Card Number: ");
         IDnumber.setFont(new Font("Arial", Font.BOLD, 20));
         IDnumber.setForeground(Color.black);
-        IDnumber.setBounds(25, 100, 180, 30);
+        IDnumber.setBounds(25, 150, 180, 30);
         image.add(IDnumber);
         idnumberfield = new JTextField();
         idnumberfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        idnumberfield.setBounds(300, 100, 250, 30);
+        idnumberfield.setBounds(300, 150, 250, 30);
         image.add(idnumberfield);
         // Phone
         phone = new JLabel("Phone Number: ");
         phone.setFont(new Font("Arial", Font.BOLD, 20));
         phone.setForeground(Color.black);
-        phone.setBounds(25, 140, 180, 30);
+        phone.setBounds(25, 190, 180, 30);
         image.add(phone);
         phonefield = new JTextField();
         phonefield.setFont(new Font("Arial", Font.PLAIN, 18));
-        phonefield.setBounds(300, 140, 250, 30);
+        phonefield.setBounds(300, 190, 250, 30);
         image.add(phonefield);
         // Email
         email = new JLabel("Email ID: ");
         email.setFont(new Font("Arial", Font.BOLD, 20));
         email.setForeground(Color.black);
-        email.setBounds(25, 180, 180, 30);
+        email.setBounds(25, 230, 180, 30);
         image.add(email);
         emailfield = new JTextField();
         emailfield.setFont(new Font("Arial", Font.PLAIN, 18));
-        emailfield.setBounds(300, 180, 250, 30);
+        emailfield.setBounds(300, 230, 250, 30);
         image.add(emailfield);
         // Proffesion Field
         proffesion = new JLabel("Role: ");
         proffesion.setFont(new Font("Arial", Font.BOLD, 20));
         proffesion.setForeground(Color.black);
-        proffesion.setBounds(25, 220, 180, 30);
+        proffesion.setBounds(25, 270, 180, 30);
         image.add(proffesion);
         String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
         idfieldsbox = new JComboBox(datas);
         idfieldsbox.setFont(new Font("Arial", Font.BOLD, 18));
-        idfieldsbox.setBounds(300, 220, 250, 30);
+        idfieldsbox.setBounds(300, 270, 250, 30);
         image.add(idfieldsbox);
         // Date of Joining
         doj=new JLabel("Date of Joining");
-        doj.setBounds(25,260,250,30);
+        doj.setBounds(25,310,250,30);
         doj.setFont(new Font("Arial", Font.BOLD, 20));
         doj.setForeground(Color.black);
         image.add(doj);
         dojfield=new JDateChooser();
-        dojfield.setBounds(300,260,250,30);
+        dojfield.setBounds(300,310,250,30);
         image.add(dojfield);
         // Status
         maritial=new JLabel("Maratial Status");
-        maritial.setBounds(25,300,200,30);
+        maritial.setBounds(25,350,200,30);
         maritial.setFont(new Font("Arial", Font.BOLD, 20));
         maritial.setForeground(Color.black);
         image.add(maritial);
         Single=new JRadioButton("Single");
         Single.setBackground(Color.white);
-        Single.setBounds(300,300,100,30);
+        Single.setBounds(300,350,100,30);
         image.add(Single);
         // Unmaaried
         Married=new JRadioButton("Married");
-        Married.setBounds(375,300,100,30);
+        Married.setBounds(375,350,100,30);
         Married.setBackground(Color.white);
         image.add(Married);
         // Divorsed
         Divorsed=new JRadioButton("Divorsed");
-        Divorsed.setBounds(500,300,100,30);
+        Divorsed.setBounds(500,350,100,30);
         Divorsed.setBackground(Color.white);
         image.add(Divorsed);
         // Group
@@ -130,11 +130,12 @@ public class Employee extends JFrame implements ActionListener {
         group.add(Divorsed);
         // Back
         back=new JButton("Back");
-        back.setBounds(50,400,300,30);
+        back.setBounds(50,400,100,30);
         back.setBackground(Color.black);
         back.setForeground(Color.white);
         back.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(back);
+        back.addActionListener(this);
         // Save
         save=new JButton("Next");
         save.setBounds(450,400,100,30);
@@ -142,6 +143,7 @@ public class Employee extends JFrame implements ActionListener {
         save.setForeground(Color.white);
         save.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(save);
+        save.addActionListener(this);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
