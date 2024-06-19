@@ -74,7 +74,7 @@ public class selection extends JFrame implements ActionListener {
         security.setBackground(Color.black);
         security.setForeground(Color.white);
         image.add(security);
-        addPatient.addActionListener(this);
+        security.addActionListener(this);
         // Employee
         addEmployee = new JButton("Employee");
         addEmployee.setBounds(560, 120, 150, 40);
@@ -82,7 +82,7 @@ public class selection extends JFrame implements ActionListener {
         addEmployee.setBackground(Color.black);
         addEmployee.setForeground(Color.white);
         image.add(addEmployee);
-        addPatient.addActionListener(this);
+        addEmployee.addActionListener(this);
         // Button 8
         logout = new JButton("Logout");
         logout.setBounds(40, 170, 150, 40);
