@@ -4,6 +4,7 @@ import com.toedter.calendar.JDateChooser;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.util.jar.Attributes.Name;
 import java.awt.Image;
 import java.awt.Color;
@@ -178,6 +179,14 @@ public class Employee extends JFrame implements ActionListener {
             String IDproof=(String)idfieldsbox.getSelectedItem();
             String Professionfield=(String)proffesionfield.getSelectedItem();
             String Joining=((JTextField)dojfield.getDateEditor().getUiComponent()).getText();
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+                String query="insert into Employee values('"+formno+"','"+Name+"','"+IDproof+"','"+IDnumber+"','"+phone+"','"+email+"','"+Professionfield+"','"+Joining+"','"+Status+"')";
+
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
         }
     }
 
