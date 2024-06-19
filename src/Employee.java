@@ -8,6 +8,7 @@ import java.util.jar.Attributes.Name;
 import java.awt.Image;
 import java.awt.Color;
 import java.awt.Font;
+import java.util.Random;
 
 public class Employee extends JFrame implements ActionListener {
     JLabel name, proffesion, ID, email, phone, IDnumber, doj, maritial;
@@ -16,6 +17,8 @@ public class Employee extends JFrame implements ActionListener {
     JComboBox proffesionfield, idfieldsbox;
     JDateChooser dojfield;
     JButton save,back;
+    Random random=new Random();
+    long ran;
     public Employee() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2 = i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
@@ -23,6 +26,12 @@ public class Employee extends JFrame implements ActionListener {
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
+        // Random
+        ran = Math.abs(random.nextLong() % 9000L + 1000);
+        JLabel form = new JLabel("Form No.: " + ran);
+        form.setBounds(250, 10, 350, 35);
+        form.setFont(new Font("Rubik", Font.BOLD, 30));
+        image.add(form);
         // Name
         name = new JLabel("Employee's Name: ");
         name.setFont(new Font("Arial", Font.BOLD, 20));
@@ -149,6 +158,7 @@ public class Employee extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==save){
+            String formno=" "+ran;
             String Name=namefield.getText();
             String IDnumber=idnumberfield.getText();
             String email=emailfield.getText();
