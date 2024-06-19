@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Font;
 
 public class selection extends JFrame implements ActionListener {
-    JButton addPatient, ambulance, appointment, medical, billing, inventory, security, logout;
+    JButton addPatient,addEmployee, ambulance, appointment, medical, billing, inventory, security, logout;
 
     selection() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
@@ -65,9 +65,16 @@ public class selection extends JFrame implements ActionListener {
         security.setBackground(Color.black);
         security.setForeground(Color.white);
         image.add(security);
+        // Employee
+        addEmployee = new JButton("Employee");
+        addEmployee.setBounds(560, 120, 150, 40);
+        addEmployee.setFont(new Font("Arial", Font.BOLD, 18));
+        addEmployee.setBackground(Color.black);
+        addEmployee.setForeground(Color.white);
+        image.add(addEmployee);
         // Button 8
         logout = new JButton("Logout");
-        logout.setBounds(560, 120, 150, 40);
+        logout.setBounds(40, 170, 150, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 18));
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
@@ -86,6 +93,11 @@ public class selection extends JFrame implements ActionListener {
             setVisible(false);
             new Patient().setVisible(true);
         }
+        else if(ae.getSource()==addEmployee){
+           setVisible(false); 
+           new Employee().setVisible(true);
+        }
+
     }
 
     public static void main(String[] args) {
