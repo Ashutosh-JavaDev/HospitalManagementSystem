@@ -101,15 +101,18 @@ public class Employee extends JFrame implements ActionListener {
         maritial.setForeground(Color.black);
         image.add(maritial);
         Single=new JRadioButton("Single");
+        Single.setBackground(Color.white);
         Single.setBounds(300,300,100,30);
         image.add(Single);
         // Unmaaried
         Married=new JRadioButton("Married");
         Married.setBounds(375,300,100,30);
+        Married.setBackground(Color.white);
         image.add(Married);
         // Divorsed
         Divorsed=new JRadioButton("Divorsed");
         Divorsed.setBounds(500,300,100,30);
+        Divorsed.setBackground(Color.white);
         image.add(Divorsed);
         // Group
         ButtonGroup group=new ButtonGroup();
