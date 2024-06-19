@@ -90,6 +90,9 @@ public class Employee extends JFrame implements ActionListener {
         doj.setFont(new Font("Arial", Font.BOLD, 20));
         doj.setForeground(Color.black);
         image.add(doj);
+        dojfield=new JDateChooser();
+        dojfield.setBounds(300,220,100,30);
+        image.add(dojfield);
         // Default Information
         setLayout(null);
         setTitle("Employee Entry");
