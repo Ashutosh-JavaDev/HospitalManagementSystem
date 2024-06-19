@@ -138,6 +138,7 @@ public class Employee extends JFrame implements ActionListener {
         setTitle("Employee Entry");
         setSize(800, 600);
         setLocation(250, 150);
+        setUndecorated(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
