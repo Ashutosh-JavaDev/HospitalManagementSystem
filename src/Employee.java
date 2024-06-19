@@ -163,6 +163,9 @@ public class Employee extends JFrame implements ActionListener {
             else if(Divorsed.isSelected()){
                 Status="Divorsed";
             }
+            String IDproof=(String)idfieldsbox.getSelectedItem();
+            String Professionfield=(String)proffesionfield.getSelectedItem();
+            
         }
     }
 
