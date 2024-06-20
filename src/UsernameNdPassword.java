@@ -20,33 +20,33 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         add(image);
         // Username
         username = new JLabel("UserName:");
-        username.setBounds(25, 100, 100, 30);
+        username.setBounds(100, 100, 200, 30);
         username.setForeground(Color.black);
         username.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(username);
         // username Textfield
         usernamefield = new JTextField();
-        usernamefield.setBounds(150, 100, 100, 30);
+        usernamefield.setBounds(350, 100, 200, 30);
         image.add(usernamefield);
         // Password
         password = new JLabel("Password:");
-        password.setBounds(25, 150, 100, 30);
+        password.setBounds(100, 150, 200, 30);
         password.setForeground(Color.black);
         password.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(password);
         // password Textfield
         passwordfield = new JPasswordField();
-        passwordfield.setBounds(150, 150, 100, 30);
+        passwordfield.setBounds(350, 150, 200, 30);
         image.add(passwordfield);
         // Password
         confirm = new JLabel("Re-Enter:");
-        confirm.setBounds(25, 205, 100, 30);
+        confirm.setBounds(100, 205, 200, 30);
         confirm.setForeground(Color.black);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(confirm);
         // password Textfield
         confirmfield = new JPasswordField();
-        confirmfield.setBounds(150, 205, 100, 30);
+        confirmfield.setBounds(350, 205, 200, 30);
         image.add(confirmfield);
         // Button
         save = new JButton("Save");
