@@ -100,8 +100,9 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(rootPane, "Password Length Should be 8-16");
                 return;
             }
-            else if(Password.){
-
+            else if(!isUpper(Password)||!isUpper(Confirm)){
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
+                return;
             }else if (Password.equals(Confirm)) {
                 try {
                     HospitalManagementSystem conn = new HospitalManagementSystem();
