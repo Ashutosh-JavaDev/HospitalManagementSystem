@@ -90,7 +90,7 @@ public class selection extends JFrame implements ActionListener {
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
         image.add(logout);
-        addPatient.addActionListener(this);
+        logout.addActionListener(this);
         // default
         setTitle("Hospital Management System");
         setSize(800, 600);
@@ -108,6 +108,9 @@ public class selection extends JFrame implements ActionListener {
         else if(ae.getSource()==addEmployee){
            setVisible(false); 
            new Employee().setVisible(true);
+        }
+        else if(ae.getSource()==logout){
+            System.exit(0);
         }
 
     }
