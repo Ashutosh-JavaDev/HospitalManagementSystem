@@ -105,11 +105,11 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             } else if (!isLower(Password) || !isLower(Confirm)) {
                 JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one LowerCase");
                 return;
-            } else if (!isUpper(Password) || !isUpper(Confirm)) {
-                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
+            } else if (!isNumber(Password) || !isNumber(Confirm)) {
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one Digit");
                 return;
-            } else if (!isUpper(Password) || !isUpper(Confirm)) {
-                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
+            } else if (!containsSpecialChar(Password) || !containsSpecialChar(Confirm)) {
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one Special Character");
                 return;
             } else if (Password.equals(Confirm)) {
                 try {
