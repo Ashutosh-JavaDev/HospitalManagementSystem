@@ -91,13 +91,13 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             if (!Password.equals(Confirm)) {
                 JOptionPane.showMessageDialog(rootPane, "Password Not Matched");
                 return;
-            } else if (Password.equals("")) {
+            } else if (Password.equals("") || Confirm.equals("")) {
                 JOptionPane.showMessageDialog(rootPane, "Please Enter the Password");
                 return;
-            } else if (Confirm.equals("")) {
-                JOptionPane.showMessageDialog(rootPane, "Please enter the Password");
-                return;
-            } else if (Password.equals(Confirm)) {
+            } 
+            else if(Password.length()<8||Password.length()>16||Confirm.length()<8||Confirm.length()>16){
+                JOptionPane.showMessageDialog(rootPane, "Password Length Should be 8-16");
+            }else if (Password.equals(Confirm)) {
                 try {
                     HospitalManagementSystem conn = new HospitalManagementSystem();
                     String query = "insert into UsernamePassword values('" + formno + "','" + Username + "','"
