@@ -77,7 +77,9 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         if (ae.getSource() == back) {
             System.exit(0);
         } else if (ae.getSource() == save) {
-
+            String Username=usernamefield.getText();
+            String Password=passwordfield.getText();
+            String Confirm=confirmfield.getText();
         }
     }
 
