@@ -38,6 +38,17 @@ public class ForgetPassword extends JFrame implements ActionListener {
         emailfield.setBounds(310, 250, 150, 30);
         emailfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(emailfield);
+            // Forget pin
+            phonenumber = new JLabel("Enter Your Phone Number:");
+            phonenumber.setBounds(25, 200, 250, 30);
+            phonenumber.setFont(new Font("Raleway", Font.PLAIN, 16));
+            phonenumber.setForeground(Color.black);
+            image.add(phonenumber);
+            // Textfield
+            phonenumberfield = new JTextField();
+            phonenumberfield.setBounds(310, 200, 150, 30);
+            phonenumberfield.setFont(new Font("Raleway", Font.BOLD, 18));
+            image.add(phonenumberfield);
         // Default
         setLayout(null);
         setSize(800, 600);
