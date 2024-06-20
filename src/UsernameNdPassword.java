@@ -3,6 +3,7 @@ import java.awt.Font;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 
 public class UsernameNdPassword extends JFrame implements ActionListener {
@@ -93,7 +94,12 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
                 return;
             }
             else if(Password.equals(Confirm)){
-                
+                try{
+                    HospitalManagementSystem conn=new HospitalManagementSystem();
+                }
+                catch(SQLException e){
+                    e.printStackTrace();
+                }
             }
         }
     }
