@@ -63,6 +63,8 @@ public class ForgetPassword extends JFrame implements ActionListener {
         back.setBackground(Color.black);
         back.setForeground(Color.white);
         back.setFont(new Font("Raleway", Font.BOLD, 20));
+        back.addActionListener(this);
+
         image.add(back);
         // Default
         setLayout(null);
@@ -74,7 +76,9 @@ public class ForgetPassword extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==back){
+            System.exit(0);
+        }
     }
 
     public static void main(String[] args) {
