@@ -80,6 +80,18 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             String Username=usernamefield.getText();
             String Password=passwordfield.getText();
             String Confirm=confirmfield.getText();
+            if(!Password.equals(Confirm)){
+                JOptionPane.showMessageDialog(rootPane, "Password Not Matched");
+                return;
+            }
+            else if(Password.equals("")){
+                JOptionPane.showMessageDialog(rootPane, "Please Enter the Password");
+                return;
+            }
+            else if(Confirm.equals("")){
+                JOptionPane.showMessageDialog(rootPane, "Please enter the Password");
+                return;
+            }
         }
     }
 
