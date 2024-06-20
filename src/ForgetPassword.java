@@ -13,7 +13,12 @@ public class ForgetPassword extends JFrame implements ActionListener {
         image.setBounds(0,0,800,600);
         add(image);
         // Default
-
+        setLayout(null);
+        setSize(800,600);
+        setLocation(250,150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setVisible(true);
     }
     public void actionPerformed(ActionEvent ae){
 
