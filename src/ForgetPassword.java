@@ -18,40 +18,40 @@ public class ForgetPassword extends JFrame implements ActionListener {
         add(image);
         // Forget pin
         phonenumber = new JLabel("Enter Your Phone Number:");
-        phonenumber.setBounds(25, 200, 250, 30);
-        phonenumber.setFont(new Font("Raleway", Font.PLAIN, 16));
+        phonenumber.setBounds(125, 200, 250, 30);
+        phonenumber.setFont(new Font("Raleway", Font.BOLD, 16));
         phonenumber.setForeground(Color.black);
         image.add(phonenumber);
         // Textfield
         phonenumberfield = new JTextField();
-        phonenumberfield.setBounds(310, 200, 150, 30);
+        phonenumberfield.setBounds(410, 200, 250, 30);
         phonenumberfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(phonenumberfield);
         // email pin
         email = new JLabel("Enter Your Email ID:");
-        email.setBounds(25, 250, 250, 30);
-        email.setFont(new Font("Raleway", Font.PLAIN, 16));
+        email.setBounds(125, 250, 250, 30);
+        email.setFont(new Font("Raleway", Font.BOLD, 16));
         email.setForeground(Color.black);
         image.add(email);
         // Textfield
         emailfield = new JTextField();
-        emailfield.setBounds(310, 250, 150, 30);
+        emailfield.setBounds(410, 250, 250, 30);
         emailfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(emailfield);
         // new pin
         newpin = new JLabel("ENew Pin:");
-        newpin.setBounds(25, 300, 250, 30);
-        newpin.setFont(new Font("Raleway", Font.PLAIN, 16));
+        newpin.setBounds(125, 300, 250, 30);
+        newpin.setFont(new Font("Raleway", Font.BOLD, 16));
         newpin.setForeground(Color.black);
         image.add(newpin);
         // Textfield
         newpinfield = new JTextField();
-        newpinfield.setBounds(310, 300, 150, 30);
+        newpinfield.setBounds(410, 300, 250, 30);
         newpinfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(newpinfield);
         // confirm
         confirm=new JButton("Confirm");
-        confirm.setBounds(500,400,100,30);
+        confirm.setBounds(500,400,150,30);
         confirm.setBackground(Color.black);
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Raleway",Font.BOLD,20));
