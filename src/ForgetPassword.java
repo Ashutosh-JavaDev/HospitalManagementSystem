@@ -10,10 +10,10 @@ public class ForgetPassword extends JFrame implements ActionListener {
         Image i2=i1.getImage().getScaledInstance(600, 600, Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
-        image.setBounds(0,0,,800,600);
+        image.setBounds(0,0,800,600);
         add(image);
         // Default
-        
+
     }
     public void actionPerformed(ActionEvent ae){
 
