@@ -85,6 +85,10 @@ public class Login extends JFrame implements ActionListener {
                 e.printStackTrace();
             }
         }
+        else if(ae.getSource()==Forget){
+            setVisible(false);
+            new ForgetPassword().setVisible(true);
+        }
     }
 
     public static void main(String[] args) throws Exception {
