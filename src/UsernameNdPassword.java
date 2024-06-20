@@ -95,15 +95,23 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             } else if (Password.isEmpty() || Confirm.isEmpty()) {
                 JOptionPane.showMessageDialog(rootPane, "Please Enter the Password");
                 return;
-            } 
-            else if(Password.length()<8||Password.length()>16||Confirm.length()<8||Confirm.length()>16){
+            } else if (Password.length() < 8 || Password.length() > 16 || Confirm.length() < 8
+                    || Confirm.length() > 16) {
                 JOptionPane.showMessageDialog(rootPane, "Password Length Should be 8-16");
                 return;
-            }
-            else if(!isUpper(Password)||!isUpper(Confirm)){
+            } else if (!isUpper(Password) || !isUpper(Confirm)) {
                 JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
                 return;
-            }else if (Password.equals(Confirm)) {
+            } else if (!isLower(Password) || !isLower(Confirm)) {
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one LowerCase");
+                return;
+            } else if (!isUpper(Password) || !isUpper(Confirm)) {
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
+                return;
+            } else if (!isUpper(Password) || !isUpper(Confirm)) {
+                JOptionPane.showMessageDialog(rootPane, "Password must Contain atleast one UpperCase");
+                return;
+            } else if (Password.equals(Confirm)) {
                 try {
                     HospitalManagementSystem conn = new HospitalManagementSystem();
                     String query = "insert into UsernamePassword values('" + formno + "','" + Username + "','"
