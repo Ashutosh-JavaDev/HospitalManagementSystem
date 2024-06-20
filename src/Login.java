@@ -63,10 +63,16 @@ public class Login extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource()==Login){
+            String user=loginfield.getText();
+            String password=passwordfield.getText();
             try{
+
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="Select*from UsernamePassword";
                 ResultSet res=conn.state.executeQuery(query);
+                while(res.next()){
+
+                }
             }
             catch(SQLException e){
                 e.printStackTrace();
