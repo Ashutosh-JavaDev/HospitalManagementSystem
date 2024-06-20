@@ -80,6 +80,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         // TODO Auto-generated constructor stub
     }
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == back) {
             System.exit(0);
@@ -91,13 +92,16 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             if (!Password.equals(Confirm)) {
                 JOptionPane.showMessageDialog(rootPane, "Password Not Matched");
                 return;
-            } else if (Password.equals("") || Confirm.equals("")) {
+            } else if (Password.isEmpty() || Confirm.isEmpty()) {
                 JOptionPane.showMessageDialog(rootPane, "Please Enter the Password");
                 return;
             } 
             else if(Password.length()<8||Password.length()>16||Confirm.length()<8||Confirm.length()>16){
                 JOptionPane.showMessageDialog(rootPane, "Password Length Should be 8-16");
                 return;
+            }
+            else if(Password.){
+
             }else if (Password.equals(Confirm)) {
                 try {
                     HospitalManagementSystem conn = new HospitalManagementSystem();
@@ -112,6 +116,43 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
                 }
             }
         }
+    }
+
+    private boolean isUpper(String str) {
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isLower(String str) {
+        for (char c : str.toCharArray()) {
+            if (Character.isLowerCase(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isNumber(String str) {
+        for (char c : str.toCharArray()) {
+            if (Character.isDigit(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean containsSpecialChar(String str) {
+        String specialChars = "@#$%^&+=!";
+        for (char c : str.toCharArray()) {
+            if (specialChars.indexOf(c) >= 0) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
