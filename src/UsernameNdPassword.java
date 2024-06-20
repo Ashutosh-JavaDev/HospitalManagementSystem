@@ -39,7 +39,21 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         passwordfield.setBounds(150, 250, 100, 30);
         image.add(passwordfield);
         // Button
-
+        save=new JButton("Save");
+        save.setBackground(Color.black);
+        save.setForeground(Color.white);
+        save.setBounds(25,320,100,30);
+        save.setFont(new Font("Raleway", Font.BOLD, 20));
+        image.add(save);
+        save.addActionListener(this);
+        // Back
+        back=new JButton("Back");
+        back.setBackground(Color.black);
+        back.setForeground(Color.white);
+        back.setBounds(450,320,100,30);
+        back.setFont(new Font("Raleway", Font.BOLD, 20));
+        image.add(back);
+        back.addActionListener(this);
         // Default
         setLayout(null);
         setSize(800, 600);
