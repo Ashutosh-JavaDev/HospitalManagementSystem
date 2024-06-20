@@ -11,8 +11,9 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
     JButton save, back;
     JTextField usernamefield;
     JPasswordField passwordfield, confirmfield;
-
-    public UsernameNdPassword() {
+    long ran;
+    public UsernameNdPassword(long ran) {
+        this.ran=ran;
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2 = i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -74,6 +75,10 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    public UsernameNdPassword(String string) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == back) {
             System.exit(0);
@@ -96,6 +101,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             else if(Password.equals(Confirm)){
                 try{
                     HospitalManagementSystem conn=new HospitalManagementSystem();
+
                 }
                 catch(SQLException e){
                     e.printStackTrace();
@@ -105,6 +111,6 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new UsernameNdPassword();
+        new UsernameNdPassword("");
     }
 }

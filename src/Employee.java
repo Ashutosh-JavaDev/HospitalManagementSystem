@@ -184,7 +184,10 @@ public class Employee extends JFrame implements ActionListener {
                 String query="insert into Employee values('"+formno+"','"+Name+"','"+IDproof+"','"+IDnumber+"','"+phone+"','"+email+"','"+Professionfield+"','"+Joining+"','"+Status+"')";
                 conn.state.executeUpdate(query);
                 JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
-                System.exit(0);
+                if(Professionfield.equals("Senior Doctor")||Professionfield.equals("Receptionist")){
+                    setVisible(false);
+                    new UsernameNdPassword(ran).setVisible(true);
+                }
             }
             catch(SQLException e){
                 e.printStackTrace();
