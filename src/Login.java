@@ -26,11 +26,11 @@ public class Login extends JFrame implements ActionListener {
         JLabel username = new JLabel("UserName");
         username.setBounds(100, 250, 100, 30);
         username.setFont(new Font("Raleway", Font.BOLD, 16));
-        username.setForeground(Color.white);
+        username.setForeground(Color.black);
         image.add(username);
         JLabel password = new JLabel("Password");
         password.setBounds(100, 300, 100, 30);
-        password.setForeground(Color.white);
+        password.setForeground(Color.black);
         password.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(password);
         loginfield = new JTextField();
