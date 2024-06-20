@@ -68,7 +68,7 @@ public class Login extends JFrame implements ActionListener {
             try{
 
                 HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="Select*from UsernamePassword";
+                String query="Select*from UsernamePassword where Username ='"+user+"' and Password ='"+password+"'";
                 ResultSet res=conn.state.executeQuery(query);
                 while(res.next()){
 
