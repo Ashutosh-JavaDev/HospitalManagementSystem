@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import java.awt.Image;
 import java.awt.Color;
+import java.sql.ResultSet;
 import java.awt.Font;
 
 public class Login extends JFrame implements ActionListener {
@@ -65,6 +66,7 @@ public class Login extends JFrame implements ActionListener {
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="Select*from UsernamePassword";
+                ResultSet res=conn.state.executeQuery(query);
             }
             catch(SQLException e){
                 e.printStackTrace();
