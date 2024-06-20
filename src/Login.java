@@ -70,8 +70,14 @@ public class Login extends JFrame implements ActionListener {
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="Select*from UsernamePassword where Username ='"+user+"' and Password ='"+password+"'";
                 ResultSet res=conn.state.executeQuery(query);
-                while(res.next()){
-
+                if(res.next()){
+                    setVisible(false);
+                    new selection().setVisible(true);
+                }
+                else{
+                    JOptionPane.showMessageDialog(rootPane, "UserName or Password Not Correct");
+                    ae.setSource("");
+                    
                 }
             }
             catch(SQLException e){
