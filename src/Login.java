@@ -52,6 +52,7 @@ public class Login extends JFrame implements ActionListener {
         Forget.setFont(new Font("Arial", Font.BOLD, 14));
         Forget.setForeground(Color.white);
         Forget.setBackground(Color.black);
+        Forget.addActionListener(this);
         image.add(Forget);
         // Default
         setTitle("Hospital Management System");
