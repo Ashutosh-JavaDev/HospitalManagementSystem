@@ -83,6 +83,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         if (ae.getSource() == back) {
             System.exit(0);
         } else if (ae.getSource() == save) {
+            String formno=""+ran;
             String Username=usernamefield.getText();
             String Password=passwordfield.getText();
             String Confirm=confirmfield.getText();
@@ -101,7 +102,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             else if(Password.equals(Confirm)){
                 try{
                     HospitalManagementSystem conn=new HospitalManagementSystem();
-
+                    String  query="insert into UsernamePassword values('"+formno+"','"+Username+"','"+Password+"')";
                 }
                 catch(SQLException e){
                     e.printStackTrace();
