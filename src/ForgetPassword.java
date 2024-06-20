@@ -54,6 +54,8 @@ public class ForgetPassword extends JFrame implements ActionListener {
         confirm.setBounds(500,400,100,30);
         confirm.setBackground(Color.black);
         confirm.setForeground(Color.white);
+        confirm.setFont(new Font("Raleway",Font.BOLD,20));
+        image.add(confirm);
         // Default
         setLayout(null);
         setSize(800, 600);
