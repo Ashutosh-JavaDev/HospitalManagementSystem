@@ -5,6 +5,10 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 public class UsernameNdPassword extends JFrame implements ActionListener{
+    JLabel username,password;
+    JButton save;
+    JTextField usernamefield;
+    JPasswordField passwordfield;
     UsernameNdPassword(){
 
     }   
