@@ -20,7 +20,7 @@ public class Login extends JFrame implements ActionListener {
         image.setBounds(0, 0, 500, 400);
         add(image);
         JLabel title = new JLabel("Hospital Management");
-        title.setBounds(150,40, 250, 30);
+        title.setBounds(150, 40, 250, 30);
         title.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(title);
         JLabel username = new JLabel("UserName");
@@ -46,6 +46,7 @@ public class Login extends JFrame implements ActionListener {
         Login.setForeground(Color.white);
         Login.setBackground(Color.black);
         image.add(Login);
+        Login.addActionListener(this);
         Forget = new JButton("Forget Password");
         Forget.setBounds(280, 350, 200, 30);
         Forget.setFont(new Font("Arial", Font.BOLD, 14));
@@ -62,25 +63,24 @@ public class Login extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        if(ae.getSource()==Login){
-            String user=loginfield.getText();
-            String password=passwordfield.getText();
-            try{
+        if (ae.getSource() == Login) {
+            String user = loginfield.getText();
+            String password = passwordfield.getText();
+            try {
 
-                HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="Select*from UsernamePassword where Username ='"+user+"' and Password ='"+password+"'";
-                ResultSet res=conn.state.executeQuery(query);
-                if(res.next()){
+                HospitalManagementSystem conn = new HospitalManagementSystem();
+                String query = "Select*from UsernamePassword where Username ='" + user + "' and Password ='" + password
+                        + "'";
+                ResultSet res = conn.state.executeQuery(query);
+                if (res.next()) {
                     setVisible(false);
                     new selection().setVisible(true);
-                }
-                else{
+                } else {
                     JOptionPane.showMessageDialog(rootPane, "UserName or Password Not Correct");
                     ae.setSource("");
-                    
+
                 }
-            }
-            catch(SQLException e){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
