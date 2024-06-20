@@ -8,10 +8,11 @@ import java.awt.event.ActionListener;
 public class ForgetPassword extends JFrame implements ActionListener {
     JLabel newpin, phonenumber, email;
     JTextField newpinfield, phonenumberfield, emailfield;
-    JButton confirm;
+    JButton confirm, back;
+
     public ForgetPassword() {
         ImageIcon i1 = new ImageIcon("pexels-scottwebb-311458.jpg");
-        Image i2 = i1.getImage().getScaledInstance(600, 600, Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
@@ -50,12 +51,19 @@ public class ForgetPassword extends JFrame implements ActionListener {
         newpinfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(newpinfield);
         // confirm
-        confirm=new JButton("Confirm");
-        confirm.setBounds(500,400,150,30);
+        confirm = new JButton("Confirm");
+        confirm.setBounds(500, 400, 150, 30);
         confirm.setBackground(Color.black);
         confirm.setForeground(Color.white);
-        confirm.setFont(new Font("Raleway",Font.BOLD,20));
+        confirm.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(confirm);
+        // confirm
+        back = new JButton("Back");
+        back.setBounds(125, 400, 150, 30);
+        back.setBackground(Color.black);
+        back.setForeground(Color.white);
+        back.setFont(new Font("Raleway", Font.BOLD, 20));
+        image.add(back);
         // Default
         setLayout(null);
         setSize(800, 600);
@@ -68,7 +76,8 @@ public class ForgetPassword extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
 
     }
-    public static void main(String[]args){
+
+    public static void main(String[] args) {
         new ForgetPassword();
     }
 }
