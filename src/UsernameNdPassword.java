@@ -103,6 +103,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
                 try{
                     HospitalManagementSystem conn=new HospitalManagementSystem();
                     String  query="insert into UsernamePassword values('"+formno+"','"+Username+"','"+Password+"')";
+                    conn.state.executeUpdate(query);
                 }
                 catch(SQLException e){
                     e.printStackTrace();

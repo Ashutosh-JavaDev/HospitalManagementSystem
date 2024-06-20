@@ -188,6 +188,9 @@ public class Employee extends JFrame implements ActionListener {
                     setVisible(false);
                     new UsernameNdPassword(ran).setVisible(true);
                 }
+                else{
+                    System.exit(0);
+                }
             }
             catch(SQLException e){
                 e.printStackTrace();
