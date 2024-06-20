@@ -92,6 +92,9 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(rootPane, "Please enter the Password");
                 return;
             }
+            else if(Password.equals(Confirm)){
+                
+            }
         }
     }
 
