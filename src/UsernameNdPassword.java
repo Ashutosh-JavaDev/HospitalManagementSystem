@@ -12,8 +12,9 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
     JTextField usernamefield;
     JPasswordField passwordfield, confirmfield;
     long ran;
+
     public UsernameNdPassword(long ran) {
-        this.ran=ran;
+        this.ran = ran;
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2 = i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -76,36 +77,36 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
     }
 
     public UsernameNdPassword(String string) {
-        //TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub
     }
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == back) {
             System.exit(0);
         } else if (ae.getSource() == save) {
-            String formno=""+ran;
-            String Username=usernamefield.getText();
-            String Password=passwordfield.getText();
-            String Confirm=confirmfield.getText();
-            if(!Password.equals(Confirm)){
+            String formno = "" + ran;
+            String Username = usernamefield.getText();
+            String Password = passwordfield.getText();
+            String Confirm = confirmfield.getText();
+            if (!Password.equals(Confirm)) {
                 JOptionPane.showMessageDialog(rootPane, "Password Not Matched");
                 return;
-            }
-            else if(Password.equals("")){
+            } else if (Password.equals("")) {
                 JOptionPane.showMessageDialog(rootPane, "Please Enter the Password");
                 return;
-            }
-            else if(Confirm.equals("")){
+            } else if (Confirm.equals("")) {
                 JOptionPane.showMessageDialog(rootPane, "Please enter the Password");
                 return;
-            }
-            else if(Password.equals(Confirm)){
-                try{
-                    HospitalManagementSystem conn=new HospitalManagementSystem();
-                    String  query="insert into UsernamePassword values('"+formno+"','"+Username+"','"+Password+"')";
+            } else if (Password.equals(Confirm)) {
+                try {
+                    HospitalManagementSystem conn = new HospitalManagementSystem();
+                    String query = "insert into UsernamePassword values('" + formno + "','" + Username + "','"
+                            + Password + "')";
                     conn.state.executeUpdate(query);
-                }
-                catch(SQLException e){
+                    JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
+
+                    System.exit(0);
+                } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
