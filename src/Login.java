@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 import java.awt.event.ActionEvent;
 import java.awt.Image;
 import java.awt.Color;
@@ -60,7 +61,14 @@ public class Login extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==Login){
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void main(String[] args) throws Exception {
