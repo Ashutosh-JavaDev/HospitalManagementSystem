@@ -24,6 +24,10 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
         username.setForeground(Color.black);
         username.setFont(new Font("Arial",Font.BOLD,20));
         image.add(username);
+        // username Textfield
+        usernamefield=new JTextField();
+        usernamefield.setBounds(25,200,150,30);
+        image.add(usernamefield);
         // Default
         setLayout(null);
         setSize(800,600);
