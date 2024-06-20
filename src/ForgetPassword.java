@@ -5,6 +5,8 @@ import java.awt.Image;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 public class ForgetPassword extends JFrame implements ActionListener {
+    JLabel oldpin,phonenumber;
+    JTextField oldpinfield,phonenumberfield;
     public ForgetPassword(){
         ImageIcon i1=new ImageIcon("pexels-scottwebb-311458.jpg");
         Image i2=i1.getImage().getScaledInstance(600, 600, Image.SCALE_DEFAULT);
@@ -12,6 +14,9 @@ public class ForgetPassword extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
+        // Forget pin
+
+
         // Default
         setLayout(null);
         setSize(800,600);
