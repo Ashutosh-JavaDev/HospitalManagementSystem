@@ -97,6 +97,7 @@ public class UsernameNdPassword extends JFrame implements ActionListener {
             } 
             else if(Password.length()<8||Password.length()>16||Confirm.length()<8||Confirm.length()>16){
                 JOptionPane.showMessageDialog(rootPane, "Password Length Should be 8-16");
+                return;
             }else if (Password.equals(Confirm)) {
                 try {
                     HospitalManagementSystem conn = new HospitalManagementSystem();
