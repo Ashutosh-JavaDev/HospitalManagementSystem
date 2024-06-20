@@ -29,13 +29,13 @@ public class ForgetPassword extends JFrame implements ActionListener {
         image.add(phonenumberfield);
         // Forget pin
         email = new JLabel("Enter Your Phone Number:");
-        email.setBounds(25, 200, 250, 30);
+        email.setBounds(25, 250, 250, 30);
         email.setFont(new Font("Raleway", Font.PLAIN, 16));
         email.setForeground(Color.black);
         image.add(email);
         // Textfield
         emailfield = new JTextField();
-        emailfield.setBounds(310, 200, 150, 30);
+        emailfield.setBounds(310, 250, 150, 30);
         emailfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(emailfield);
         // Default
