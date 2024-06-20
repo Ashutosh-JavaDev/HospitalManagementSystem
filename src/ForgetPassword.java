@@ -14,6 +14,11 @@ public class ForgetPassword extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
+        // Check Form number
+        JLabel heading=new JLabel("Form No:");
+        heading.setBounds(300,20,150,30);
+        heading.setFont(new Font("Arial",Font.BOLD,20));
+        image.add(heading);
         // Forget pin
         phonenumber=new JLabel("Enter Your Phone Number:");
         phonenumber.setBounds(25,200,250,30);
@@ -25,6 +30,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         phonenumberfield.setBounds(310,200,150,30);
         phonenumberfield.setFont(new Font("Raleway",Font.BOLD,18));
         image.add(phonenumberfield);
+
         // Default
         setLayout(null);
         setSize(800,600);
