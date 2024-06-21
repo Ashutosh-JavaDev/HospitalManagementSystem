@@ -22,17 +22,22 @@ public class ForgetPassword extends JFrame implements ActionListener {
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
+        // Change pin
+        JLabel heading=new JLabel("Forget PIN?");
+        heading.setBounds(125,25,200,30);
+        heading.setFont(new Font("Raleway",Font.BOLD,20));
+        image.add(heading);
         // Forget pin
-        phonenumber = new JLabel("Enter Your Phone Number:");
-        phonenumber.setBounds(125, 200, 250, 30);
-        phonenumber.setFont(new Font("Raleway", Font.BOLD, 16));
-        phonenumber.setForeground(Color.black);
-        image.add(phonenumber);
+        username = new JLabel("Enter Your UserName:");
+        username.setBounds(125, 150, 250, 30);
+        username.setFont(new Font("Raleway", Font.BOLD, 16));
+        username.setForeground(Color.black);
+        image.add(username);
         // Textfield
-        phonenumberfield = new JTextField();
-        phonenumberfield.setBounds(410, 200, 250, 30);
-        phonenumberfield.setFont(new Font("Raleway", Font.BOLD, 18));
-        image.add(phonenumberfield);
+        usernamefield = new JTextField();
+        usernamefield.setBounds(410, 150, 250, 30);
+        usernamefield.setFont(new Font("Raleway", Font.BOLD, 18));
+        image.add(usernamefield);
         // Forget pin
         phonenumber = new JLabel("Enter Your Phone Number:");
         phonenumber.setBounds(125, 200, 250, 30);
