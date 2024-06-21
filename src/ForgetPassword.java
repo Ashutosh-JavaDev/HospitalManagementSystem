@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class ForgetPassword extends JFrame implements ActionListener {
     JLabel newpin, phonenumber, email;
@@ -84,6 +85,12 @@ public class ForgetPassword extends JFrame implements ActionListener {
             String Newpin=newpinfield.getText();
             String phone=phonenumberfield.getText();
             String emailid=emailfield.getText();
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
         }
     }
 
