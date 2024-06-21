@@ -111,7 +111,9 @@ public class ForgetPassword extends JFrame implements ActionListener {
                 ResultSet res = conn.state.executeQuery(query);
                 if (res.next()) {
                     String query2 = "update table UsernamePassword set Password='" + Newpin + "' where Username='"+UserName+"'";
-
+                    conn.state.executeUpdate(query2);
+                    JOptionPane.showMessageDialog(rootPane, "Password Changed  Successfully");
+                    System.exit(0);
                 }
 
             } catch (SQLException e) {
