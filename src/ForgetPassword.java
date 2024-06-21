@@ -101,6 +101,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         if (ae.getSource() == back) {
             System.exit(0);
         } else if (ae.getSource() == confirm) {
+            String UserName=usernamefield.getText();
             String Newpin = newpinfield.getText();
             String phone = phonenumberfield.getText();
             String emailid = emailfield.getText();
@@ -109,7 +110,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
                 String query = "select*from Employee where Phone='" + phone + "' and Email='" + emailid + "'";
                 ResultSet res = conn.state.executeQuery(query);
                 if (res.next()) {
-                    String query2 = "update table UsernamePassword set Password='" + Newpin + "' where ";
+                    String query2 = "update table UsernamePassword set Password='" + Newpin + "' where Username='"+UserName+"'";
 
                 }
 
