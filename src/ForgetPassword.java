@@ -21,8 +21,8 @@ public class ForgetPassword extends JFrame implements ActionListener {
         add(image);
         // Change pin
         JLabel heading=new JLabel("Forget PIN?");
-        heading.setBounds(125,25,200,30);
-        heading.setFont(new Font("Raleway",Font.BOLD,20));
+        heading.setBounds(300,25,200,50);
+        heading.setFont(new Font("Raleway",Font.BOLD,30));
         image.add(heading);
         // Forget pin
         username = new JLabel("Enter Your UserName:");
@@ -107,13 +107,13 @@ public class ForgetPassword extends JFrame implements ActionListener {
                 String query = "select*from Employee where Phone='" + phone + "' and Email='" + emailid + "'";
                 ResultSet res = conn.state.executeQuery(query);
                 if (res.next()) {
-                    String query2 = "update table UsernamePassword set Password='" + Newpin + "' where Username='"+UserName+"'";
+                    String query2 = "update UsernamePassword set Password='" + Newpin + "' where Username='"+UserName+"'";
                     conn.state.executeUpdate(query2);
                     JOptionPane.showMessageDialog(rootPane, "Password Changed  Successfully");
                     System.exit(0);
                 }
                 else{
-                    JOptionPane.showMessageDialog(rootPane, "Email or Phone  Number Not Matched");
+                    JOptionPane.showMessageDialog(rootPane, "Username or Email or Phone  Number Not Matched");
                 }
 
             } catch (SQLException e) {
