@@ -115,6 +115,9 @@ public class ForgetPassword extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Password Changed  Successfully");
                     System.exit(0);
                 }
+                else{
+                    JOptionPane.showMessageDialog(rootPane, "Email or Phone  Number Not Matched");
+                }
 
             } catch (SQLException e) {
                 e.printStackTrace();
