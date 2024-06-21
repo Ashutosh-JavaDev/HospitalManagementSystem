@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.sql.SQLException;
 public class Appointment extends JFrame implements ActionListener {
     public Appointment(){
+        
         //Default
         setLayout(null);
         setSize(800,600);
