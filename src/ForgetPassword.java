@@ -1,7 +1,11 @@
 import javax.swing.*;
+
+import com.mysql.cj.protocol.Resultset;
+
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Image;
+import java.sql.ResultSet;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -88,6 +92,8 @@ public class ForgetPassword extends JFrame implements ActionListener {
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="select*from Employee where Phone='"+phone+"' and Email='"+emailid+"'";
+                ResultSet res=conn.state.executeQuery(query);
+
             }
             catch(SQLException e){
                 e.printStackTrace();
