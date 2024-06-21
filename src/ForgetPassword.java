@@ -87,6 +87,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
             String emailid=emailfield.getText();
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
+                String query="select*from Employee where Phone='"+phone+"' and Email='"+emailid+"'";
             }
             catch(SQLException e){
                 e.printStackTrace();
