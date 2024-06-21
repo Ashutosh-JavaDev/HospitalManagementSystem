@@ -11,8 +11,8 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class ForgetPassword extends JFrame implements ActionListener {
-    JLabel newpin, phonenumber, email;
-    JTextField newpinfield, phonenumberfield, emailfield;
+    JLabel newpin, phonenumber, email, username;
+    JTextField newpinfield, phonenumberfield, emailfield, usernamefield;
     JButton confirm, back;
 
     public ForgetPassword() {
@@ -22,6 +22,17 @@ public class ForgetPassword extends JFrame implements ActionListener {
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
+        // Forget pin
+        phonenumber = new JLabel("Enter Your Phone Number:");
+        phonenumber.setBounds(125, 200, 250, 30);
+        phonenumber.setFont(new Font("Raleway", Font.BOLD, 16));
+        phonenumber.setForeground(Color.black);
+        image.add(phonenumber);
+        // Textfield
+        phonenumberfield = new JTextField();
+        phonenumberfield.setBounds(410, 200, 250, 30);
+        phonenumberfield.setFont(new Font("Raleway", Font.BOLD, 18));
+        image.add(phonenumberfield);
         // Forget pin
         phonenumber = new JLabel("Enter Your Phone Number:");
         phonenumber.setBounds(125, 200, 250, 30);
@@ -82,20 +93,22 @@ public class ForgetPassword extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        if(ae.getSource()==back){
+        if (ae.getSource() == back) {
             System.exit(0);
-        }
-        else if(ae.getSource()==confirm){
-            String Newpin=newpinfield.getText();
-            String phone=phonenumberfield.getText();
-            String emailid=emailfield.getText();
-            try{
-                HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="select*from Employee where Phone='"+phone+"' and Email='"+emailid+"'";
-                ResultSet res=conn.state.executeQuery(query);
+        } else if (ae.getSource() == confirm) {
+            String Newpin = newpinfield.getText();
+            String phone = phonenumberfield.getText();
+            String emailid = emailfield.getText();
+            try {
+                HospitalManagementSystem conn = new HospitalManagementSystem();
+                String query = "select*from Employee where Phone='" + phone + "' and Email='" + emailid + "'";
+                ResultSet res = conn.state.executeQuery(query);
+                if (res.next()) {
+                    String query2 = "update table UsernamePassword set Password='" + Newpin + "' where ";
 
-            }
-            catch(SQLException e){
+                }
+
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
