@@ -81,7 +81,9 @@ public class ForgetPassword extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
-            
+            String Newpin=newpinfield.getText();
+            String phone=phonenumberfield.getText();
+            String emailid=emailfield.getText();
         }
     }
 
