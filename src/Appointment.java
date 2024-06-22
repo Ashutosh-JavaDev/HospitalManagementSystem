@@ -23,7 +23,9 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(newPatient);
         // Name
         name=new JLabel("Patient's Name");
-        name.setBounds();
+        name.setBounds(25,100,150,20);
+        name.setFont(new Font("Raleway",Font.BOLD,25));
+        image.add(name);
         //Default
         setLayout(null);
         setSize(800,600);
