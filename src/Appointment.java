@@ -26,7 +26,7 @@ public class Appointment extends JFrame implements ActionListener {
         // Name
         name = new JLabel("Patient's Name");
         name.setBounds(25, 100, 200, 30);
-        name.setFont(new Font("Raleway", Font.BOLD, 25));
+        name.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(name);
         // Name filed
         namefield = new JTextField();
@@ -36,7 +36,7 @@ public class Appointment extends JFrame implements ActionListener {
         // Phone
         phone = new JLabel("Phone Number");
         phone.setBounds(25, 150, 200, 30);
-        phone.setFont(new Font("Raleway", Font.BOLD, 25));
+        phone.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(phone);
         // phone filed
         phonefield = new JTextField();
@@ -46,7 +46,7 @@ public class Appointment extends JFrame implements ActionListener {
         // timing
         timing = new JLabel("Timing");
         timing.setBounds(25, 200, 200, 30);
-        timing.setFont(new Font("Raleway", Font.BOLD, 25));
+        timing.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(timing);
         // timing filed
         timingfield = new JTextField();
@@ -56,7 +56,7 @@ public class Appointment extends JFrame implements ActionListener {
         // cause
         cause = new JLabel("Cause");
         cause.setBounds(25, 250, 200, 30);
-        cause.setFont(new Font("Raleway", Font.BOLD, 25));
+        cause.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(cause);
         // cause filed
         causefield = new JTextField();
@@ -66,7 +66,7 @@ public class Appointment extends JFrame implements ActionListener {
         // payment
         payment = new JLabel("Payment");
         payment.setBounds(25, 300, 200, 30);
-        payment.setFont(new Font("Raleway", Font.BOLD, 25));
+        payment.setFont(new Font("Raleway", Font.BOLD, 20));
         image.add(payment);
         // paymment filed
         paymentfield = new JTextField();
@@ -78,7 +78,7 @@ public class Appointment extends JFrame implements ActionListener {
         back.setBounds(50,380,150,40);
         back.setBackground(Color.black);
         back.setForeground(Color.white);
-        back.setFont(new Font("Raleway", Font.BOLD, 18));
+        back.setFont(new Font("Raleway", Font.BOLD, 16));
         back.addActionListener(this);
         image.add(back);
         // Done
@@ -86,7 +86,7 @@ public class Appointment extends JFrame implements ActionListener {
         done.setBounds(350,380,150,40);
         done.setBackground(Color.black);
         done.setForeground(Color.white);
-        done.setFont(new Font("Raleway", Font.BOLD, 18));
+        done.setFont(new Font("Raleway", Font.BOLD, 16));
         done.addActionListener(this);
         image.add(done);
         // Default
@@ -113,6 +113,7 @@ public class Appointment extends JFrame implements ActionListener {
                 String query="insert into Appointment values('"+Name+"','"+Phone+"','"+Timing+"','"+Cause+"','"+Payment+"')";
                 conn.state.executeUpdate(query);
                 JOptionPane.showMessageDialog(done, "Appointment Set Succesfully");
+                System.exit(0);
             }
             catch(SQLException e){
                 e.printStackTrace();
