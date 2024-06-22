@@ -7,7 +7,7 @@ import java.awt.Color;
 import java.sql.SQLException;
 public class Appointment extends JFrame implements ActionListener {
     JLabel name,phone,timing,cause,payment;
-    JTextField namefiekd,phonefield,timingfield,causefield,paymentfield;
+    JTextField namefield,phonefield,timingfield,causefield,paymentfield;
     JButton back,done;
     public Appointment(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -18,7 +18,7 @@ public class Appointment extends JFrame implements ActionListener {
         add(image);
         // 
         JLabel newPatient=new JLabel("New Appoinment");
-        newPatient.setBounds(150,20,250,35);
+        newPatient.setBounds(150,20,150,35);
         newPatient.setFont(new Font("Arial",Font.BOLD,25));
         image.add(newPatient);
         // Name
@@ -26,6 +26,11 @@ public class Appointment extends JFrame implements ActionListener {
         name.setBounds(25,100,150,20);
         name.setFont(new Font("Raleway",Font.BOLD,25));
         image.add(name);
+        // Name filed
+        namefield=new JTextField();
+        namefield.setBounds(200,100,150,20);
+        namefield.setFont(new Font("Raleway",Font.BOLD,18));
+        image.add(namefield);
         //Default
         setLayout(null);
         setSize(800,600);
