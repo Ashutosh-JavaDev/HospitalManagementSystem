@@ -30,7 +30,7 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(name);
         // Name filed
         namefield = new JTextField();
-        namefield.setBounds(200, 100, 300, 30);
+        namefield.setBounds(250, 100, 300, 30);
         namefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(namefield);
         // Phone
@@ -40,7 +40,7 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(phone);
         // phone filed
         phonefield = new JTextField();
-        phonefield.setBounds(200, 150, 300, 30);
+        phonefield.setBounds(250, 150, 300, 30);
         phonefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(phonefield);
         // timing
@@ -50,7 +50,7 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(timing);
         // timing filed
         timingfield = new JTextField();
-        timingfield.setBounds(200, 200, 300, 30);
+        timingfield.setBounds(250, 200, 300, 30);
         timingfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(timingfield);
         // cause
@@ -60,7 +60,7 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(cause);
         // cause filed
         causefield = new JTextField();
-        causefield.setBounds(200, 250, 300, 30);
+        causefield.setBounds(250, 250, 300, 30);
         causefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(causefield);
         // payment
@@ -70,7 +70,7 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(payment);
         // paymment filed
         paymentfield = new JTextField();
-        paymentfield.setBounds(200, 300, 300, 30);
+        paymentfield.setBounds(250, 300, 300, 30);
         paymentfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(paymentfield);
         // Jbutton
