@@ -75,14 +75,14 @@ public class Appointment extends JFrame implements ActionListener {
         image.add(paymentfield);
         // Jbutton
         back=new JButton("Back");
-        back.setBounds(25,400,100,30);
+        back.setBounds(25,360,100,40);
         back.setBackground(Color.black);
         back.setForeground(Color.white);
         back.addActionListener(this);
         image.add(back);
         // Done
         done=new JButton("Done");
-        done.setBounds(200,400,100,30);
+        done.setBounds(200,360,100,40);
         done.setBackground(Color.black);
         done.setForeground(Color.white);
         done.addActionListener(this);
