@@ -110,7 +110,7 @@ public class Appointment extends JFrame implements ActionListener {
             String Payment=paymentfield.getText();
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="insert into Appointment values()";
+                String query="insert into Appointment values('"+Name+"','"+Phone+"','"+Timing+"','"+Cause+"','"+Payment+"')";
                 conn.state.executeUpdate(query);
             }
             catch(SQLException e){
