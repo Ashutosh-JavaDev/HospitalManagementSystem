@@ -102,6 +102,13 @@ public class Appointment extends JFrame implements ActionListener {
         if(ae.getSource()==back){
             System.exit(0);
         }
+        else if(ae.getSource()==done){
+            String Name=namefield.getText();
+            String Phone=phonefield.getText();
+            String Timing=timingfield.getText();
+            String Cause=causefield.getText();
+            String Payment=paymentfield.getText();
+        }
     }
     public static void main(String[]args){
         new Appointment();
