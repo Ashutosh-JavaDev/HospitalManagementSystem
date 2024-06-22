@@ -7,7 +7,7 @@ import java.awt.Color;
 import java.sql.SQLException;
 public class Appointment extends JFrame implements ActionListener {
     public Appointment(){
-        
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         //Default
         setLayout(null);
         setSize(800,600);
