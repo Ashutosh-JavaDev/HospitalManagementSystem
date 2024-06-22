@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class Appointment extends JFrame implements ActionListener {
     JLabel name,phone,timing,cause,payment;
     JTextField namefiekd,phonefield,timingfield,causefield,paymentfield;
+    JButton back,done;
     public Appointment(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2=i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
