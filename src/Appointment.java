@@ -20,57 +20,57 @@ public class Appointment extends JFrame implements ActionListener {
         add(image);
         //
         JLabel newPatient = new JLabel("New Appoinment");
-        newPatient.setBounds(150, 20, 150, 35);
+        newPatient.setBounds(150, 20, 250, 35);
         newPatient.setFont(new Font("Arial", Font.BOLD, 25));
         image.add(newPatient);
         // Name
         name = new JLabel("Patient's Name");
-        name.setBounds(25, 100, 150, 20);
+        name.setBounds(25, 100, 200, 20);
         name.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(name);
         // Name filed
         namefield = new JTextField();
-        namefield.setBounds(200, 100, 150, 20);
+        namefield.setBounds(200, 100, 250, 20);
         namefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(namefield);
         // Phone
         phone = new JLabel("Phone Number");
-        phone.setBounds(25, 130, 150, 20);
+        phone.setBounds(25, 130, 200, 20);
         phone.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(phone);
         // phone filed
         phonefield = new JTextField();
-        phonefield.setBounds(200, 130, 150, 20);
+        phonefield.setBounds(200, 130, 250, 20);
         phonefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(phonefield);
         // timing
         timing = new JLabel("Timing");
-        timing.setBounds(25, 160, 150, 20);
+        timing.setBounds(25, 160, 200, 20);
         timing.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(timing);
         // timing filed
         timingfield = new JTextField();
-        timingfield.setBounds(200, 160, 150, 20);
+        timingfield.setBounds(200, 160, 250, 20);
         timingfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(timingfield);
         // cause
         cause = new JLabel("Cause");
-        cause.setBounds(25, 190, 150, 20);
+        cause.setBounds(25, 190, 200, 20);
         cause.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(cause);
         // cause filed
         causefield = new JTextField();
-        causefield.setBounds(200, 190, 150, 20);
+        causefield.setBounds(200, 190, 250, 20);
         causefield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(causefield);
         // payment
         payment = new JLabel("Payment");
-        payment.setBounds(25, 220, 150, 20);
+        payment.setBounds(25, 220, 200, 20);
         payment.setFont(new Font("Raleway", Font.BOLD, 25));
         image.add(payment);
         // paymment filed
         paymentfield = new JTextField();
-        paymentfield.setBounds(200, 220, 150, 20);
+        paymentfield.setBounds(200, 220, 250, 20);
         paymentfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(paymentfield);
         // Jbutton
