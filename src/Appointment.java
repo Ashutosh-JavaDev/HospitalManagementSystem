@@ -108,6 +108,12 @@ public class Appointment extends JFrame implements ActionListener {
             String Timing=timingfield.getText();
             String Cause=causefield.getText();
             String Payment=paymentfield.getText();
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
         }
     }
     public static void main(String[]args){
