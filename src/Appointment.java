@@ -31,6 +31,46 @@ public class Appointment extends JFrame implements ActionListener {
         namefield.setBounds(200,100,150,20);
         namefield.setFont(new Font("Raleway",Font.BOLD,18));
         image.add(namefield);
+          // Name
+          name=new JLabel("Patient's Name");
+          name.setBounds(25,100,150,20);
+          name.setFont(new Font("Raleway",Font.BOLD,25));
+          image.add(name);
+          // Name filed
+          namefield=new JTextField();
+          namefield.setBounds(200,100,150,20);
+          namefield.setFont(new Font("Raleway",Font.BOLD,18));
+          image.add(namefield); 
+           // Name
+          name=new JLabel("Patient's Name");
+          name.setBounds(25,100,150,20);
+          name.setFont(new Font("Raleway",Font.BOLD,25));
+          image.add(name);
+          // Name filed
+          namefield=new JTextField();
+          namefield.setBounds(200,100,150,20);
+          namefield.setFont(new Font("Raleway",Font.BOLD,18));
+          image.add(namefield); 
+           // Name
+          name=new JLabel("Patient's Name");
+          name.setBounds(25,100,150,20);
+          name.setFont(new Font("Raleway",Font.BOLD,25));
+          image.add(name);
+          // Name filed
+          namefield=new JTextField();
+          namefield.setBounds(200,100,150,20);
+          namefield.setFont(new Font("Raleway",Font.BOLD,18));
+          image.add(namefield);  
+          // Name
+          name=new JLabel("Patient's Name");
+          name.setBounds(25,100,150,20);
+          name.setFont(new Font("Raleway",Font.BOLD,25));
+          image.add(name);
+          // Name filed
+          namefield=new JTextField();
+          namefield.setBounds(200,100,150,20);
+          namefield.setFont(new Font("Raleway",Font.BOLD,18));
+          image.add(namefield);
         //Default
         setLayout(null);
         setSize(800,600);
