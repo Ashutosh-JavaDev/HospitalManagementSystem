@@ -112,6 +112,7 @@ public class Appointment extends JFrame implements ActionListener {
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="insert into Appointment values('"+Name+"','"+Phone+"','"+Timing+"','"+Cause+"','"+Payment+"')";
                 conn.state.executeUpdate(query);
+                JOptionPane.showMessageDialog(done, "Appointment Set Succesfully");
             }
             catch(SQLException e){
                 e.printStackTrace();
