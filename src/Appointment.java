@@ -73,6 +73,13 @@ public class Appointment extends JFrame implements ActionListener {
         paymentfield.setBounds(200, 220, 150, 20);
         paymentfield.setFont(new Font("Raleway", Font.BOLD, 18));
         image.add(paymentfield);
+        // Jbutton
+        back=new JButton("Back");
+        back.setBounds(25,400,100,30);
+        back.setBackground(Color.black);
+        back.setForeground(Color.white);
+        back.addActionListener(this);
+        image.add(back);
         // Default
         setLayout(null);
         setSize(800, 600);
