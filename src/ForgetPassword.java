@@ -105,17 +105,15 @@ public class ForgetPassword extends JFrame implements ActionListener {
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String query = "select*from Employee where Phone='" + phone + "' and Email='" + emailid + "'";
-                String query3="select *from UsernamePassword where Username='"+UserName+"'";
                 ResultSet res = conn.state.executeQuery(query);
-                ResultSet resu=conn.state.executeQuery(query3);
-                if (res.next()&& resu.next()) {
+                if (res.next()) {
                     String query2 = "update UsernamePassword set Password='" + Newpin + "' where Username='"+UserName+"'";
                     conn.state.executeUpdate(query2);
                     JOptionPane.showMessageDialog(rootPane, "Password Changed  Successfully");
                     System.exit(0);
                 }
                 else{
-                    JOptionPane.showMessageDialog(rootPane, "Username or Email or Phone  Number Not Matched");
+                    JOptionPane.showMessageDialog(rootPane, "Email or Phone  Number Not Matched");
                 }
 
             } catch (SQLException e) {
