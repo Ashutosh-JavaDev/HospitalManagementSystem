@@ -99,4 +99,7 @@ public class Appointment extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
 
     }
+    public static void main(String[]args){
+        new Appointment();
+    }
 }
