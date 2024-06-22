@@ -80,6 +80,13 @@ public class Appointment extends JFrame implements ActionListener {
         back.setForeground(Color.white);
         back.addActionListener(this);
         image.add(back);
+        // Done
+        done=new JButton("Done");
+        done.setBounds(200,400,100,30);
+        done.setBackground(Color.black);
+        done.setForeground(Color.white);
+        done.addActionListener(this);
+        image.add(done);
         // Default
         setLayout(null);
         setSize(800, 600);
