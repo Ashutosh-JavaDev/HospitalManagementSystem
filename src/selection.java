@@ -110,7 +110,7 @@ public class selection extends JFrame implements ActionListener {
            new Employee().setVisible(true);
         }
         else if(ae.getSource()==appointment){
-
+            setVisible(false);
         }
         else if(ae.getSource()==logout){
             System.exit(0);
