@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class Ambulance extends JFrame implements ActionListener{
     JLabel name,start,arrive,phone;
+    JTextField namefiele,startfield,arrivefield,phonefield;
     public Ambulance(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2=i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
