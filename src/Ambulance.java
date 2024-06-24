@@ -16,6 +16,7 @@ public class Ambulance extends JFrame implements ActionListener{
         // Default
         setLayout(null);
         setTitle("Ambluance");
+        setSize(800,600);
     }
     public void actionPerformed(ActionEvent ae){
 
