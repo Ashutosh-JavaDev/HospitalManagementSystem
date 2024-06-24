@@ -12,6 +12,7 @@ public class Ambulance extends JFrame implements ActionListener{
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
+        add(image);
     }
     public void actionPerformed(ActionEvent ae){
 
