@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 public class Ambulance extends JFrame implements ActionListener{
 
     public Ambulance(){
-
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
     }
     public void actionPerformed(ActionEvent ae){
 
