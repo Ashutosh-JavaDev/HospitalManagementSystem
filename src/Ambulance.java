@@ -13,6 +13,9 @@ public class Ambulance extends JFrame implements ActionListener{
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
+        // Default
+        setLayout(null);
+        setTitle("Ambluance");
     }
     public void actionPerformed(ActionEvent ae){
 
