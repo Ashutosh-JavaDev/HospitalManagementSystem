@@ -5,7 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class Ambulance extends JFrame implements ActionListener{
-
+    JLabel name,start,arrive,phone;
     public Ambulance(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2=i1.getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
@@ -13,6 +13,7 @@ public class Ambulance extends JFrame implements ActionListener{
         JLabel image=new JLabel(i3);
         image.setBounds(0,0,800,600);
         add(image);
+
         // Default
         setLayout(null);
         setTitle("Ambluance");
