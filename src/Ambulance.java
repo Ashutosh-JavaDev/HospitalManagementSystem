@@ -5,8 +5,8 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class Ambulance extends JFrame implements ActionListener{
-    JLabel name,start,arrive,phone;
-    JTextField namefiele,startfield,arrivefield,phonefield;
+    JLabel name,start,arrive,cause,phone;
+    JTextField namefiele,startfield,causefield,arrivefield,phonefield;
     JButton confirm;
     public Ambulance(){
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
