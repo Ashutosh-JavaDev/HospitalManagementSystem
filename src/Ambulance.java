@@ -22,7 +22,7 @@ public class Ambulance extends JFrame implements ActionListener{
         image.add(name);
         // Name field
         namefield=new JTextField();
-        namefield.setBounds(250,50,100,50);
+        namefield.setBounds(250,50,150,50);
         namefield.setFont(new Font("Arial",Font.BOLD,18));
         image.add(namefield);
         // start
@@ -31,6 +31,10 @@ public class Ambulance extends JFrame implements ActionListener{
         start.setFont(new Font("Arial",Font.BOLD,20));
         image.add(start);
         // Startfield
+        startfield=new JTextField();
+        startfield.setBounds(250,120,150,50);
+        startfield.setFont(new Font("Arial",Font.BOLD,18));
+        image.add(startfield);
         // Default
         setLayout(null);
         setTitle("Ambluance");
