@@ -4,6 +4,7 @@ import java.awt.Image;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class Ambulance extends JFrame implements ActionListener {
     JLabel name, start, arrive, cause, phone, ambluancenumber, driver;
@@ -129,6 +130,12 @@ public class Ambulance extends JFrame implements ActionListener {
             String Phone=phonefield.getText();
             String Driver=driverfield.getText();
             String Ambluance=ambluancenumberfield.getText();
+            try{
+                HospitalManagementSystem conn=new HospitalManagementSystem();
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
         }
     }
 
