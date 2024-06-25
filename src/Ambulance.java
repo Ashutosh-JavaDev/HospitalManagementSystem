@@ -49,7 +49,7 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(arrivefield);
         // start
         cause = new JLabel("Cause:");
-        cause.setBounds(25, 260, 150, 50);
+        cause.setBounds(25, 260, 150, 30);
         cause.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(cause);
         // Startfield
@@ -69,7 +69,7 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(phonefield);
         // JButton
         confirm=new JButton("Confirm");
-        confirm.setBounds(400,400,100,30);
+        confirm.setBounds(400,400,150,30);
         confirm.setBackground(Color.black);
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Raleway",Font.BOLD,20));
