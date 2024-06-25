@@ -19,32 +19,32 @@ public class Ambulance extends JFrame implements ActionListener {
         add(image);
         // Name
         name = new JLabel("Name:");
-        name.setBounds(25, 50, 150, 50);
+        name.setBounds(25, 50, 150, 30);
         name.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(name);
         // Name field
         namefield = new JTextField();
-        namefield.setBounds(250, 50, 150, 50);
+        namefield.setBounds(250, 50, 150, 30);
         namefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(namefield);
         // start
         start = new JLabel("Pickup Point:");
-        start.setBounds(25, 120, 150, 50);
+        start.setBounds(25, 120, 150, 30);
         start.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(start);
         // Startfield
         startfield = new JTextField();
-        startfield.setBounds(250, 120, 150, 50);
+        startfield.setBounds(250, 120, 150, 30);
         startfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(startfield);
         // end
         arrive = new JLabel("Arriving Point:");
-        arrive.setBounds(25, 190, 150, 50);
+        arrive.setBounds(25, 190, 150, 30);
         arrive.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(arrive);
         // Startfield
         arrivefield = new JTextField();
-        arrivefield.setBounds(250, 190, 150, 50);
+        arrivefield.setBounds(250, 190, 150, 30);
         arrivefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(arrivefield);
         // start
@@ -54,22 +54,22 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(cause);
         // Startfield
         causefield = new JTextField();
-        causefield.setBounds(250, 260, 150, 50);
+        causefield.setBounds(250, 260, 150, 30);
         causefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(causefield);
         // start
         phone = new JLabel("Phone No.:");
-        phone.setBounds(25, 330, 150, 50);
+        phone.setBounds(25, 330, 150, 30);
         phone.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(phone);
         // Startfield
         phonefield = new JTextField();
-        phonefield.setBounds(250, 330, 150, 50);
+        phonefield.setBounds(250, 330, 150, 30);
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
         // JButton
         confirm=new JButton("Confirm");
-        confirm.setBounds(400,400,100,50);
+        confirm.setBounds(400,400,100,30);
         confirm.setBackground(Color.black);
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Raleway",Font.BOLD,20));
@@ -77,7 +77,7 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(confirm);
         // back
         back=new JButton("Back");
-        back.setBounds(25,400,100,50);
+        back.setBounds(25,400,100,30);
         back.setBackground(Color.black);
         back.setForeground(Color.white);
         back.setFont(new Font("Raleway",Font.BOLD,20));
