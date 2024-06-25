@@ -89,7 +89,7 @@ public class Employee extends JFrame implements ActionListener {
         proffesion.setForeground(Color.black);
         proffesion.setBounds(25, 270, 180, 30);
         image.add(proffesion);
-        String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper" };
+        String datas[] = { "Assistant Doctor", "Junior Doctor", "Senior Doctor", "Nurse", "Receptionist","Sweaper","Driver" };
         proffesionfield = new JComboBox(datas);
         proffesionfield.setFont(new Font("Arial", Font.BOLD, 18));
         proffesionfield.setBounds(300, 270, 250, 30);

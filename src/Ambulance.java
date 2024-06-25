@@ -6,8 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ambulance extends JFrame implements ActionListener {
-    JLabel name, start, arrive, cause, phone,ambluancenumber;
-    JTextField namefield, startfield, causefield, arrivefield, phonefield,ambluancenumberfield;
+    JLabel name, start, arrive, cause, phone,ambluancenumber,driver;
+    JTextField namefield, startfield, causefield, arrivefield, phonefield,ambluancenumberfield,driverfield;
     JButton confirm,back;
 
     public Ambulance() {
