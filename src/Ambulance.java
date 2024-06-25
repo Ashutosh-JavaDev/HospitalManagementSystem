@@ -23,52 +23,52 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(titile);
         // Name
         name = new JLabel("Name:");
-        name.setBounds(25, 70, 150, 30);
+        name.setBounds(25, 70, 200, 30);
         name.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(name);
         // Name field
         namefield = new JTextField();
-        namefield.setBounds(250, 70, 150, 30);
+        namefield.setBounds(250, 70, 200, 30);
         namefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(namefield);
         // start
         start = new JLabel("Pickup Point:");
-        start.setBounds(25, 120, 150, 30);
+        start.setBounds(25, 120, 200, 30);
         start.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(start);
         // Startfield
         startfield = new JTextField();
-        startfield.setBounds(250, 120, 150, 30);
+        startfield.setBounds(250, 120, 200, 30);
         startfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(startfield);
         // end
         arrive = new JLabel("Arriving Point:");
-        arrive.setBounds(25, 170, 150, 30);
+        arrive.setBounds(25, 170, 200, 30);
         arrive.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(arrive);
         // Startfield
         arrivefield = new JTextField();
-        arrivefield.setBounds(250, 170, 150, 30);
+        arrivefield.setBounds(250, 170, 200, 30);
         arrivefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(arrivefield);
         // cause
         cause = new JLabel("Cause:");
-        cause.setBounds(25, 220, 150, 30);
+        cause.setBounds(25, 220, 200, 30);
         cause.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(cause);
         // cause field
         causefield = new JTextField();
-        causefield.setBounds(250, 220, 150, 30);
+        causefield.setBounds(250, 220, 200, 30);
         causefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(causefield);
         // phone
         phone = new JLabel("Phone No.:");
-        phone.setBounds(25, 250, 150, 30);
+        phone.setBounds(25, 250, 200, 30);
         phone.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(phone);
         // phonefield
         phonefield = new JTextField();
-        phonefield.setBounds(250, 250, 150, 30);
+        phonefield.setBounds(250, 250, 200, 30);
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
         // driver
@@ -83,12 +83,12 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(driverfield);
         // ambluance
         ambluancenumber = new JLabel("Ambluance No:");
-        ambluancenumber.setBounds(25, 250, 150, 30);
+        ambluancenumber.setBounds(25, 250, 200, 30);
         ambluancenumber.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(ambluancenumber);
         // ambluance field
         ambluancenumberfield = new JTextField();
-        ambluancenumberfield.setBounds(250, 250, 150, 30);
+        ambluancenumberfield.setBounds(250, 250, 200, 30);
         ambluancenumberfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(ambluancenumberfield);
         // JButton
