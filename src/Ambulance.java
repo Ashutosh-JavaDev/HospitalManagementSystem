@@ -51,46 +51,46 @@ public class Ambulance extends JFrame implements ActionListener {
         arrivefield.setBounds(250, 170, 150, 30);
         arrivefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(arrivefield);
-        // start
+        // cause
         cause = new JLabel("Cause:");
         cause.setBounds(25, 220, 150, 30);
         cause.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(cause);
-        // Startfield
+        // cause field
         causefield = new JTextField();
         causefield.setBounds(250, 220, 150, 30);
         causefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(causefield);
-        // start
+        // phone
         phone = new JLabel("Phone No.:");
         phone.setBounds(25, 250, 150, 30);
         phone.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(phone);
-        // Startfield
+        // phonefield
         phonefield = new JTextField();
         phonefield.setBounds(250, 250, 150, 30);
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
-        // start
+        // driver
         driver = new JLabel("Driver Name.:");
         driver.setBounds(25, 300, 200, 30);
         driver.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(driverfield);
-        // Startfield
+        // driver field
         driverfield = new JTextField();
         driverfield.setBounds(250, 300, 200, 30);
         driverfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(driverfield);
-         // start
+         // ambluance
         ambluancenumber = new JLabel("Ambluance No:");
         ambluancenumber.setBounds(25, 250, 150, 30);
         ambluancenumber.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(ambluancenumber);
-        // Startfield
-        phonefield = new JTextField();
-        phonefield.setBounds(250, 250, 150, 30);
-        phonefield.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(phonefield);
+        // ambluance field
+        ambluancenumberfield = new JTextField();
+        ambluancenumberfield.setBounds(250, 250, 150, 30);
+        ambluancenumberfield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(ambluancenumberfield);
         // start
         phone = new JLabel("Phone No.:");
         phone.setBounds(25, 250, 150, 30);
