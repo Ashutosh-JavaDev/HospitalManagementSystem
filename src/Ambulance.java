@@ -17,14 +17,19 @@ public class Ambulance extends JFrame implements ActionListener{
         add(image);
         // Name
         name=new JLabel("Name:");
-        name.setBounds(25,50,100,30);
+        name.setBounds(25,50,150,50);
         name.setFont(new Font("Arial",Font.BOLD,20));
         image.add(name);
         // Name field
         namefield=new JTextField();
-        namefield.setBounds(200,50,100,30);
+        namefield.setBounds(250,50,100,50);
         namefield.setFont(new Font("Arial",Font.BOLD,18));
         image.add(namefield);
+        // start
+        start=new JLabel("Pickup Point:");
+        start.setBounds(25,120,150,50);
+        start.setFont(new Font("Arial",Font.BOLD,20));
+        image.add(start);
         // Default
         setLayout(null);
         setTitle("Ambluance");
