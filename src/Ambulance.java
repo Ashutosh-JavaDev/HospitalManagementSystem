@@ -67,6 +67,13 @@ public class Ambulance extends JFrame implements ActionListener {
         phonefield.setBounds(250, 330, 150, 50);
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
+        // JButton
+        confirm=new JButton("Confirm");
+        confirm.setBounds(400,400,100,50);
+        confirm.setBackground(Color.black);
+        confirm.setForeground(Color.white);
+        confirm.setFont(new Font("Raleway",Font.BOLD,20));
+        image.add(confirm);
         // Default
         setLayout(null);
         setTitle("Ambluance");
