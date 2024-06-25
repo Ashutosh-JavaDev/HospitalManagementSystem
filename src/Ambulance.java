@@ -121,6 +121,15 @@ public class Ambulance extends JFrame implements ActionListener {
         if (ae.getSource() == back) {
             System.exit(0);
         }
+        else if(ae.getSource()==confirm){
+            String Name=namefield.getText();
+            String Start=startfield.getText();
+            String Arrive=arrivefield.getText();
+            String Cause=causefield.getText();
+            String Phone=phonefield.getText();
+            String Driver=driverfield.getText();
+            String Ambluance=ambluancenumberfield.getText();
+        }
     }
 
     public static void main(String[] args) {
