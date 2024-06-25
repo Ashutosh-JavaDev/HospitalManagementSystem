@@ -137,6 +137,9 @@ public class Ambulance extends JFrame implements ActionListener {
                 ResultSet result=conn.state.executeQuery(query);
                 if(result.next()){
                     String query2="insert into Ambluance values('"+Name+"','"+Start+"','"+Arrive+"','"+Cause+"','"+Phone+"','"+DriverName+"','"+AmbluanceNumber+"')";
+                    conn.state.executeUpdate(query2);
+                    JOptionPane.showMessageDialog(phone, "Data Updated Succesfully");
+                    System.exit(0);
                 }
             }
             catch(SQLException e){
