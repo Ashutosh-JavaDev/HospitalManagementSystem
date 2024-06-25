@@ -44,7 +44,7 @@ public class Ambulance extends JFrame implements ActionListener {
         startfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(startfield);
         // end
-        arrive = new JLabel("Arriving Point:");
+        arrive = new JLabel("Destination Point:");
         arrive.setBounds(25, 170, 200, 30);
         arrive.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(arrive);
