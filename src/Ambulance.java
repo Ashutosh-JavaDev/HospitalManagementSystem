@@ -6,8 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ambulance extends JFrame implements ActionListener {
-    JLabel name, start, arrive, cause, phone;
-    JTextField namefield, startfield, causefield, arrivefield, phonefield;
+    JLabel name, start, arrive, cause, phone,ambluancenumber;
+    JTextField namefield, startfield, causefield, arrivefield, phonefield,ambluancenumberfield;
     JButton confirm,back;
 
     public Ambulance() {
@@ -17,6 +17,10 @@ public class Ambulance extends JFrame implements ActionListener {
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 800, 600);
         add(image);
+        JLabel titile=new JLabel("Ambluance Service");
+        titile.setBounds(300,10,300,30);
+        titile.setFont(new Font("Arial",Font.BOLD,20));
+        image.add(titile);
         // Name
         name = new JLabel("Name:");
         name.setBounds(25, 50, 150, 30);
