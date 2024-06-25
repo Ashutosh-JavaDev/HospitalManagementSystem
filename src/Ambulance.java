@@ -83,12 +83,12 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(driverfield);
         // ambluance
         ambluancenumber = new JLabel("Ambluance No:");
-        ambluancenumber.setBounds(25, 250, 200, 30);
+        ambluancenumber.setBounds(25, 350, 200, 30);
         ambluancenumber.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(ambluancenumber);
         // ambluance field
         ambluancenumberfield = new JTextField();
-        ambluancenumberfield.setBounds(250, 250, 200, 30);
+        ambluancenumberfield.setBounds(250, 350, 200, 30);
         ambluancenumberfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(ambluancenumberfield);
         // JButton
