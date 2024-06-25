@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class Ambulance extends JFrame implements ActionListener {
     JLabel name, start, arrive, cause, phone;
     JTextField namefield, startfield, causefield, arrivefield, phonefield;
-    JButton confirm;
+    JButton confirm,back;
 
     public Ambulance() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -75,6 +75,14 @@ public class Ambulance extends JFrame implements ActionListener {
         confirm.setFont(new Font("Raleway",Font.BOLD,20));
         confirm.addActionListener(this);
         image.add(confirm);
+        // back
+        back=new JButton("Back");
+        back.setBounds(25,400,100,50);
+        back.setBackground(Color.black);
+        back.setForeground(Color.white);
+        back.setFont(new Font("Raleway",Font.BOLD,20));
+        back.addActionListener(this);
+        image.add(back);
         // Default
         setLayout(null);
         setTitle("Ambluance");
