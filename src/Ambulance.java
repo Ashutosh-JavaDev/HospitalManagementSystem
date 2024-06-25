@@ -94,7 +94,9 @@ public class Ambulance extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==back){
+            System.exit(0);
+        }
     }
 
     public static void main(String[] args) {
