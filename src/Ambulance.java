@@ -130,11 +130,14 @@ public class Ambulance extends JFrame implements ActionListener {
             String Cause=causefield.getText();
             String Phone=phonefield.getText();
             String DriverName=driverfield.getText();
-            String Ambluance=ambluancenumberfield.getText();
+            String AmbluanceNumber=ambluancenumberfield.getText();
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="select*from Employee where Employee_Name='"+DriverName+"'";
                 ResultSet result=conn.state.executeQuery(query);
+                if(result.next()){
+                    String query2="insert into Ambluance values('"+Name+"','"+Start+"','"+Arrive+"','"+Cause+"','"+Phone+"','"+DriverName+"','"+AmbluanceNumber+"')";
+                }
             }
             catch(SQLException e){
                 e.printStackTrace();
