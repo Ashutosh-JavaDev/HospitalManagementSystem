@@ -18,17 +18,17 @@ public class Ambulance extends JFrame implements ActionListener {
         image.setBounds(0, 0, 800, 600);
         add(image);
         JLabel titile=new JLabel("Ambluance Service");
-        titile.setBounds(300,10,300,30);
+        titile.setBounds(300,10,300,40);
         titile.setFont(new Font("Arial",Font.BOLD,20));
         image.add(titile);
         // Name
         name = new JLabel("Name:");
-        name.setBounds(25, 50, 150, 30);
+        name.setBounds(25, 70, 150, 30);
         name.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(name);
         // Name field
         namefield = new JTextField();
-        namefield.setBounds(250, 50, 150, 30);
+        namefield.setBounds(250, 70, 150, 30);
         namefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(namefield);
         // start
@@ -43,34 +43,63 @@ public class Ambulance extends JFrame implements ActionListener {
         image.add(startfield);
         // end
         arrive = new JLabel("Arriving Point:");
-        arrive.setBounds(25, 190, 150, 30);
+        arrive.setBounds(25, 170, 150, 30);
         arrive.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(arrive);
         // Startfield
         arrivefield = new JTextField();
-        arrivefield.setBounds(250, 190, 150, 30);
+        arrivefield.setBounds(250, 170, 150, 30);
         arrivefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(arrivefield);
         // start
         cause = new JLabel("Cause:");
-        cause.setBounds(25, 260, 150, 30);
+        cause.setBounds(25, 220, 150, 30);
         cause.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(cause);
         // Startfield
         causefield = new JTextField();
-        causefield.setBounds(250, 260, 150, 30);
+        causefield.setBounds(250, 220, 150, 30);
         causefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(causefield);
         // start
         phone = new JLabel("Phone No.:");
-        phone.setBounds(25, 330, 150, 30);
+        phone.setBounds(25, 250, 150, 30);
         phone.setFont(new Font("Arial", Font.BOLD, 20));
         image.add(phone);
         // Startfield
         phonefield = new JTextField();
-        phonefield.setBounds(250, 330, 150, 30);
+        phonefield.setBounds(250, 250, 150, 30);
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
+          // start
+          phone = new JLabel("Phone No.:");
+          phone.setBounds(25, 250, 150, 30);
+          phone.setFont(new Font("Arial", Font.BOLD, 20));
+          image.add(phone);
+          // Startfield
+          phonefield = new JTextField();
+          phonefield.setBounds(250, 250, 150, 30);
+          phonefield.setFont(new Font("Arial", Font.BOLD, 18));
+          image.add(phonefield);  // start
+        phone = new JLabel("Phone No.:");
+        phone.setBounds(25, 250, 150, 30);
+        phone.setFont(new Font("Arial", Font.BOLD, 20));
+        image.add(phone);
+        // Startfield
+        phonefield = new JTextField();
+        phonefield.setBounds(250, 250, 150, 30);
+        phonefield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(phonefield);
+          // start
+          phone = new JLabel("Phone No.:");
+          phone.setBounds(25, 250, 150, 30);
+          phone.setFont(new Font("Arial", Font.BOLD, 20));
+          image.add(phone);
+          // Startfield
+          phonefield = new JTextField();
+          phonefield.setBounds(250, 250, 150, 30);
+          phonefield.setFont(new Font("Arial", Font.BOLD, 18));
+          image.add(phonefield);
         // JButton
         confirm=new JButton("Confirm");
         confirm.setBounds(400,400,150,30);
