@@ -35,6 +35,36 @@ public class Ambulance extends JFrame implements ActionListener{
         startfield.setBounds(250,120,150,50);
         startfield.setFont(new Font("Arial",Font.BOLD,18));
         image.add(startfield);
+            // start
+            start=new JLabel("Pickup Point:");
+            start.setBounds(25,120,150,50);
+            start.setFont(new Font("Arial",Font.BOLD,20));
+            image.add(start);
+            // Startfield
+            startfield=new JTextField();
+            startfield.setBounds(250,120,150,50);
+            startfield.setFont(new Font("Arial",Font.BOLD,18));
+            image.add(startfield);
+                // start
+        start=new JLabel("Pickup Point:");
+        start.setBounds(25,120,150,50);
+        start.setFont(new Font("Arial",Font.BOLD,20));
+        image.add(start);
+        // Startfield
+        startfield=new JTextField();
+        startfield.setBounds(250,120,150,50);
+        startfield.setFont(new Font("Arial",Font.BOLD,18));
+        image.add(startfield);
+            // start
+            start=new JLabel("Pickup Point:");
+            start.setBounds(25,120,150,50);
+            start.setFont(new Font("Arial",Font.BOLD,20));
+            image.add(start);
+            // Startfield
+            startfield=new JTextField();
+            startfield.setBounds(250,120,150,50);
+            startfield.setFont(new Font("Arial",Font.BOLD,18));
+            image.add(startfield);
         // Default
         setLayout(null);
         setTitle("Ambluance");
