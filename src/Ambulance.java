@@ -72,19 +72,20 @@ public class Ambulance extends JFrame implements ActionListener {
         phonefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(phonefield);
         // start
-        phone = new JLabel("Phone No.:");
-        phone.setBounds(25, 250, 150, 30);
-        phone.setFont(new Font("Arial", Font.BOLD, 20));
-        image.add(phone);
+        driver = new JLabel("Driver Name.:");
+        driver.setBounds(25, 300, 200, 30);
+        driver.setFont(new Font("Arial", Font.BOLD, 20));
+        image.add(driverfield);
         // Startfield
-        phonefield = new JTextField();
-        phonefield.setBounds(250, 250, 150, 30);
-        phonefield.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(phonefield); // start
-        phone = new JLabel("Phone No.:");
-        phone.setBounds(25, 250, 150, 30);
-        phone.setFont(new Font("Arial", Font.BOLD, 20));
-        image.add(phone);
+        driverfield = new JTextField();
+        driverfield.setBounds(250, 300, 200, 30);
+        driverfield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(driverfield);
+         // start
+        ambluancenumber = new JLabel("Driver:");
+        ambluancenumber.setBounds(25, 250, 150, 30);
+        ambluancenumber.setFont(new Font("Arial", Font.BOLD, 20));
+        image.add(ambluancenumber);
         // Startfield
         phonefield = new JTextField();
         phonefield.setBounds(250, 250, 150, 30);
