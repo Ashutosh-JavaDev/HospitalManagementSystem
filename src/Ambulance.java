@@ -20,6 +20,8 @@ public class Ambulance extends JFrame implements ActionListener{
         name.setBounds(25,50,100,30);
         name.setFont(new Font("Arial",Font.BOLD,20));
         image.add(name);
+        // Name field
+        
         // Default
         setLayout(null);
         setTitle("Ambluance");
