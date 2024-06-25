@@ -141,6 +141,10 @@ public class Ambulance extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(phone, "Data Updated Succesfully");
                     System.exit(0);
                 }
+                else{
+                    JOptionPane.showMessageDialog(phone, "This  Driver is not in Your List");
+                    return;
+                }
             }
             catch(SQLException e){
                 e.printStackTrace();
