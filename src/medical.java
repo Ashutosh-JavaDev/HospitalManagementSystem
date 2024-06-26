@@ -22,7 +22,7 @@ public class medical extends JFrame implements ActionListener {
         image.setBounds(0,0,800,600);
         add(image);
         JLabel head=new JLabel("Medical Report");
-        head.setBounds(300,20,100,40);
+        head.setBounds(300,20,200,40);
         head.setFont(new Font("Arial",Font.BOLD,22));
         image.add(head);
         // consultatiion
