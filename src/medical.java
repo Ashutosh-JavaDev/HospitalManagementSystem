@@ -11,7 +11,14 @@ public class medical extends JFrame implements ActionListener {
             immmunizatonfield;
 
     public medical() {
-
+        // Default
+        setLayout(null);
+        setTitle("Medical Report");
+        setSize(800,600);
+        setLocation(250,150);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setVisible(true);
     }
 
     public void actionPerformed(ActionEvent ae) {
