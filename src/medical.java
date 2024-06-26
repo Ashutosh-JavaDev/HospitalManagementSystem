@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization;
-    JTextField consultfield, notesfield, diagnosticfield, treatementfield, prescriptionfield, surgeryfield,
+    JTextField notesfield, diagnosticfield, treatementfield, prescriptionfield, surgeryfield,
             immmunizatonfield;
     JDateChooser consult;
     public medical() {
@@ -30,6 +30,10 @@ public class medical extends JFrame implements ActionListener {
         consulation.setFont(new Font("Arial",Font.BOLD,18));
         consulation.setBounds(35,75,200,30);
         image.add(consulation);
+        // Consult field
+        consult=new JDateChooser();
+        consult.setBounds(270,75,200,30);
+        image.add(consult);
         // Default
         setLayout(null);
         setTitle("Medical Report");
