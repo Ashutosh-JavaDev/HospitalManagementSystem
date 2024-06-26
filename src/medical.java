@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.Color;
 import java.sql.SQLException;
 public class medical extends JFrame implements ActionListener{
+    JLabel consulation,DoctorsNotes,diagnostic,treatement,prescription,surgery,immunization;
     public medical(){
 
     }
