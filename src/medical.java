@@ -62,13 +62,13 @@ public class medical extends JFrame implements ActionListener {
 
         //
         CTScan = new JCheckBox("CT-Scan");
-        CTScan.setBounds(380, 155, 200, 30);
+        CTScan.setBounds(380, 155, 120, 30);
         CTScan.setFont(new Font("Arial", Font.BOLD, 22));
         CTScan.setOpaque(false);
         image.add(CTScan);
         //
         BloodTest = new JCheckBox("Blood Test");
-        BloodTest.setBounds(590, 155, 200, 30);
+        BloodTest.setBounds(510, 155, 200, 30);
         BloodTest.setFont(new Font("Arial", Font.BOLD, 22));
         BloodTest.setOpaque(false);
         image.add(BloodTest);
@@ -80,7 +80,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(MRIs);
         //
         BP = new JCheckBox("BP");
-        BP.setBounds(410, 195, 100, 30);
+        BP.setBounds(490, 195, 100, 30);
         BP.setFont(new Font("Arial", Font.BOLD, 22));
         BP.setOpaque(false);
         image.add(BP);
