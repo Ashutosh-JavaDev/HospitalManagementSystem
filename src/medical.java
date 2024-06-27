@@ -82,6 +82,7 @@ public class medical extends JFrame implements ActionListener {
         BP = new JCheckBox("BP");
         BP.setBounds(410, 195, 100, 30);
         BP.setFont(new Font("Arial", Font.BOLD, 22));
+        BP.setBackground(Color.white);
         image.add(BP);
 
         // Notes
