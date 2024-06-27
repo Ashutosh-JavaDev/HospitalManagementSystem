@@ -50,35 +50,35 @@ public class medical extends JFrame implements ActionListener {
 
         // Notes
         diagnostic = new JLabel("Diagnostic:");
-        diagnostic.setBounds(35, 115, 200, 30);
+        diagnostic.setBounds(35, 155, 200, 30);
         diagnostic.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(diagnostic);
         // Dooctor field
-        Xray = new JCheckBox();
-        Xray.setBounds(270, 115, 200, 30);
+        Xray = new JCheckBox("X-Ray");
+        Xray.setBounds(270, 155, 100, 30);
         Xray.setFont(new Font("Arial", Font.BOLD, 22));
         image.add(Xray);
 
         //
-        Xray = new JCheckBox();
-        Xray.setBounds(270, 115, 200, 30);
-        Xray.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(Xray);
+        CTScan = new JCheckBox("CT-Scan");
+        CTScan.setBounds(380, 155, 100, 30);
+        CTScan.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(CTScan);
         //
-        Xray = new JCheckBox();
-        Xray.setBounds(270, 115, 200, 30);
-        Xray.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(Xray);
+        BloodTest = new JCheckBox("Blood Test");
+        BloodTest.setBounds(490, 155, 100, 30);
+        BloodTest.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(BloodTest);
         //
-        Xray = new JCheckBox();
-        Xray.setBounds(270, 115, 200, 30);
-        Xray.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(Xray);
+        MRIs = new JCheckBox("MRIs");
+        MRIs.setBounds(300, 195, 100, 30);
+        MRIs.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(MRIs);
         //
-        Xray = new JCheckBox();
-        Xray.setBounds(270, 115, 200, 30);
-        Xray.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(Xray);
+        BP = new JCheckBox("BP");
+        BP.setBounds(410, 195, 100, 30);
+        BP.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(BP);
 
         // Notes
         // Default
