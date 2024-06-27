@@ -38,9 +38,10 @@ public class medical extends JFrame implements ActionListener {
         image.add(consult);
         // Notes
         DoctorsNotes = new JLabel("Doctor Notes:");
-        DoctorsNotes.setBounds(300, 20, 200, 40);
-        DoctorsNotes.setFont(new Font("Arial", Font.BOLD, 22));
+        DoctorsNotes.setBounds(35, 115, 200, 30);
+        DoctorsNotes.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(DoctorsNotes);
+        // Dooctor field
         // Default
         setLayout(null);
         setTitle("Medical Report");
