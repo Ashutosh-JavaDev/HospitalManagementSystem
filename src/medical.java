@@ -10,7 +10,7 @@ import java.awt.Color;
 import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
-    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization;
+    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization,treatementime,treatementdate,treatementPhy,treatementDesc,treatementCode;
     JTextField notesfield, treatementfield, prescriptionfield, surgeryfield,
             immmunizatonfield;
     JDateChooser consult;
@@ -91,6 +91,7 @@ public class medical extends JFrame implements ActionListener {
         treatement.setFont(new Font("Raleway",Font.BOLD,28));
         treatement.setForeground(Color.GRAY);
         image.add(treatement);
+        // 
         // Default
         setLayout(null);
         setTitle("Medical Report");
