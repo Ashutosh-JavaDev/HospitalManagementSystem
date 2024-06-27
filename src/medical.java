@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Color;
+import java.util.Date;
 import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
