@@ -24,8 +24,9 @@ public class medical extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1200, 1000);
         add(image);
         JLabel head = new JLabel("Medical Report");
-        head.setBounds(300, 20, 200, 40);
-        head.setFont(new Font("Arial", Font.BOLD, 22));
+        head.setBounds(600, 20, 600, 60);
+        head.setForeground(Color.red);
+        head.setFont(new Font("Arial", Font.BOLD, 32));
         image.add(head);
         // consultatiion
         consulation = new JLabel("Consultation Date:");
