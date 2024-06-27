@@ -11,9 +11,10 @@ import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization;
-    JTextField notesfield, diagnosticfield, treatementfield, prescriptionfield, surgeryfield,
+    JTextField notesfield, treatementfield, prescriptionfield, surgeryfield,
             immmunizatonfield;
     JDateChooser consult;
+    JCheckBox  diagnosticfield;
 
     public medical() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
