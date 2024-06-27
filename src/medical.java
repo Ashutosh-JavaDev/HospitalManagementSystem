@@ -25,7 +25,7 @@ public class medical extends JFrame implements ActionListener {
         add(image);
         JLabel head = new JLabel("Medical Report");
         head.setBounds(600, 20, 600, 60);
-        head.setForeground(Color.red);
+        head.setForeground(Color.gray);
         head.setFont(new Font("Arial", Font.BOLD, 32));
         image.add(head);
         // consultatiion
@@ -85,6 +85,12 @@ public class medical extends JFrame implements ActionListener {
         BP.setFont(new Font("Arial", Font.BOLD, 22));
         BP.setOpaque(false);
         image.add(BP);
+        // Treatemewnt
+        treatement=new JLabel("Treatement Details");
+        treatement.setBounds(500,240,500,50);
+        treatement.setFont(new Font("Raleway",Font.BOLD,28));
+        treatement.setForeground(Color.GRAY);
+        image.add(treatement);
         // Default
         setLayout(null);
         setTitle("Medical Report");
