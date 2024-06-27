@@ -14,7 +14,7 @@ public class medical extends JFrame implements ActionListener {
     JTextField notesfield, treatementfield, prescriptionfield, surgeryfield,
             immmunizatonfield;
     JDateChooser consult;
-    JCheckBox  diagnosticfield;
+    JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
 
     public medical() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -49,15 +49,37 @@ public class medical extends JFrame implements ActionListener {
         image.add(consult);
 
         // Notes
-        DoctorsNotes = new JLabel("Doctor Notes:");
-        DoctorsNotes.setBounds(35, 115, 200, 30);
-        DoctorsNotes.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(DoctorsNotes);
+        diagnostic = new JLabel("Diagnostic:");
+        diagnostic.setBounds(35, 115, 200, 30);
+        diagnostic.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(diagnostic);
         // Dooctor field
-        notesfield = new JTextField();
-        notesfield.setBounds(270, 115, 200, 30);
-        notesfield.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(consult);
+        Xray = new JCheckBox();
+        Xray.setBounds(270, 115, 200, 30);
+        Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(Xray);
+
+        //
+        Xray = new JCheckBox();
+        Xray.setBounds(270, 115, 200, 30);
+        Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(Xray);
+        //
+        Xray = new JCheckBox();
+        Xray.setBounds(270, 115, 200, 30);
+        Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(Xray);
+        //
+        Xray = new JCheckBox();
+        Xray.setBounds(270, 115, 200, 30);
+        Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(Xray);
+        //
+        Xray = new JCheckBox();
+        Xray.setBounds(270, 115, 200, 30);
+        Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(Xray);
+
         // Notes
         // Default
         setLayout(null);
