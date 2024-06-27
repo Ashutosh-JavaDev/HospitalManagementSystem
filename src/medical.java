@@ -70,6 +70,7 @@ public class medical extends JFrame implements ActionListener {
         BloodTest = new JCheckBox("Blood Test");
         BloodTest.setBounds(490, 155, 200, 30);
         BloodTest.setFont(new Font("Arial", Font.BOLD, 22));
+        BloodTest.setBackground(Color.white);
         image.add(BloodTest);
         //
         MRIs = new JCheckBox("MRIs");
