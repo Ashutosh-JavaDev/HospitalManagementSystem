@@ -43,7 +43,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(DoctorsNotes);
         // Dooctor field
         notesfield = new JTextField();
-        notesfield.setBounds(270, 75, 200, 30);
+        notesfield.setBounds(270, 115, 200, 30);
         notesfield.setFont(new Font("Arial", Font.BOLD, 22));
         image.add(consult);
         // Notes
