@@ -42,6 +42,12 @@ public class medical extends JFrame implements ActionListener {
         DoctorsNotes.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(DoctorsNotes);
         // Dooctor field
+
+        consult = new JDateChooser();
+        consult.setBounds(270, 75, 200, 30);
+        consult.setFont(new Font("Arial", Font.BOLD, 22));
+        image.add(consult);
+        // Notes
         // Default
         setLayout(null);
         setTitle("Medical Report");
