@@ -46,7 +46,7 @@ public class medical extends JFrame implements ActionListener {
         notesfield = new JTextField();
         notesfield.setBounds(270, 115, 200, 30);
         notesfield.setFont(new Font("Arial", Font.BOLD, 22));
-        image.add(consult);
+        image.add(notesfield);
 
         // Notes
         diagnostic = new JLabel("Diagnostic:");
@@ -57,6 +57,7 @@ public class medical extends JFrame implements ActionListener {
         Xray = new JCheckBox("X-Ray");
         Xray.setBounds(270, 155, 100, 30);
         Xray.setFont(new Font("Arial", Font.BOLD, 22));
+        Xray.setBackground(Color.white);
         image.add(Xray);
 
         //
