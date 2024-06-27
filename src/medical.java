@@ -84,8 +84,6 @@ public class medical extends JFrame implements ActionListener {
         BP.setFont(new Font("Arial", Font.BOLD, 22));
         BP.setOpaque(false);
         image.add(BP);
-
-        // Notes
         // Default
         setLayout(null);
         setTitle("Medical Report");
