@@ -96,7 +96,7 @@ public class medical extends JFrame implements ActionListener {
         prescription=new JLabel("Prescription:");
         prescription.setBounds(35,115,150,30);
         prescription.setFont(new Font("Arial",Font.BOLD,18));
-        prescription
+        prescription.setForeground(getForeground());
         // Default
         setLayout(null);
         setTitle("Medical Report");
