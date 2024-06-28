@@ -94,11 +94,12 @@ public class medical extends JFrame implements ActionListener {
         image.add(treatement);
         // Prescription
         prescription=new JLabel("Prescription:");
-        prescription.setBounds(35,115,150,30);
+        prescription.setBounds(35,310,200,30);
         prescription.setFont(new Font("Arial",Font.BOLD,18));
         image.add(prescription);
         // Pre textField
         prescriptionfield=new JTextField();
+        prescriptionfield.setBounds(250,310,200,30);
         // Default
         setLayout(null);
         setTitle("Medical Report");
