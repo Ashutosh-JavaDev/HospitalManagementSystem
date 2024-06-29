@@ -13,7 +13,7 @@ public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization,treatementime,treatementdate,treatementPhy,treatementDesc,treatementCode;
     JTextField notesfield, treatementfield, prescriptionfield,
             immmunizatonfield,physicianfield,descfield,codefield;
-    JDateChooser consult;
+    JDateChooser consult,surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
 
     public medical() {
