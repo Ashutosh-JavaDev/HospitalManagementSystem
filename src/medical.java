@@ -112,6 +112,16 @@ public class medical extends JFrame implements ActionListener {
         surgeryfield.setBounds(250, 350, 200, 30);
         surgeryfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(surgeryfield);
+        // physician
+        surgery = new JLabel("Surgery Field");
+        surgery.setBounds(35, 350, 200, 30);
+        surgery.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(surgery);
+        // Surgery date
+        surgeryfield = new JDateChooser();
+        surgeryfield.setBounds(250, 350, 200, 30);
+        surgeryfield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(surgeryfield);
         // Default
         setLayout(null);
         setTitle("Medical Report");
