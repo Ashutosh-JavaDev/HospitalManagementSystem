@@ -10,10 +10,10 @@ import java.awt.Color;
 import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
-    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, describe, code,
+    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
             treatementime, treatementdate, treatementPhy, treatementDesc, treatementCode;
     JTextField notesfield, treatementfield, prescriptionfield,
-            physicianfield, descfield, codefield;
+            physicianfield, codefield;
     JDateChooser consult, surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
 
