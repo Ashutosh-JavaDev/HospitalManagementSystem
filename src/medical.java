@@ -124,12 +124,12 @@ public class medical extends JFrame implements ActionListener {
         image.add(physicianfield);
         // // physician
         code = new JLabel("Surgery Code");
-        code.setBounds(35, 390, 200, 30);
+        code.setBounds(35, 430, 200, 30);
         code.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(code);
         // Phuysician date
         codefield = new JTextField();
-        codefield.setBounds(250, 390, 200, 30);
+        codefield.setBounds(250, 430, 200, 30);
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
         // Default
