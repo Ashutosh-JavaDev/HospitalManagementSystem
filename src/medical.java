@@ -103,6 +103,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(prescriptionfield);
         // surgery
         surgery=new JLabel("Surgery Field");
+        surgery.setBounds(35,350,200,30);
         // Default
         setLayout(null);
         setTitle("Medical Report");
