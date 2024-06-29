@@ -134,7 +134,8 @@ public class medical extends JFrame implements ActionListener {
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
         // Button
-
+        back=new JButton("Back");
+        back.setBounds(35,480,100,30);
         // Default
         setLayout(null);
         setTitle("Medical Report");
