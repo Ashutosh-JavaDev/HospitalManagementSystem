@@ -7,12 +7,11 @@ import java.awt.event.ActionListener;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Color;
-import java.util.Date;
 import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization,treatementime,treatementdate,treatementPhy,treatementDesc,treatementCode;
-    JTextField notesfield, treatementfield, prescriptionfield, surgeryfield,
+    JTextField notesfield, treatementfield, prescriptionfield,
             immmunizatonfield,physicianfield,descfield,codefield;
     JDateChooser consult;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
@@ -101,6 +100,7 @@ public class medical extends JFrame implements ActionListener {
         prescriptionfield=new JTextField();
         prescriptionfield.setBounds(250,310,200,30);
         prescriptionfield.setFont(new Font("Arial",Font.BOLD,22));
+        image.add(prescriptionfield);
         // Default
         setLayout(null);
         setTitle("Medical Report");
