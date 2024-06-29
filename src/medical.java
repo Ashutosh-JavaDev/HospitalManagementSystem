@@ -10,10 +10,11 @@ import java.awt.Color;
 import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
-    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, immunization,treatementime,treatementdate,treatementPhy,treatementDesc,treatementCode;
+    JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, describe, code,
+            treatementime, treatementdate, treatementPhy, treatementDesc, treatementCode;
     JTextField notesfield, treatementfield, prescriptionfield,
-            immmunizatonfield,physicianfield,descfield,codefield;
-    JDateChooser consult,surgeryfield;
+            physicianfield, descfield, codefield;
+    JDateChooser consult, surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
 
     public medical() {
@@ -86,29 +87,31 @@ public class medical extends JFrame implements ActionListener {
         BP.setOpaque(false);
         image.add(BP);
         // Treatemewnt
-        treatement=new JLabel("Treatement Details");
-        treatement.setBounds(500,240,500,50);
-        treatement.setFont(new Font("Raleway",Font.BOLD,28));
+        treatement = new JLabel("Treatement Details");
+        treatement.setBounds(500, 240, 500, 50);
+        treatement.setFont(new Font("Raleway", Font.BOLD, 28));
         treatement.setForeground(Color.GRAY);
         image.add(treatement);
         // Prescription
-        prescription=new JLabel("Prescription:");
-        prescription.setBounds(35,310,200,30);
-        prescription.setFont(new Font("Arial",Font.BOLD,18));
+        prescription = new JLabel("Prescription:");
+        prescription.setBounds(35, 310, 200, 30);
+        prescription.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(prescription);
         // Pre textField
-        prescriptionfield=new JTextField();
-        prescriptionfield.setBounds(250,310,200,30);
-        prescriptionfield.setFont(new Font("Arial",Font.BOLD,22));
+        prescriptionfield = new JTextField();
+        prescriptionfield.setBounds(250, 310, 200, 30);
+        prescriptionfield.setFont(new Font("Arial", Font.BOLD, 22));
         image.add(prescriptionfield);
         // surgery
-        surgery=new JLabel("Surgery Field");
-        surgery.setBounds(35,350,200,30);
-        surgery.setFont(new Font("Arial",Font.BOLD,18));
+        surgery = new JLabel("Surgery Field");
+        surgery.setBounds(35, 350, 200, 30);
+        surgery.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(surgery);
-        //Surgery date
-        surgeryfield=new JDateChooser();
-        surgeryfield.setBounds(250,350,200,30);
+        // Surgery date
+        surgeryfield = new JDateChooser();
+        surgeryfield.setBounds(250, 350, 200, 30);
+        surgeryfield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(surgeryfield);
         // Default
         setLayout(null);
         setTitle("Medical Report");
