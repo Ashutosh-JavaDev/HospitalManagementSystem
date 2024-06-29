@@ -117,11 +117,12 @@ public class medical extends JFrame implements ActionListener {
         physica.setBounds(35, 390, 200, 30);
         physica.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(physica);
-        // Surgery date
+        // Phuysician date
         physicianfield = new JTextField();
         physicianfield.setBounds(250, 390, 200, 30);
         physicianfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(physicianfield);
+        // 
         // Default
         setLayout(null);
         setTitle("Medical Report");
