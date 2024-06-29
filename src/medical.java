@@ -137,7 +137,10 @@ public class medical extends JFrame implements ActionListener {
         back=new JButton("Back");
         back.setBounds(35,480,100,30);
         back.setFont(new Font("Arial",Font.BOLD,18));
+        back.setBackground(Color.black);
+        back.addActionListener(this);
         image.add(back);
+
 
         // Default
         setLayout(null);
