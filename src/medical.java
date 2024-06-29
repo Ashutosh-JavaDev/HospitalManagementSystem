@@ -16,6 +16,7 @@ public class medical extends JFrame implements ActionListener {
             physicianfield, codefield;
     JDateChooser consult, surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
+    JButton back,confirm;
 
     public medical() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -132,6 +133,8 @@ public class medical extends JFrame implements ActionListener {
         codefield.setBounds(250, 430, 200, 30);
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
+        // Button
+
         // Default
         setLayout(null);
         setTitle("Medical Report");
