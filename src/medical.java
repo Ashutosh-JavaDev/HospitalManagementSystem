@@ -11,10 +11,10 @@ import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
-            treatementime, treatementdate, treatementPhy, treatementDesc, treatementCode;
+             treatementdate, treatementDesc;
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
-    JDateChooser consult, surgeryfield;
+    JDateChooser consult, surgeryfield,treatmentdate;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
     JButton back,confirm;
 
@@ -165,7 +165,7 @@ public class medical extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
-
+            String Consultant=consu
         }
     }
 
