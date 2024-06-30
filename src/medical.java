@@ -14,7 +14,7 @@ public class medical extends JFrame implements ActionListener {
              treatementdate, treatementDesc;
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
-    JDateChooser consult, surgeryfield,treatmentdate;
+    JDateChooser consult, surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
     JButton back,confirm;
 
@@ -165,7 +165,7 @@ public class medical extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
-            String Consultant=consu
+            String Consultant=((JTextField)consult.getDateEditor().getUiComponent()).getText();
         }
     }
 
