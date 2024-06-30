@@ -161,7 +161,9 @@ public class medical extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-
+        if(ae.getSource()==back){
+            
+        }
     }
 
     public static void main(String[] args) {
