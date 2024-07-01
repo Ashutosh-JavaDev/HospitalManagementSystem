@@ -205,6 +205,9 @@ public class medical extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
                     System.exit(0);
                 }
+                else{
+                    JOptionPane.showMessageDialog(rootPane, "Profession or Doctor Name not Matched");
+                }
             } catch (SQLException e) {
                 e.printStackTrace();
             }
