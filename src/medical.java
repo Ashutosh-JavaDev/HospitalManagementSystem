@@ -196,7 +196,7 @@ public class medical extends JFrame implements ActionListener {
             String Box=(String)box.getSelectedItem();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-                String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and )";
+                String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and Profession='"+Box+"')";
             } catch (SQLException e) {
                 e.printStackTrace();
             }
