@@ -133,6 +133,16 @@ public class medical extends JFrame implements ActionListener {
         codefield.setBounds(250, 430, 200, 30);
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
+        // Profession
+        code = new JLabel("Surgery Code");
+        code.setBounds(35, 430, 200, 30);
+        code.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(code);
+        // Phuysician date
+        codefield = new JTextField();
+        codefield.setBounds(250, 430, 200, 30);
+        codefield.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(codefield);
         // Button
         back = new JButton("Back");
         back.setBounds(35, 800, 100, 30);
@@ -183,7 +193,7 @@ public class medical extends JFrame implements ActionListener {
             String Physician = physicianfield.getText();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-                String query="Select *from Employee where(Employee_Name ='"+Physician+"'and )";
+                String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and )";
             } catch (SQLException e) {
                 e.printStackTrace();
             }
