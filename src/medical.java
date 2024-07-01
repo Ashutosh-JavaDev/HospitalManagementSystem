@@ -41,7 +41,7 @@ public class medical extends JFrame implements ActionListener {
         consult.setFont(new Font("Arial", Font.BOLD, 22));
         image.add(consult);
         // Notes
-        DoctorsNotes = new JLabel("Doctor Notes:");
+        DoctorsNotes = new JLabel("Operation:");
         DoctorsNotes.setBounds(35, 115, 200, 30);
         DoctorsNotes.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(DoctorsNotes);
@@ -186,6 +186,7 @@ public class medical extends JFrame implements ActionListener {
             }
             String prescription=prescriptionfield.getText();
             String Physician=physicianfield.getText();
+
         }
     }
 
