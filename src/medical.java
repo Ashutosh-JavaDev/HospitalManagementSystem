@@ -11,10 +11,11 @@ import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
-            treatementdate, treatementDesc;
+            treatementdate, treatementDesc,Profession;
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
     JDateChooser consult, surgeryfield;
+    
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
     JButton back, confirm;
 
@@ -134,15 +135,16 @@ public class medical extends JFrame implements ActionListener {
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
         // Profession
-        code = new JLabel("Surgery Code");
-        code.setBounds(35, 430, 200, 30);
-        code.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(code);
+        Profession = new JLabel("Profession");
+        Profession.setBounds(35, 470, 200, 30);
+        Profession.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(Profession);
         // Phuysician date
-        codefield = new JTextField();
-        codefield.setBounds(250, 430, 200, 30);
-        codefield.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(codefield);
+        String prof[]={"Junior Doctor","Senior Doctor"};
+        JComboBox box=new JComboBox(prof);
+        box.setBounds(250, 470, 200, 30);
+        box.setFont(new Font("Arial", Font.BOLD, 18));
+        image.add(box);
         // Button
         back = new JButton("Back");
         back.setBounds(35, 800, 100, 30);
