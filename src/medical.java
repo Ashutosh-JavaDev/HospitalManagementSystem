@@ -166,6 +166,7 @@ public class medical extends JFrame implements ActionListener {
         }
         else if(ae.getSource()==confirm){
             String Consultant=((JTextField)consult.getDateEditor().getUiComponent()).getText();
+            
         }
     }
 
