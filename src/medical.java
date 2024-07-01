@@ -20,13 +20,13 @@ public class medical extends JFrame implements ActionListener {
 
     public medical() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(800, 550, Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(1000, 800, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(0, 0, 800, 550);
+        image.setBounds(0, 0, 1000, 800);
         add(image);
         JLabel head = new JLabel("Medical Report");
-        head.setBounds(300, 20, 600, 60);
+        head.setBounds(300, 10, 600, 60);
         head.setForeground(Color.gray);
         head.setFont(new Font("Arial", Font.BOLD, 32));
         image.add(head);
@@ -135,7 +135,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(codefield);
         // Button
         back = new JButton("Back");
-        back.setBounds(35, 480, 100, 30);
+        back.setBounds(35, 800, 100, 30);
         back.setFont(new Font("Arial", Font.BOLD, 18));
         back.setForeground(Color.white);
         back.setBackground(Color.black);
@@ -143,7 +143,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(back);
         // Button
         confirm = new JButton("Confirm");
-        confirm.setBounds(300, 480, 150, 30);
+        confirm.setBounds(300, 800, 150, 30);
         confirm.setFont(new Font("Arial", Font.BOLD, 18));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
@@ -153,7 +153,7 @@ public class medical extends JFrame implements ActionListener {
         // Default
         setLayout(null);
         setTitle("Medical Report");
-        setSize(800, 550);
+        setSize(1000, 800);
         setLocation(250, 150);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -183,7 +183,7 @@ public class medical extends JFrame implements ActionListener {
             String Physician = physicianfield.getText();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-
+                String query="Select *from Employee where(Employee_Name ='"+Physician+"'and )";
             } catch (SQLException e) {
                 e.printStackTrace();
             }
