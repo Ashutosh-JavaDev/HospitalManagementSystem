@@ -105,50 +105,40 @@ public class medical extends JFrame implements ActionListener {
         prescriptionfield.setBounds(250, 310, 200, 30);
         prescriptionfield.setFont(new Font("Arial", Font.BOLD, 22));
         image.add(prescriptionfield);
-        // surgery
-        surgery = new JLabel("Surgery Field");
-        surgery.setBounds(35, 350, 200, 30);
-        surgery.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(surgery);
-        // Surgery date
-        surgeryfield = new JDateChooser();
-        surgeryfield.setBounds(250, 350, 200, 30);
-        surgeryfield.setFont(new Font("Arial", Font.BOLD, 18));
-        image.add(surgeryfield);
         // physician
         physica = new JLabel("Physician");
-        physica.setBounds(35, 390, 200, 30);
+        physica.setBounds(35, 350, 200, 30);
         physica.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(physica);
         // Phuysician date
         physicianfield = new JTextField();
-        physicianfield.setBounds(250, 390, 200, 30);
+        physicianfield.setBounds(250, 350, 200, 30);
         physicianfield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(physicianfield);
         // // physician
         code = new JLabel("Surgery Code");
-        code.setBounds(35, 430, 200, 30);
+        code.setBounds(35, 400, 200, 30);
         code.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(code);
         // Phuysician date
         codefield = new JTextField();
-        codefield.setBounds(250, 430, 200, 30);
+        codefield.setBounds(250, 400, 200, 30);
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
         // Profession
         Profession = new JLabel("Profession");
-        Profession.setBounds(35, 470, 200, 30);
+        Profession.setBounds(35, 440, 200, 30);
         Profession.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(Profession);
         // Phuysician date
         String prof[] = { "Junior Doctor", "Senior Doctor" };
         box = new JComboBox(prof);
-        box.setBounds(250, 470, 200, 30);
+        box.setBounds(250, 440, 200, 30);
         box.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(box);
         // Button
         back = new JButton("Back");
-        back.setBounds(300, 600, 100, 30);
+        back.setBounds(300, 550, 100, 30);
         back.setFont(new Font("Arial", Font.BOLD, 18));
         back.setForeground(Color.white);
         back.setBackground(Color.black);
@@ -156,7 +146,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(back);
         // Button
         confirm = new JButton("Confirm");
-        confirm.setBounds(500, 600, 150, 30);
+        confirm.setBounds(500, 550, 150, 30);
         confirm.setFont(new Font("Arial", Font.BOLD, 18));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
