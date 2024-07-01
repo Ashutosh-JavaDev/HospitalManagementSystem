@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
-            treatementdate, treatementDesc,Profession;
+            treatementdate, treatementDesc, Profession;
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
     JDateChooser consult, surgeryfield;
@@ -141,8 +141,8 @@ public class medical extends JFrame implements ActionListener {
         Profession.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(Profession);
         // Phuysician date
-        String prof[]={"Junior Doctor","Senior Doctor"};
-         box=new JComboBox(prof);
+        String prof[] = { "Junior Doctor", "Senior Doctor" };
+        box = new JComboBox(prof);
         box.setBounds(250, 470, 200, 30);
         box.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(box);
@@ -194,18 +194,19 @@ public class medical extends JFrame implements ActionListener {
             }
             String prescription = prescriptionfield.getText();
             String Physician = physicianfield.getText();
-            String Box=(String)box.getSelectedItem();
+            String Box = (String) box.getSelectedItem();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-                String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and Profession='"+Box+"')";
-                ResultSet res=conn.state.executeQuery(query);
-                if(res.next()){
-                    String query2="insert into Medical values('"+Code+"','"+Consultant+"','"+Notes+"','"+Physician+"','"+facility+"','"+prescription+"')";
+                String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and Profession='" + Box
+                        + "')";
+                ResultSet res = conn.state.executeQuery(query);
+                if (res.next()) {
+                    String query2 = "insert into Medical values('" + Code + "','" + Consultant + "','" + Notes + "','"
+                            + Physician + "','" + facility + "','" + prescription + "')";
                     conn.state.executeUpdate(query2);
                     JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
                     System.exit(0);
-                }
-                else{
+                } else {
                     JOptionPane.showMessageDialog(rootPane, "Profession or Doctor Name not Matched");
                 }
             } catch (SQLException e) {
