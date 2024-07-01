@@ -15,7 +15,7 @@ public class medical extends JFrame implements ActionListener {
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
     JDateChooser consult, surgeryfield;
-    
+    JComboBox box;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
     JButton back, confirm;
 
@@ -141,7 +141,7 @@ public class medical extends JFrame implements ActionListener {
         image.add(Profession);
         // Phuysician date
         String prof[]={"Junior Doctor","Senior Doctor"};
-        JComboBox box=new JComboBox(prof);
+         box=new JComboBox(prof);
         box.setBounds(250, 470, 200, 30);
         box.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(box);
@@ -193,6 +193,7 @@ public class medical extends JFrame implements ActionListener {
             }
             String prescription = prescriptionfield.getText();
             String Physician = physicianfield.getText();
+            String Box=(String)box.getSelectedItem();
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and )";
