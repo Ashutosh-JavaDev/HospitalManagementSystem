@@ -167,6 +167,13 @@ public class medical extends JFrame implements ActionListener {
         else if(ae.getSource()==confirm){
             String Consultant=((JTextField)consult.getDateEditor().getUiComponent()).getText();
             String Notes=notesfield.getText();
+            String facility="";
+            if(Xray.isSelected()){
+                facility=facility+"Xray ";
+            }
+            else if(CTScan.isSelected()){
+                facility=facility+"CT-Scan ";
+            }
             
         }
     }
