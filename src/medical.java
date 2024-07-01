@@ -174,6 +174,15 @@ public class medical extends JFrame implements ActionListener {
             else if(CTScan.isSelected()){
                 facility=facility+"CT-Scan ";
             }
+            else if(BP.isSelected()){
+                facility=facility+"BP ";
+            }
+            else if(MRIs.isSelected()){
+                facility=facility+"MRIs ";
+            }
+            else if(BloodTest.isSelected()){
+                facility=facility+"Blood Test ";
+            }
             
         }
     }
