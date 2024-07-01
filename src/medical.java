@@ -8,6 +8,7 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.Color;
 import java.sql.SQLException;
+import java.sql.ResultSet;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
@@ -197,6 +198,7 @@ public class medical extends JFrame implements ActionListener {
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String query = "Select *from Employee where(Employee_Name ='" + Physician + "'and Profession='"+Box+"')";
+                ResultSet res=conn.state.executeQuery(query);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
