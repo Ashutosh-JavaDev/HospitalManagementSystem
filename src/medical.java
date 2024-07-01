@@ -165,6 +165,7 @@ public class medical extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
+            String  Code=codefield.getText();
             String Consultant=((JTextField)consult.getDateEditor().getUiComponent()).getText();
             String Notes=notesfield.getText();
             String facility="";
@@ -183,7 +184,8 @@ public class medical extends JFrame implements ActionListener {
             else if(BloodTest.isSelected()){
                 facility=facility+"Blood Test ";
             }
-            
+            String prescription=prescriptionfield.getText();
+            String Physician=physicianfield.getText();
         }
     }
 
