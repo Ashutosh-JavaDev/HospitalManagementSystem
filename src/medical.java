@@ -11,12 +11,12 @@ import java.sql.SQLException;
 
 public class medical extends JFrame implements ActionListener {
     JLabel consulation, DoctorsNotes, diagnostic, treatement, prescription, surgery, physica, code,
-             treatementdate, treatementDesc;
+            treatementdate, treatementDesc;
     JTextField notesfield, treatementfield, prescriptionfield,
             physicianfield, codefield;
     JDateChooser consult, surgeryfield;
     JCheckBox Xray, CTScan, BloodTest, MRIs, BP;
-    JButton back,confirm;
+    JButton back, confirm;
 
     public medical() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -134,17 +134,17 @@ public class medical extends JFrame implements ActionListener {
         codefield.setFont(new Font("Arial", Font.BOLD, 18));
         image.add(codefield);
         // Button
-        back=new JButton("Back");
-        back.setBounds(35,480,100,30);
-        back.setFont(new Font("Arial",Font.BOLD,18));
+        back = new JButton("Back");
+        back.setBounds(35, 480, 100, 30);
+        back.setFont(new Font("Arial", Font.BOLD, 18));
         back.setForeground(Color.white);
         back.setBackground(Color.black);
         back.addActionListener(this);
         image.add(back);
         // Button
-        confirm=new JButton("Confirm");
-        confirm.setBounds(300,480,150,30);
-        confirm.setFont(new Font("Arial",Font.BOLD,18));
+        confirm = new JButton("Confirm");
+        confirm.setBounds(300, 480, 150, 30);
+        confirm.setFont(new Font("Arial", Font.BOLD, 18));
         confirm.setForeground(Color.white);
         confirm.setBackground(Color.black);
         confirm.addActionListener(this);
@@ -161,36 +161,30 @@ public class medical extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        if(ae.getSource()==back){
+        if (ae.getSource() == back) {
             System.exit(0);
-        }
-        else if(ae.getSource()==confirm){
-            String  Code=codefield.getText();
-            String Consultant=((JTextField)consult.getDateEditor().getUiComponent()).getText();
-            String Notes=notesfield.getText();
-            String facility="";
-            if(Xray.isSelected()){
-                facility=facility+"Xray ";
+        } else if (ae.getSource() == confirm) {
+            String Code = codefield.getText();
+            String Consultant = ((JTextField) consult.getDateEditor().getUiComponent()).getText();
+            String Notes = notesfield.getText();
+            String facility = "";
+            if (Xray.isSelected()) {
+                facility = facility + "Xray ";
+            } else if (CTScan.isSelected()) {
+                facility = facility + "CT-Scan ";
+            } else if (BP.isSelected()) {
+                facility = facility + "BP ";
+            } else if (MRIs.isSelected()) {
+                facility = facility + "MRIs ";
+            } else if (BloodTest.isSelected()) {
+                facility = facility + "Blood Test ";
             }
-            else if(CTScan.isSelected()){
-                facility=facility+"CT-Scan ";
-            }
-            else if(BP.isSelected()){
-                facility=facility+"BP ";
-            }
-            else if(MRIs.isSelected()){
-                facility=facility+"MRIs ";
-            }
-            else if(BloodTest.isSelected()){
-                facility=facility+"Blood Test ";
-            }
-            String prescription=prescriptionfield.getText();
-            String Physician=physicianfield.getText();
-            try{
-            HospitalManagementSystem conn=new  HospitalManagementSystem();
+            String prescription = prescriptionfield.getText();
+            String Physician = physicianfield.getText();
+            try {
+                HospitalManagementSystem conn = new HospitalManagementSystem();
 
-            }
-            catch(SQLException e){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
