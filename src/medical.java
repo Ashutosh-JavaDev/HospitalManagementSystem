@@ -186,8 +186,15 @@ public class medical extends JFrame implements ActionListener {
             }
             String prescription=prescriptionfield.getText();
             String Physician=physicianfield.getText();
+            try{
+            HospitalManagementSystem conn=new  HospitalManagementSystem();
 
+            }
+            catch(SQLException e){
+                e.printStackTrace();
+            }
         }
+
     }
 
     public static void main(String[] args) {
