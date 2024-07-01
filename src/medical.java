@@ -201,6 +201,9 @@ public class medical extends JFrame implements ActionListener {
                 ResultSet res=conn.state.executeQuery(query);
                 if(res.next()){
                     String query2="insert into Medical values('"+Code+"','"+Consultant+"','"+Notes+"','"+Physician+"','"+facility+"','"+prescription+"')";
+                    conn.state.executeUpdate(query2);
+                    JOptionPane.showMessageDialog(rootPane, "Data Inserted Succesfully");
+                    System.exit(0);
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
