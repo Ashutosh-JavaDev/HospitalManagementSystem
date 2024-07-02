@@ -122,6 +122,7 @@ public class selection extends JFrame implements ActionListener {
         }
         else if(ae.getSource()==medical){
             setVisible(false);
+            new medical().setVisible(true);
         }
 
     }
