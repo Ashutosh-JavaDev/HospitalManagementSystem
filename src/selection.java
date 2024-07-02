@@ -120,6 +120,9 @@ public class selection extends JFrame implements ActionListener {
         else if(ae.getSource()==logout){
             System.exit(0);
         }
+        else if(ae.getSource()==medical){
+            
+        }
 
     }
 
