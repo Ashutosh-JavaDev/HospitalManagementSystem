@@ -117,13 +117,14 @@ public class selection extends JFrame implements ActionListener {
             setVisible(false);
             new Ambulance().setVisible(true);
         }
-        else if(ae.getSource()==logout){
-            System.exit(0);
-        }
         else if(ae.getSource()==medical){
             setVisible(false);
             new medical().setVisible(true);
         }
+        else if(ae.getSource()==logout){
+            System.exit(0);
+        }
+    
 
     }
 
