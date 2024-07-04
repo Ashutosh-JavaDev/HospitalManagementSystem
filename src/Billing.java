@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Billing {
+    JLabel patientID,patientName,admissionDate,dischargeDate,roomCharges,consultationFees,medicianFees,labtestCjharges,surgeryCharges,miscellaneousCharges,totalAmount,amountPaid,balanceDue,paymentMethod,billingDate,billingID,attendingPhysician;
     public Billing() {
 
     }
