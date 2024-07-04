@@ -10,7 +10,7 @@ public class Billing extends JFrame implements ActionListener{
     public Billing() {
 
     }
-    public void actionPerformend(ActionEvent ae){
-        
+    public void actionPerformed(ActionEvent ae){
+
     }
 }
