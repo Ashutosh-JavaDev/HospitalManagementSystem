@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import javax.swing.*;
 
 import com.toedter.calendar.JDateChooser;
