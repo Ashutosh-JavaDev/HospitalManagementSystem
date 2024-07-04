@@ -6,7 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Billing extends JFrame implements ActionListener{
-    JLabel patientID,patientName,admissionDate,dischargeDate,roomCharges,consultationFees,medicianFees,labtestCjharges,surgeryCharges,miscellaneousCharges,totalAmount,amountPaid,balanceDue,paymentMethod,billingDate,billingID,attendingPhysician;
+    JLabel patientID,patientName,admissionDate,dischargeDate,roomCharges,consultationFees,medicianFees,labtestCharges,surgeryCharges,miscellaneousCharges,totalAmount,amountPaid,balanceDue,paymentMethod,billingDate,billingID,attendingPhysician;
+    JTextField idfield,namefield,roomfield,consultfield,feefield,labfield,surgeryfield,miscellaneousfield,totalfield,amountfield,balancefield,billingfield,physicianfield;
     public Billing() {
 
     }
