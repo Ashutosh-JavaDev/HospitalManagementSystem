@@ -13,7 +13,7 @@ public class Billing extends JFrame implements ActionListener{
     JDateChooser addmissionfield,dischargefield;
     JRadioButton methodfield;
     public Billing() {
-
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
     }
     public void actionPerformed(ActionEvent ae){
 
