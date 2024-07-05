@@ -14,6 +14,7 @@ public class Billing extends JFrame implements ActionListener{
     JRadioButton methodfield;
     public Billing() {
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
+        Image i2=i1.getImage().getScaledInstance(1000, 800, Image.SCALE_DEFAULT);
     }
     public void actionPerformed(ActionEvent ae){
 
