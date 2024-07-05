@@ -26,6 +26,7 @@ public class Billing extends JFrame implements ActionListener {
         // Default
         setSize(1000,800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocation(250,150);
         setUndecorated(true);
         setLayout(null);
         setVisible(true);
