@@ -26,12 +26,12 @@ public class Billing extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1000, 800);
         add(image);
         JLabel title=new JLabel("Billing");
-        title.setBounds(300,10,180,30);
-        title.setFont(new Font("Arial",Font.BOLD,20));
+        title.setBounds(450,10,180,45);
+        title.setFont(new Font("Arial",Font.BOLD,35));
         image.add(title);
         patientID=new JLabel("Patient ID");
         patientID.setBounds(30,70,100,30);
-        patientID.setFont(new Font("Raleway",Font.BOLD,16));
+        patientID.setFont(new Font("Arial",Font.BOLD,16));
         add(patientID);
         idfield=new JTextField();
         idfield.setBounds(180,70,100,30);
@@ -42,7 +42,7 @@ public class Billing extends JFrame implements ActionListener {
         back.setBounds(600,900,100,30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
-        back.setFont(new Font("Raleway",Font.BOLD,20));
+        back.setFont(new Font("Arial",Font.BOLD,20));
         image.add(back);
         // Default
         setSize(1000,800);
