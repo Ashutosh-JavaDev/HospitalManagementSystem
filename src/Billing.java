@@ -30,16 +30,16 @@ public class Billing extends JFrame implements ActionListener {
         title.setFont(new Font("Arial",Font.BOLD,35));
         image.add(title);
         patientID=new JLabel("Patient ID");
-        patientID.setBounds(30,70,100,30);
+        patientID.setBounds(30,70,200,30);
         patientID.setFont(new Font("Arial",Font.BOLD,16));
-        add(patientID);
+        image.add(patientID);
         idfield=new JTextField();
-        idfield.setBounds(180,70,100,30);
+        idfield.setBounds(180,70,200,30);
         image.add(idfield);
 
         // Button
         back=new JButton("Back");
-        back.setBounds(600,900,100,30);
+        back.setBounds(500,800,100,30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
         back.setFont(new Font("Arial",Font.BOLD,20));
