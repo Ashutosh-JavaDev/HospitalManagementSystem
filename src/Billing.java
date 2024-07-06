@@ -30,6 +30,7 @@ public class Billing extends JFrame implements ActionListener {
         patientID=new JLabel("Patient ID");
         patientID.setBounds(30,120,100,30);
         patientID.setFont(new Font("Raleway",Font.BOLD,16));
+        add(patientID);
         // Default
         setSize(1000,800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
