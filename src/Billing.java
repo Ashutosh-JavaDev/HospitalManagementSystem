@@ -24,6 +24,7 @@ public class Billing extends JFrame implements ActionListener {
         image.setBounds(0, 0, 1000, 800);
         add(image);
         patientID=new JLabel("Patient ID");
+        // patientID.setBounds();
         // Default
         setSize(1000,800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
