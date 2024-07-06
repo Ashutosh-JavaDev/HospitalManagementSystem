@@ -43,6 +43,7 @@ public class Billing extends JFrame implements ActionListener {
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
         back.setFont(new Font("Raleway",Font.BOLD,20));
+        add(back);
         // Default
         setSize(1000,800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
