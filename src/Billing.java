@@ -47,12 +47,20 @@ public class Billing extends JFrame implements ActionListener {
         image.add(namefield);
         // 
         roomCharges=new JLabel("Room Charges");
-        roomCharges.setBounds(30,70,200,30);
+        roomCharges.setBounds(30,150,200,30);
         roomCharges.setFont(new Font("Arial",Font.BOLD,16));
         image.add(roomCharges);
         roomfield=new JTextField();
-        roomfield.setBounds(180,70,200,30);
+        roomfield.setBounds(180,150,200,30);
         image.add(roomfield);
+        // 
+        consultationFees=new JLabel("Consultant Fees");
+        consultationFees.setBounds(30,190,200,30);
+        consultationFees.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(consultationFees);
+        consultfield=new JTextField();
+        consultfield.setBounds(180,190,200,30);
+        image.add(consultfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
