@@ -39,7 +39,7 @@ public class Billing extends JFrame implements ActionListener {
 
         // Button
         back=new JButton("Back");
-        back.setBounds(500,500,100,30);
+        back.setBounds(800,650,100,30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
         back.setFont(new Font("Arial",Font.BOLD,20));
