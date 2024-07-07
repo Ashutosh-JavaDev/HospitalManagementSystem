@@ -76,7 +76,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(labtestCharges);
         labfield=new JTextField();
         labfield.setBounds(180,270,200,30);
-        image.add(idfield);
+        image.add(labfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
