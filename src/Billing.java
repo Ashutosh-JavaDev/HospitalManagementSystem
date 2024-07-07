@@ -77,6 +77,14 @@ public class Billing extends JFrame implements ActionListener {
         labfield=new JTextField();
         labfield.setBounds(180,270,200,30);
         image.add(labfield);
+        // 
+        surgeryCharges=new JLabel("Surgery Charges");
+        surgeryCharges.setBounds(30,70,200,30);
+        surgeryCharges.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(surgeryCharges);
+        idfield=new JTextField();
+        idfield.setBounds(180,70,200,30);
+        image.add(idfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
