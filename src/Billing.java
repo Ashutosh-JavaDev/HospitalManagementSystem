@@ -91,7 +91,7 @@ public class Billing extends JFrame implements ActionListener {
         miscellaneousCharges.setFont(new Font("Arial",Font.BOLD,16));
         image.add(miscellaneousCharges);
         miscellaneousfield=new JTextField();
-        miscellaneousfield.setBounds(180,310,200,30);
+        miscellaneousfield.setBounds(180,350,200,30);
         image.add(miscellaneousfield);
         // Button
         back = new JButton("Back");
