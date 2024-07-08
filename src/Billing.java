@@ -138,9 +138,9 @@ public class Billing extends JFrame implements ActionListener {
         dischargeDate.setBounds(30,590,200,30);
         dischargeDate.setFont(new Font("Arial",Font.BOLD,16));
         image.add(dischargeDate);
-        addmissionfield=new JDateChooser();
-        addmissionfield.setBounds(180,550,200,30);
-        image.add(addmissionfield);
+        dischargefield=new JDateChooser();
+        dischargefield.setBounds(180,550,200,30);
+        image.add(dischargefield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
