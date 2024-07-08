@@ -109,6 +109,14 @@ public class Billing extends JFrame implements ActionListener {
         balancefield = new JTextField();
         balancefield.setBounds(180, 430, 200, 30);
         image.add(balancefield);
+        // 
+        billingID=new JLabel("Billing ID");
+        billingID.setBounds(30,470,200,30);
+        billingID.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(billingID);
+        billingfield=new JTextField();
+        billingfield.setBounds(180,470,200,30);
+        image.add(billingfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
