@@ -143,9 +143,10 @@ public class Billing extends JFrame implements ActionListener {
         image.add(dischargefield);
         // 
         paymentMethod=new JLabel("Payment Method");
-        paymentMethod.setBounds(30,550,200,30);
+        paymentMethod.setBounds(30,630,200,30);
         paymentMethod.setFont(new Font("Arial",Font.BOLD,16));
-        image.add(admissionDate);
+        image.add(paymentMethod);
+        String method[]={"Net-Banking","Online Payment","Cash","Credit Card","Debit Card"};
         addmissionfield=new JDateChooser();
         addmissionfield.setBounds(180,550,200,30);
         image.add(addmissionfield);
