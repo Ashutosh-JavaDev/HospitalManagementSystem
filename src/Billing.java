@@ -125,6 +125,22 @@ public class Billing extends JFrame implements ActionListener {
         physicianfield=new JTextField();
         physicianfield.setBounds(180,510,200,30);
         image.add(physicianfield);
+        // 
+        admissionDate=new JLabel("Admission Date");
+        admissionDate.setBounds(30,550,200,30);
+        admissionDate.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(admissionDate);
+        addmissionfield=new JDateChooser();
+        addmissionfield.setBounds(180,550,200,30);
+        image.add(addmissionfield);
+        // 
+        dischargeDate=new JLabel("Discharge Date");
+        dischargeDate.setBounds(30,550,200,30);
+        dischargeDate.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(admissionDate);
+        addmissionfield=new JDateChooser();
+        addmissionfield.setBounds(180,550,200,30);
+        image.add(addmissionfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
