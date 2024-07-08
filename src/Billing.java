@@ -152,7 +152,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(methodfield);
         // Button
         back = new JButton("Back");
-        back.setBounds(800, 650, 100, 30);
+        back.setBounds(800, 700, 100, 30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
         back.setFont(new Font("Arial", Font.BOLD, 20));
@@ -160,7 +160,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(back);
         // Confirm
         confirm = new JButton("Confirm");
-        confirm.setBounds(800, 650, 100, 30);
+        confirm.setBounds(200, 700, 100, 30);
         confirm.setBackground(Color.BLACK);
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
