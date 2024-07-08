@@ -159,7 +159,7 @@ public class Billing extends JFrame implements ActionListener {
         back.addActionListener(this);
         image.add(back);
         // Confirm
-        confirm = new JButton("Back");
+        confirm = new JButton("Confirm");
         confirm.setBounds(800, 650, 100, 30);
         confirm.setBackground(Color.BLACK);
         confirm.setForeground(Color.white);
