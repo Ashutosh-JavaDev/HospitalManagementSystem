@@ -165,7 +165,7 @@ public class Billing extends JFrame implements ActionListener {
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.addActionListener(this);
-        image.add(back);
+        image.add(confirm);
         // Default
         setSize(1000, 800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
