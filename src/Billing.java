@@ -135,9 +135,9 @@ public class Billing extends JFrame implements ActionListener {
         image.add(addmissionfield);
         // 
         dischargeDate=new JLabel("Discharge Date");
-        dischargeDate.setBounds(30,550,200,30);
+        dischargeDate.setBounds(30,590,200,30);
         dischargeDate.setFont(new Font("Arial",Font.BOLD,16));
-        image.add(admissionDate);
+        image.add(dischargeDate);
         addmissionfield=new JDateChooser();
         addmissionfield.setBounds(180,550,200,30);
         image.add(addmissionfield);
