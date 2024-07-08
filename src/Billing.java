@@ -147,8 +147,8 @@ public class Billing extends JFrame implements ActionListener {
         paymentMethod.setFont(new Font("Arial",Font.BOLD,16));
         image.add(paymentMethod);
         String method[]={"Net-Banking","Online Payment","Cash","Credit Card","Debit Card"};
-        addmissionfield=new JDateChooser();
-        addmissionfield.setBounds(180,550,200,30);
+        methodfield=new JComboBox(method);
+        methodfield.setBounds(180,550,200,30);
         image.add(addmissionfield);
         // Button
         back = new JButton("Back");
