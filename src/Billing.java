@@ -99,8 +99,8 @@ public class Billing extends JFrame implements ActionListener {
         totalAmount.setFont(new Font("Arial",Font.BOLD,16));
         image.add(totalAmount);
         totalfield=new JTextField();
-        totalfield.setBounds(180,310,200,30);
-        image.add(surgeryfield);
+        totalfield.setBounds(180,390,200,30);
+        image.add(totalfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
