@@ -148,8 +148,8 @@ public class Billing extends JFrame implements ActionListener {
         image.add(paymentMethod);
         String method[]={"Net-Banking","Online Payment","Cash","Credit Card","Debit Card"};
         methodfield=new JComboBox(method);
-        methodfield.setBounds(180,550,200,30);
-        image.add(addmissionfield);
+        methodfield.setBounds(180,630,200,30);
+        image.add(methodfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
