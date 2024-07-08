@@ -16,7 +16,7 @@ public class Billing extends JFrame implements ActionListener {
             totalfield, amountfield, balancefield, billingfield, physicianfield;
     JDateChooser addmissionfield, dischargefield;
     JButton confirm, back;
-    JRadioButton methodfield;
+    JComboBox methodfield;
 
     public Billing() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
@@ -141,6 +141,14 @@ public class Billing extends JFrame implements ActionListener {
         dischargefield=new JDateChooser();
         dischargefield.setBounds(180,590,200,30);
         image.add(dischargefield);
+        // 
+        admissionDate=new JLabel("Admission Date");
+        admissionDate.setBounds(30,550,200,30);
+        admissionDate.setFont(new Font("Arial",Font.BOLD,16));
+        image.add(admissionDate);
+        addmissionfield=new JDateChooser();
+        addmissionfield.setBounds(180,550,200,30);
+        image.add(addmissionfield);
         // Button
         back = new JButton("Back");
         back.setBounds(800, 650, 100, 30);
