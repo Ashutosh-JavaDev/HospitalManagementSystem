@@ -159,12 +159,12 @@ public class Billing extends JFrame implements ActionListener {
         back.addActionListener(this);
         image.add(back);
         // Confirm
-        back = new JButton("Back");
-        back.setBounds(800, 650, 100, 30);
-        back.setBackground(Color.BLACK);
-        back.setForeground(Color.white);
-        back.setFont(new Font("Arial", Font.BOLD, 20));
-        back.addActionListener(this);
+        confirm = new JButton("Back");
+        confirm.setBounds(800, 650, 100, 30);
+        confirm.setBackground(Color.BLACK);
+        confirm.setForeground(Color.white);
+        confirm.setFont(new Font("Arial", Font.BOLD, 20));
+        confirm.addActionListener(this);
         image.add(back);
         // Default
         setSize(1000, 800);
