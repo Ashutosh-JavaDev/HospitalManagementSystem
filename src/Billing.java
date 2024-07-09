@@ -20,10 +20,10 @@ public class Billing extends JFrame implements ActionListener {
 
     public Billing() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(1000, 800, Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(1000, 1000, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(0, 0, 1000, 800);
+        image.setBounds(0, 0, 1000, 1000);
         add(image);
         JLabel title = new JLabel("Billing");
         title.setBounds(450, 10, 180, 45);
@@ -79,7 +79,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(labfield);
         //
         surgeryCharges = new JLabel("Surgery Charges");
-        surgeryCharges.setBounds(300, 110, 200, 30);
+        surgeryCharges.setBounds(420, 110, 200, 30);
         surgeryCharges.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(surgeryCharges);
         surgeryfield = new JTextField();
@@ -167,7 +167,7 @@ public class Billing extends JFrame implements ActionListener {
         confirm.addActionListener(this);
         image.add(confirm);
         // Default
-        setSize(1000, 800);
+        setSize(1000, 1000);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(250, 150);
         setUndecorated(true);
