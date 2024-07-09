@@ -47,35 +47,35 @@ public class Billing extends JFrame implements ActionListener {
         image.add(namefield);
         //
         roomCharges = new JLabel("Room Charges");
-        roomCharges.setBounds(30, 150, 200, 30);
+        roomCharges.setBounds(30, 160, 200, 30);
         roomCharges.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(roomCharges);
         roomfield = new JTextField();
-        roomfield.setBounds(180, 150, 200, 30);
+        roomfield.setBounds(180, 160, 200, 30);
         image.add(roomfield);
         //
         consultationFees = new JLabel("Consultant Fees");
-        consultationFees.setBounds(30, 190, 200, 30);
+        consultationFees.setBounds(30, 210, 200, 30);
         consultationFees.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(consultationFees);
         consultfield = new JTextField();
-        consultfield.setBounds(180, 190, 200, 30);
+        consultfield.setBounds(180, 210, 200, 30);
         image.add(consultfield);
         //
         medicianFees = new JLabel("Medicen Fees");
-        medicianFees.setBounds(30, 230, 200, 30);
+        medicianFees.setBounds(30, 260, 200, 30);
         medicianFees.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(medicianFees);
         feefield = new JTextField();
-        feefield.setBounds(180, 230, 200, 30);
+        feefield.setBounds(180, 260, 200, 30);
         image.add(feefield);
         //
         labtestCharges = new JLabel("Lab Charges");
-        labtestCharges.setBounds(30, 270, 200, 30);
+        labtestCharges.setBounds(30, 310, 200, 30);
         labtestCharges.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(labtestCharges);
         labfield = new JTextField();
-        labfield.setBounds(180, 270, 200, 30);
+        labfield.setBounds(180, 310, 200, 30);
         image.add(labfield);
         //
         surgeryCharges = new JLabel("Surgery Charges");
@@ -87,11 +87,11 @@ public class Billing extends JFrame implements ActionListener {
         image.add(surgeryfield);
         //
         miscellaneousCharges = new JLabel("Miscellaneous Charges");
-        miscellaneousCharges.setBounds(30, 350, 200, 30);
+        miscellaneousCharges.setBounds(420, 160, 200, 30);
         miscellaneousCharges.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(miscellaneousCharges);
         miscellaneousfield = new JTextField();
-        miscellaneousfield.setBounds(180, 350, 200, 30);
+        miscellaneousfield.setBounds(640, 160, 200, 30);
         image.add(miscellaneousfield);
         //
         totalAmount = new JLabel("Total Amount");
