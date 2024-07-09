@@ -127,11 +127,11 @@ public class Billing extends JFrame implements ActionListener {
         image.add(physicianfield);
         // 
         admissionDate=new JLabel("Admission Date");
-        admissionDate.setBounds(30,410,200,30);
+        admissionDate.setBounds(30,360,200,30);
         admissionDate.setFont(new Font("Arial",Font.BOLD,16));
         image.add(admissionDate);
         addmissionfield=new JDateChooser();
-        addmissionfield.setBounds(180,410,200,30);
+        addmissionfield.setBounds(180,360,200,30);
         image.add(addmissionfield);
         // 
         dischargeDate=new JLabel("Discharge Date");
@@ -143,12 +143,12 @@ public class Billing extends JFrame implements ActionListener {
         image.add(dischargefield);
         // 
         paymentMethod=new JLabel("Payment Method");
-        paymentMethod.setBounds(200,460,200,30);
+        paymentMethod.setBounds(30,410,200,30);
         paymentMethod.setFont(new Font("Arial",Font.BOLD,16));
         image.add(paymentMethod);
         String method[]={"Net-Banking","Online Payment","Cash","Credit Card","Debit Card"};
         methodfield=new JComboBox(method);
-        methodfield.setBounds(420,460,200,30);
+        methodfield.setBounds(180,410,200,30);
         image.add(methodfield);
         // Button
         back = new JButton("Back");
