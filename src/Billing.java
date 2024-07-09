@@ -95,11 +95,11 @@ public class Billing extends JFrame implements ActionListener {
         image.add(miscellaneousfield);
         //
         totalAmount = new JLabel("Total Amount");
-        totalAmount.setBounds(30, 390, 200, 30);
+        totalAmount.setBounds(420, 210, 200, 30);
         totalAmount.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(totalAmount);
         totalfield = new JTextField();
-        totalfield.setBounds(180, 390, 200, 30);
+        totalfield.setBounds(640, 160, 200, 30);
         image.add(totalfield);
         //
         balanceDue = new JLabel("Balance Due");
