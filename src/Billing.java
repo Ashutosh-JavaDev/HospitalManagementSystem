@@ -23,7 +23,7 @@ public class Billing extends JFrame implements ActionListener {
         Image i2 = i1.getImage().getScaledInstance(1000, 700, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(0, 0, 1000, 700);
+        image.setBounds(0, 0, 1000, 600);
         add(image);
         JLabel title = new JLabel("Billing");
         title.setBounds(450, 10, 180, 45);
@@ -152,7 +152,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(methodfield);
         // Button
         back = new JButton("Back");
-        back.setBounds(800, 500, 100, 30);
+        back.setBounds(600, 470, 200, 30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
         back.setFont(new Font("Arial", Font.BOLD, 20));
@@ -160,14 +160,14 @@ public class Billing extends JFrame implements ActionListener {
         image.add(back);
         // Confirm
         confirm = new JButton("Confirm");
-        confirm.setBounds(200, 500, 200, 30);
+        confirm.setBounds(30, 470, 200, 30);
         confirm.setBackground(Color.BLACK);
         confirm.setForeground(Color.white);
         confirm.setFont(new Font("Arial", Font.BOLD, 20));
         confirm.addActionListener(this);
         image.add(confirm);
         // Default
-        setSize(1000, 700);
+        setSize(1000, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(250, 150);
         setUndecorated(true);
