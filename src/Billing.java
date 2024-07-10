@@ -180,7 +180,7 @@ public class Billing extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
-            String patientName;
+            
         }
     }
 
