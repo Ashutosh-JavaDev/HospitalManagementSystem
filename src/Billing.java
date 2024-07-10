@@ -179,6 +179,9 @@ public class Billing extends JFrame implements ActionListener {
         if (ae.getSource() == back) {
             System.exit(0);
         }
+        else if(ae.getSource()==confirm){
+            
+        }
     }
 
     public static void main(String[] args) {
