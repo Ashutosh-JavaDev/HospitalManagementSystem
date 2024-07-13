@@ -190,6 +190,7 @@ public class Billing extends JFrame implements ActionListener {
             String Labfield=labfield.getText();
             String Surgeryfield=surgeryfield.getText();
             String Miscellaneous=miscellaneousfield.getText();
+            String Totalamount=totalfield.getText();
         }
     }
 
