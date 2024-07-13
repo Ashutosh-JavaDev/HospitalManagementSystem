@@ -186,6 +186,7 @@ public class Billing extends JFrame implements ActionListener {
             String Namefield=namefield.getText();
             String Roomfield=roomfield.getText();
             String Consultfield=consultfield.getText();
+            String Feefield=feefield.getText();
         }
     }
 
