@@ -109,46 +109,46 @@ public class Billing extends JFrame implements ActionListener {
         balancefield = new JTextField();
         balancefield.setBounds(640, 260, 200, 30);
         image.add(balancefield);
-        // 
-        billingID=new JLabel("Billing ID");
-        billingID.setBounds(420,310,200,30);
-        billingID.setFont(new Font("Arial",Font.BOLD,16));
+        //
+        billingID = new JLabel("Billing ID");
+        billingID.setBounds(420, 310, 200, 30);
+        billingID.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(billingID);
-        billingfield=new JTextField();
-        billingfield.setBounds(640,310,200,30);
+        billingfield = new JTextField();
+        billingfield.setBounds(640, 310, 200, 30);
         image.add(billingfield);
-        // 
-        attendingPhysician=new JLabel("Physician Name");
-        attendingPhysician.setBounds(420,410,200,30);
-        attendingPhysician.setFont(new Font("Arial",Font.BOLD,16));
+        //
+        attendingPhysician = new JLabel("Physician Name");
+        attendingPhysician.setBounds(420, 410, 200, 30);
+        attendingPhysician.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(attendingPhysician);
-        physicianfield=new JTextField();
-        physicianfield.setBounds(640,410,200,30);
+        physicianfield = new JTextField();
+        physicianfield.setBounds(640, 410, 200, 30);
         image.add(physicianfield);
-        // 
-        admissionDate=new JLabel("Admission Date");
-        admissionDate.setBounds(30,360,200,30);
-        admissionDate.setFont(new Font("Arial",Font.BOLD,16));
+        //
+        admissionDate = new JLabel("Admission Date");
+        admissionDate.setBounds(30, 360, 200, 30);
+        admissionDate.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(admissionDate);
-        addmissionfield=new JDateChooser();
-        addmissionfield.setBounds(180,360,200,30);
+        addmissionfield = new JDateChooser();
+        addmissionfield.setBounds(180, 360, 200, 30);
         image.add(addmissionfield);
-        // 
-        dischargeDate=new JLabel("Discharge Date");
-        dischargeDate.setBounds(420,360,200,30);
-        dischargeDate.setFont(new Font("Arial",Font.BOLD,16));
+        //
+        dischargeDate = new JLabel("Discharge Date");
+        dischargeDate.setBounds(420, 360, 200, 30);
+        dischargeDate.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(dischargeDate);
-        dischargefield=new JDateChooser();
-        dischargefield.setBounds(640,360,200,30);
+        dischargefield = new JDateChooser();
+        dischargefield.setBounds(640, 360, 200, 30);
         image.add(dischargefield);
-        // 
-        paymentMethod=new JLabel("Payment Method");
-        paymentMethod.setBounds(30,410,200,30);
-        paymentMethod.setFont(new Font("Arial",Font.BOLD,16));
+        //
+        paymentMethod = new JLabel("Payment Method");
+        paymentMethod.setBounds(30, 410, 200, 30);
+        paymentMethod.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(paymentMethod);
-        String method[]={"Net-Banking","Online Payment","Cash","Credit Card","Debit Card"};
-        methodfield=new JComboBox(method);
-        methodfield.setBounds(180,410,200,30);
+        String method[] = { "Net-Banking", "Online Payment", "Cash", "Credit Card", "Debit Card" };
+        methodfield = new JComboBox(method);
+        methodfield.setBounds(180, 410, 200, 30);
         image.add(methodfield);
         // Button
         back = new JButton("Back");
@@ -178,22 +178,27 @@ public class Billing extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == back) {
             System.exit(0);
-        }
-        else if(ae.getSource()==confirm){
-            // idfield, namefield, roomfield, consultfield, feefield, labfield, surgeryfield, miscellaneousfield,
+        } else if (ae.getSource() == confirm) {
+            // idfield, namefield, roomfield, consultfield, feefield, labfield,
+            // surgeryfield, miscellaneousfield,
             // totalfield, amountfield, balancefield, billingfield, physicianfield;
-            String IDfield=idfield.getText();
-            String Namefield=namefield.getText();
-            String Roomfield=roomfield.getText();
-            String Consultfield=consultfield.getText();
-            String Feefield=feefield.getText();
-            String Labfield=labfield.getText();
-            String Surgeryfield=surgeryfield.getText();
-            String Miscellaneous=miscellaneousfield.getText();
-            String Totalamount=totalfield.getText();
-            String BalanceField=balancefield.getText();
-            String Billingfield=billingfield.getText();
-            String Physicianfield=physicianfield.getText();
+            /*
+             * JDateChooser addmissionfield, dischargefield;
+             * JButton confirm, back;
+             * JComboBox methodfield;
+             */
+            String IDfield = idfield.getText();
+            String Namefield = namefield.getText();
+            String Roomfield = roomfield.getText();
+            String Consultfield = consultfield.getText();
+            String Feefield = feefield.getText();
+            String Labfield = labfield.getText();
+            String Surgeryfield = surgeryfield.getText();
+            String Miscellaneous = miscellaneousfield.getText();
+            String Totalamount = totalfield.getText();
+            String BalanceField = balancefield.getText();
+            String Billingfield = billingfield.getText();
+            String Physicianfield = physicianfield.getText();
         }
     }
 
