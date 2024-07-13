@@ -183,6 +183,7 @@ public class Billing extends JFrame implements ActionListener {
             // idfield, namefield, roomfield, consultfield, feefield, labfield, surgeryfield, miscellaneousfield,
             // totalfield, amountfield, balancefield, billingfield, physicianfield;
             String IDfield=idfield.getText();
+            String Namefield=namefield.getText();
         }
     }
 
