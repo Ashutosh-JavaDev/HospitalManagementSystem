@@ -180,7 +180,9 @@ public class Billing extends JFrame implements ActionListener {
             System.exit(0);
         }
         else if(ae.getSource()==confirm){
-            
+            // idfield, namefield, roomfield, consultfield, feefield, labfield, surgeryfield, miscellaneousfield,
+            // totalfield, amountfield, balancefield, billingfield, physicianfield;
+            String IDfield=idfield.getText();
         }
     }
 
