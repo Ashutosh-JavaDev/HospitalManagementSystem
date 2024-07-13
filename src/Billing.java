@@ -200,6 +200,7 @@ public class Billing extends JFrame implements ActionListener {
             String Billingfield = billingfield.getText();
             String Physicianfield = physicianfield.getText();
             String Addmissionfield=((JTextField)addmissionfield.getDateEditor().getUiComponent()).getText();
+            String Dischargefield=((JTextField)dischargefield.getDateEditor().getUiComponent()).getText();
         }
     }
 
