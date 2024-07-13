@@ -192,6 +192,8 @@ public class Billing extends JFrame implements ActionListener {
             String Miscellaneous=miscellaneousfield.getText();
             String Totalamount=totalfield.getText();
             String BalanceField=balancefield.getText();
+            String Billingfield=billingfield.getText();
+            String Physicianfield=physicianfield.getText();
         }
     }
 
