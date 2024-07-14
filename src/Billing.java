@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class Billing extends JFrame implements ActionListener {
     JLabel patientID, patientName, admissionDate, dischargeDate, roomCharges, consultationFees, medicianFees,
@@ -202,6 +203,12 @@ public class Billing extends JFrame implements ActionListener {
             String Addmissionfield=((JTextField)addmissionfield.getDateEditor().getUiComponent()).getText();
             String Dischargefield=((JTextField)dischargefield.getDateEditor().getUiComponent()).getText();
             String Method=(String)methodfield.getSelectedItem();
+            try{
+
+            }
+            catch(SQLException a){
+                a.printStackTrace();
+            }
         }
     }
 
