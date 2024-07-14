@@ -205,7 +205,6 @@ public class Billing extends JFrame implements ActionListener {
             String Method=(String)methodfield.getSelectedItem();
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
-                
             }
             catch(SQLException a){
                 a.printStackTrace();
