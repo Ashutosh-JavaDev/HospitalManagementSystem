@@ -204,7 +204,7 @@ public class Billing extends JFrame implements ActionListener {
             String Dischargefield=((JTextField)dischargefield.getDateEditor().getUiComponent()).getText();
             String Method=(String)methodfield.getSelectedItem();
             try{
-
+                HospitalManagementSystem conn=new HospitalManagementSystem();
             }
             catch(SQLException a){
                 a.printStackTrace();
