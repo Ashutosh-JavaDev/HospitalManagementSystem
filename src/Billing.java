@@ -213,7 +213,7 @@ public class Billing extends JFrame implements ActionListener {
                 String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield + "','"
                         + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"+Miscellaneous+"','"
                         + Feefield + "','"+Billingfield+"','" + Totalamount + "','" + balancepaid + "','" + BalanceDue + "','"
-                        + physicianfield + "','"+Consultfield+"')";
+                        + Physicianfield + "','"+Consultfield+"','"+Method+"')";
             } catch (SQLException a) {
                 a.printStackTrace();
             }
