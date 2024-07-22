@@ -200,19 +200,21 @@ public class Billing extends JFrame implements ActionListener {
             String BalanceField = balancefield.getText();
             String Billingfield = billingfield.getText();
             String Physicianfield = physicianfield.getText();
-            String Addmissionfield=((JTextField)addmissionfield.getDateEditor().getUiComponent()).getText();
-            String Dischargefield=((JTextField)dischargefield.getDateEditor().getUiComponent()).getText();
-            String Method=(String)methodfield.getSelectedItem();
-            int totalamt=Integer.parseInt(Totalamount);
-            int balancefld=Integer.parseInt(BalanceField);
-            int balanceDue=totalamt-balancefld;
+            String Addmissionfield = ((JTextField) addmissionfield.getDateEditor().getUiComponent()).getText();
+            String Dischargefield = ((JTextField) dischargefield.getDateEditor().getUiComponent()).getText();
+            String Method = (String) methodfield.getSelectedItem();
+            int totalamt = Integer.parseInt(Totalamount);
+            int balancefld = Integer.parseInt(BalanceField);
+            int balanceDue = totalamt - balancefld;
 
-            String BalanceDue=Integer.toString(balanceDue);
-            try{
-                HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="insert into billing values('"+IDfield+"','"+Namefield+"','"+Roomfield+"','"+Addmissionfield+"','"+Dischargefield+"','"+Labfield+"','"+Surgeryfield+"','"+feefield+"','"+Totalamount+"','"+balancepaid+"')";
-            }
-            catch(SQLException a){
+            String BalanceDue = Integer.toString(balanceDue);
+            try {
+                HospitalManagementSystem conn = new HospitalManagementSystem();
+                String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield + "','"
+                        + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
+                        + feefield + "','" + Totalamount + "','" + balancepaid + "','" + balanceDue + "','"
+                        + physicianfield + "')";
+            } catch (SQLException a) {
                 a.printStackTrace();
             }
         }
