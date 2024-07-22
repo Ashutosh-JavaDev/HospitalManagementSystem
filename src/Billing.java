@@ -205,7 +205,9 @@ public class Billing extends JFrame implements ActionListener {
             String Method=(String)methodfield.getSelectedItem();
             int totalamt=Integer.parseInt(Totalamount);
             int balancefld=Integer.parseInt(BalanceField);
-            // String balancedue=(int)Totalamount-(int)BalanceField;
+            int balanceDue=totalamt-balancefld;
+
+            String BalanceDue=Integer.toString(balanceDue);
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="insert into billing values('"+IDfield+"','"+Namefield+"')";
