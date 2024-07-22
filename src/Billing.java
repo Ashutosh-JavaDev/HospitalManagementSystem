@@ -210,7 +210,7 @@ public class Billing extends JFrame implements ActionListener {
             String BalanceDue=Integer.toString(balanceDue);
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
-                String query="insert into billing values('"+IDfield+"','"+Namefield+"')";
+                String query="insert into billing values('"+IDfield+"','"+Namefield+"','"+Roomfield+"','"+Addmissionfield+"')";
             }
             catch(SQLException a){
                 a.printStackTrace();
