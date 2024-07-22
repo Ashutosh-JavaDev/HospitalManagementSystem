@@ -203,6 +203,9 @@ public class Billing extends JFrame implements ActionListener {
             String Addmissionfield=((JTextField)addmissionfield.getDateEditor().getUiComponent()).getText();
             String Dischargefield=((JTextField)dischargefield.getDateEditor().getUiComponent()).getText();
             String Method=(String)methodfield.getSelectedItem();
+            int totalamt=Integer.parseInt(Totalamount);
+            int balancefld=Integer.parseInt(BalanceField);
+            // String balancedue=(int)Totalamount-(int)BalanceField;
             try{
                 HospitalManagementSystem conn=new HospitalManagementSystem();
                 String query="insert into billing values('"+IDfield+"','"+Namefield+"')";
