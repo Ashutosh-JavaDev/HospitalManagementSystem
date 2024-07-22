@@ -211,9 +211,9 @@ public class Billing extends JFrame implements ActionListener {
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield + "','"
-                        + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
-                        + feefield + "','" + Totalamount + "','" + balancepaid + "','" + balanceDue + "','"
-                        + physicianfield + "')";
+                        + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"+Miscellaneous+"','"
+                        + Feefield + "','"+Billingfield+"','" + Totalamount + "','" + balancepaid + "','" + BalanceDue + "','"
+                        + physicianfield + "','"+Consultfield+"')";
             } catch (SQLException a) {
                 a.printStackTrace();
             }
