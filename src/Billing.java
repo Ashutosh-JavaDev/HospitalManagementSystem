@@ -216,7 +216,7 @@ public class Billing extends JFrame implements ActionListener {
                         + Feefield + "','" + Billingfield + "','" + Totalamount + "','" + balancepaid + "','"
                         + BalanceDue + "','"
                         + Physicianfield + "','" + Consultfield + "','" + Method + "')";
-                conn.state.executeQuery(query);
+                conn.state.executeUpdate(query);
             } catch (SQLException a) {
                 a.printStackTrace();
             }
