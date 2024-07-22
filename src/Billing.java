@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class Billing extends JFrame implements ActionListener {
     JLabel patientID, patientName, admissionDate, dischargeDate, roomCharges, consultationFees, medicianFees,
-            labtestCharges, surgeryCharges, miscellaneousCharges, totalAmount, amountPaid, balanceDue, paymentMethod,
+            labtestCharges, surgeryCharges, miscellaneousCharges, totalAmount, amountPaid, balancepaid, paymentMethod,
             billingDate, billingID, attendingPhysician;
     JTextField idfield, namefield, roomfield, consultfield, feefield, labfield, surgeryfield, miscellaneousfield,
             totalfield, amountfield, balancefield, billingfield, physicianfield;
@@ -103,10 +103,10 @@ public class Billing extends JFrame implements ActionListener {
         totalfield.setBounds(640, 210, 200, 30);
         image.add(totalfield);
         //
-        balanceDue = new JLabel("Balance Due");
-        balanceDue.setBounds(420, 260, 200, 30);
-        balanceDue.setFont(new Font("Arial", Font.BOLD, 16));
-        image.add(balanceDue);
+        balancepaid = new JLabel("Balance Paid");
+        balancepaid.setBounds(420, 260, 200, 30);
+        balancepaid.setFont(new Font("Arial", Font.BOLD, 16));
+        image.add(balancepaid);
         balancefield = new JTextField();
         balancefield.setBounds(640, 260, 200, 30);
         image.add(balancefield);
