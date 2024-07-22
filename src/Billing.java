@@ -217,6 +217,8 @@ public class Billing extends JFrame implements ActionListener {
                         + BalanceDue + "','"
                         + Physicianfield + "','" + Consultfield + "','" + Method + "')";
                 conn.state.executeUpdate(query);
+                JOptionPane.showMessageDialog(rootPane, "Balance Due: "+BalanceDue);
+                JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
             } catch (SQLException a) {
                 a.printStackTrace();
             }
