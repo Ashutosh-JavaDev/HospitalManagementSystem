@@ -97,7 +97,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(miscellaneousfield);
         //
         totalAmount = new JLabel("Total Amount");
-        totalAmount.setBounds(30,260,200,30);
+        totalAmount.setBounds(30, 260, 200, 30);
         totalAmount.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(totalAmount);
         totalfield = new JTextField();
@@ -207,10 +207,10 @@ public class Billing extends JFrame implements ActionListener {
             int roomcharges = Integer.parseInt(Roomfield);
             int constlantfee = Integer.parseInt(Consultfield);
             int Fee = Integer.parseInt(Feefield);
-            int lab=Integer.parseInt(Labfield);
-            int miscelleous=Integer.parseInt(Miscellaneous);
-            int surgery=Integer.parseInt(Surgeryfield);
-            int total=roomcharges+constlantfee+Fee+lab+miscelleous+surgery;
+            int lab = Integer.parseInt(Labfield);
+            int miscelleous = Integer.parseInt(Miscellaneous);
+            int surgery = Integer.parseInt(Surgeryfield);
+            int total = roomcharges + constlantfee + Fee + lab + miscelleous + surgery;
             int balancefld = Integer.parseInt(BalanceField);
             int balanceDue = total - balancefld;
             String Total = Integer.toString(total);
@@ -223,7 +223,7 @@ public class Billing extends JFrame implements ActionListener {
                 String search = "select*from HospitalManagementSystem where Patient_ID = '" + IDfield
                         + "' and Patient_Name = '" + Namefield + "'";
                 ResultSet result = conn.state.executeQuery(search);
-               
+
                 while (result.next()) {
                     String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield
                             + "','"
@@ -236,8 +236,7 @@ public class Billing extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Balance Due: " + BalanceDue);
                     JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
                 }
-             
-               
+
             } catch (SQLException a) {
                 a.printStackTrace();
             }
