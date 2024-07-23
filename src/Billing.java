@@ -69,7 +69,7 @@ public class Billing extends JFrame implements ActionListener {
         medicianFees.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(medicianFees);
         feefield = new JTextField();
-        feefield.setBounds(180, 260, 200, 30);
+        feefield.setBounds(640, 210, 200, 30);
         image.add(feefield);
         //
         labtestCharges = new JLabel("Lab Charges");
@@ -101,7 +101,7 @@ public class Billing extends JFrame implements ActionListener {
         totalAmount.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(totalAmount);
         totalfield = new JTextField();
-        totalfield.setBounds(640, 210, 200, 30);
+        totalfield.setBounds(180, 260, 200, 30);
         image.add(totalfield);
         //
         balancepaid = new JLabel("Balance Paid");
@@ -223,6 +223,7 @@ public class Billing extends JFrame implements ActionListener {
                 String search = "select*from HospitalManagementSystem where Patient_ID = '" + IDfield
                         + "' and Patient_Name = '" + Namefield + "'";
                 ResultSet result = conn.state.executeQuery(search);
+               
                 while (result.next()) {
                     String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield
                             + "','"
@@ -235,9 +236,8 @@ public class Billing extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Balance Due: " + BalanceDue);
                     JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
                 }
-                while (!result.next()) {
-                    JOptionPane.showMessageDialog(rootPane, "Patient Not Exist in Hospital");
-                }
+             
+               
             } catch (SQLException a) {
                 a.printStackTrace();
             }
