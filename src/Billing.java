@@ -198,7 +198,6 @@ public class Billing extends JFrame implements ActionListener {
             String Labfield = labfield.getText();
             String Surgeryfield = surgeryfield.getText();
             String Miscellaneous = miscellaneousfield.getText();
-            String Totalamount = totalfield.getText();
             String BalanceField = balancefield.getText();
             String Billingfield = billingfield.getText();
             String Physicianfield = physicianfield.getText();
@@ -214,6 +213,9 @@ public class Billing extends JFrame implements ActionListener {
             int total=roomcharges+constlantfee+Fee+lab+miscelleous+surgery;
             int balancefld = Integer.parseInt(BalanceField);
             int balanceDue = total - balancefld;
+            String Total = Integer.toString(total);
+
+            totalfield.setText(Total);
 
             String BalanceDue = Integer.toString(balanceDue);
             try {
@@ -226,7 +228,7 @@ public class Billing extends JFrame implements ActionListener {
                             + "','"
                             + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
                             + Miscellaneous + "','"
-                            + Feefield + "','" + Billingfield + "','" + Totalamount + "','" + balancepaid + "','"
+                            + Feefield + "','" + Billingfield + "','" + Total + "','" + balancepaid + "','"
                             + BalanceDue + "','"
                             + Physicianfield + "','" + Consultfield + "','" + Method + "')";
                     conn.state.executeUpdate(query);
