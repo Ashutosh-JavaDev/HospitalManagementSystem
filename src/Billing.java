@@ -207,11 +207,10 @@ public class Billing extends JFrame implements ActionListener {
             int roomcharges = Integer.parseInt(Roomfield);
             int constlantfee = Integer.parseInt(Consultfield);
             int Fee = Integer.parseInt(Feefield);
-            int Medicin=Integer.parseInt(BalanceField);
             int lab=Integer.parseInt(Labfield);
             int miscelleous=Integer.parseInt(Miscellaneous);
             int surgery=Integer.parseInt(Surgeryfield);
-            int total=roomcharges+constlantfee+Fee+lab+miscelleous+surgery+Medicin;
+            int total=roomcharges+constlantfee+Fee+lab+miscelleous+surgery;
             int balancefld = Integer.parseInt(BalanceField);
             int balanceDue = total - balancefld;
             String Total = Integer.toString(total);
