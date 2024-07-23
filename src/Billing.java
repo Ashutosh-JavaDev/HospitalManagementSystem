@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Billing extends JFrame implements ActionListener {
@@ -211,15 +212,7 @@ public class Billing extends JFrame implements ActionListener {
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
                 String search="select*from HospitalManagementSystem where Patient_ID = '"+IDfield+"' and Patient_Name = '"+Namefield+"'";
-                String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield + "','"
-                        + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
-                        + Miscellaneous + "','"
-                        + Feefield + "','" + Billingfield + "','" + Totalamount + "','" + balancepaid + "','"
-                        + BalanceDue + "','"
-                        + Physicianfield + "','" + Consultfield + "','" + Method + "')";
-                conn.state.executeUpdate(query);
-                JOptionPane.showMessageDialog(rootPane, "Balance Due: "+BalanceDue);
-                JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
+               ResultSet result=conn.state.executeQuery(search);
             } catch (SQLException a) {
                 a.printStackTrace();
             }
