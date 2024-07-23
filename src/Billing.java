@@ -226,6 +226,9 @@ public class Billing extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Balance Due: " + BalanceDue);
                     JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
                 }
+               while(!result.next()){
+                JOptionPane.showMessageDialog(rootPane, "Patient Not Exist in Hospital");
+               }
             } catch (SQLException a) {
                 a.printStackTrace();
             }
