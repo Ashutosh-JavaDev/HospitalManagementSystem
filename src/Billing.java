@@ -210,7 +210,7 @@ public class Billing extends JFrame implements ActionListener {
             String BalanceDue = Integer.toString(balanceDue);
             try {
                 HospitalManagementSystem conn = new HospitalManagementSystem();
-                String search="select*from HospitalManagementSystem where Patient_ID = '"+IDfield+"'";
+                String search="select*from HospitalManagementSystem where Patient_ID = '"+IDfield+"' and Patient_Name = '"+Namefield+"'";
                 String query = "insert into billing values('" + IDfield + "','" + Namefield + "','" + Roomfield + "','"
                         + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
                         + Miscellaneous + "','"
