@@ -65,7 +65,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(consultfield);
         //
         medicianFees = new JLabel("Medicen Fees");
-        medicianFees.setBounds(30, 260, 200, 30);
+        medicianFees.setBounds(420, 210, 200, 30);
         medicianFees.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(medicianFees);
         feefield = new JTextField();
@@ -97,7 +97,7 @@ public class Billing extends JFrame implements ActionListener {
         image.add(miscellaneousfield);
         //
         totalAmount = new JLabel("Total Amount");
-        totalAmount.setBounds(420, 210, 200, 30);
+        totalAmount.setBounds(30,260,200,30);
         totalAmount.setFont(new Font("Arial", Font.BOLD, 16));
         image.add(totalAmount);
         totalfield = new JTextField();
