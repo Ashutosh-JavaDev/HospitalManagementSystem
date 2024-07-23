@@ -189,6 +189,7 @@ public class Billing extends JFrame implements ActionListener {
              * JButton confirm, back;
              * JComboBox methodfield;
              */
+
             String IDfield = idfield.getText();
             String Namefield = namefield.getText();
             String Roomfield = roomfield.getText();
@@ -204,6 +205,9 @@ public class Billing extends JFrame implements ActionListener {
             String Addmissionfield = ((JTextField) addmissionfield.getDateEditor().getUiComponent()).getText();
             String Dischargefield = ((JTextField) dischargefield.getDateEditor().getUiComponent()).getText();
             String Method = (String) methodfield.getSelectedItem();
+            int roomcharges = Integer.parseInt(Roomfield);
+            int constlantfee = Integer.parseInt(Consultfield);
+            int Fee = Integer.parseInt(Feefield);
             int totalamt = Integer.parseInt(Totalamount);
             int balancefld = Integer.parseInt(BalanceField);
             int balanceDue = totalamt - balancefld;
@@ -226,9 +230,9 @@ public class Billing extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(rootPane, "Balance Due: " + BalanceDue);
                     JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully");
                 }
-               while(!result.next()){
-                JOptionPane.showMessageDialog(rootPane, "Patient Not Exist in Hospital");
-               }
+                while (!result.next()) {
+                    JOptionPane.showMessageDialog(rootPane, "Patient Not Exist in Hospital");
+                }
             } catch (SQLException a) {
                 a.printStackTrace();
             }
