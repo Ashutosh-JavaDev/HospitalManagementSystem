@@ -228,7 +228,7 @@ public class Billing extends JFrame implements ActionListener {
                             + "','"
                             + Addmissionfield + "','" + Dischargefield + "','" + Labfield + "','" + Surgeryfield + "','"
                             + Miscellaneous + "','"
-                            + Feefield + "','" + Billingfield + "','" + Total + "','" + balancepaid + "','"
+                            + Feefield + "','" + Billingfield + "','" + Total + "','" + BalanceField + "','"
                             + BalanceDue + "','"
                             + Physicianfield + "','" + Consultfield + "','" + Method + "')";
                     conn.state.executeUpdate(query);
