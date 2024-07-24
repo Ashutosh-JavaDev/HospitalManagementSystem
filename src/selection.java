@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Font;
 
 public class selection extends JFrame implements ActionListener {
-    JButton addPatient,addEmployee, ambulance, appointment, medical, billing, inventory, security, logout;
+    JButton addPatient, addEmployee, ambulance, appointment, medical, billing, inventory, security, logout;
 
     selection() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
@@ -104,31 +104,24 @@ public class selection extends JFrame implements ActionListener {
         if (ae.getSource() == addPatient) {
             setVisible(false);
             new Patient().setVisible(true);
-        }
-        else if(ae.getSource()==addEmployee){
-           setVisible(false); 
-           new Employee().setVisible(true);
-        }
-        else if(ae.getSource()==appointment){
+        } else if (ae.getSource() == addEmployee) {
+            setVisible(false);
+            new Employee().setVisible(true);
+        } else if (ae.getSource() == appointment) {
             setVisible(false);
             new Appointment().setVisible(true);
-        }
-        else if(ae.getSource()==ambulance){
+        } else if (ae.getSource() == ambulance) {
             setVisible(false);
             new Ambulance().setVisible(true);
-        }
-        else if(ae.getSource()==medical){
+        } else if (ae.getSource() == medical) {
             setVisible(false);
             new medical().setVisible(true);
-        }
-        else if(ae.getSource()==billing){
+        } else if (ae.getSource() == billing) {
             setVisible(false);
             new Billing().setVisible(true);
-        }
-        else if(ae.getSource()==logout){
+        } else if (ae.getSource() == logout) {
             System.exit(0);
         }
-    
 
     }
 
