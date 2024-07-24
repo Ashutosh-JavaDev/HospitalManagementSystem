@@ -56,7 +56,7 @@ public class selection extends JFrame implements ActionListener {
         billing.setBackground(Color.black);
         billing.setForeground(Color.white);
         image.add(billing);
-        addPatient.addActionListener(this);
+        billing.addActionListener(this);
 
         // Button 6
         inventory = new JButton("Inventory");
