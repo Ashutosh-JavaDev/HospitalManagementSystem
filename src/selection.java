@@ -122,7 +122,7 @@ public class selection extends JFrame implements ActionListener {
             new medical().setVisible(true);
         }
         else if(ae.getSource()==billing){
-
+            setVisible(false);
         }
         else if(ae.getSource()==logout){
             System.exit(0);
