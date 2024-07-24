@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Font;
 
 public class selection extends JFrame implements ActionListener {
-    JButton addPatient, addEmployee, ambulance, appointment, medical, billing, inventory, security, logout;
+    JButton addPatient, addEmployee, ambulance, appointment, medical, billing, logout;
 
     selection() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-jmeyer1220-668300.jpg"));
@@ -58,26 +58,9 @@ public class selection extends JFrame implements ActionListener {
         image.add(billing);
         billing.addActionListener(this);
 
-        // Button 6
-        inventory = new JButton("Inventory");
-        inventory.setBounds(200, 120, 150, 40);
-        inventory.setFont(new Font("Arial", Font.BOLD, 18));
-        inventory.setBackground(Color.black);
-        inventory.setForeground(Color.white);
-        image.add(inventory);
-        addPatient.addActionListener(this);
-
-        // Button 7
-        security = new JButton("Security");
-        security.setBounds(360, 120, 180, 40);
-        security.setFont(new Font("Arial", Font.BOLD, 18));
-        security.setBackground(Color.black);
-        security.setForeground(Color.white);
-        image.add(security);
-        security.addActionListener(this);
         // Employee
         addEmployee = new JButton("Employee");
-        addEmployee.setBounds(560, 120, 150, 40);
+        addEmployee.setBounds(200, 120, 150, 40);
         addEmployee.setFont(new Font("Arial", Font.BOLD, 18));
         addEmployee.setBackground(Color.black);
         addEmployee.setForeground(Color.white);
@@ -85,7 +68,7 @@ public class selection extends JFrame implements ActionListener {
         addEmployee.addActionListener(this);
         // Button 8
         logout = new JButton("Logout");
-        logout.setBounds(40, 170, 150, 40);
+        logout.setBounds(360, 120, 180, 40);
         logout.setFont(new Font("Arial", Font.BOLD, 18));
         logout.setBackground(Color.black);
         logout.setForeground(Color.white);
