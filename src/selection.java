@@ -123,7 +123,7 @@ public class selection extends JFrame implements ActionListener {
         }
         else if(ae.getSource()==billing){
             setVisible(false);
-            new Billing()
+            new Billing().setVisible(true);
         }
         else if(ae.getSource()==logout){
             System.exit(0);
