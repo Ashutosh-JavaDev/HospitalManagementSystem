@@ -12,7 +12,7 @@ public class Login extends JFrame implements ActionListener {
     JTextField loginfield;
     JPasswordField passwordfield;
 
-  public   Login() {
+  public Login() {
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Images/pexels-scottwebb-311458.jpg"));
         Image i2 = i1.getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
