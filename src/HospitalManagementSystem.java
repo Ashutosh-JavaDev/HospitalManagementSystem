@@ -13,7 +13,7 @@ public class HospitalManagementSystem {
             conn=DriverManager.getConnection("jdbc:mysql:///HospitalmanagementSystem", "root", "@Radhakrishna297");
             state=conn.createStatement();
         }catch(ClassNotFoundException ae){
-            JOptionPane.showMessageDialog(null, ae, "Class Not Found", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, ae.getMessage(), "Class Not Found", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
